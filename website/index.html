@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>平安詩集</title>
+<meta name="description" content="包含平安詩集、敬拜頌歌及詩歌集(葵平涌平用)，及收錄在敬拜頌歌的英文歌詞，以曲目/歌名/歌詞搜索詩歌快捷方便。" />
+<meta name="copyright" content="HKPEC: http://www.hkpec.org/" />
+<meta name="author" content="HKPEC: http://www.hkpec.org/" />
+<meta name="keywords" content="平安,福音堂,平安詩集,敬拜頌歌" />
+<meta name="Area" content="Hymn" />
+
+
+<meta name="robots" content="noodp, noydir" />
+<meta property="og:title" content="平安詩集(手機版)" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="http://www.pechymn.com/qr_code.png" />
+<meta property="og:site_name" content="平安詩集(手機版)" />
+<meta property="og:description" content="包含平安詩集、敬拜頌歌及詩歌集(葵平涌平用)，及收錄在敬拜頌歌的英文歌詞，以曲目/歌名/歌詞搜索詩歌快捷方便。" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--<meta name="apple-mobile-web-app-capable" content="yes" />-->
+
+<!--Andriod bookmark icon-->
+<link rel="SHORTCUT ICON" href="pec_logo.jpg"/>
+<!--Andriod bookmark icon-->
+
+<!--IOS bookmark icon-->
+<link rel="apple-touch-icon-precomposed" href="pec_logo.jpg"/>
+<link rel="apple-touch-icon" href="pec_logo.jpg"/>
+<!--IOS bookmark icon-->
+
+
+
+
+<script src="jquery_mobile/jquery-1.7.1.min.js"></script>
+<link rel="stylesheet" href="jquery_mobile/jquery.mobile.css" />
+<script src="jquery_mobile/langConvert.js"></script>
+<link rel="stylesheet" href="hymn.css" />
+<script src="hymn_script.js"></script>
+<script src="hymn.js"></script>
+
+
+</head>
+
+<body>
+<div id="pl_bookmark" style="display:none; text-align:center; vertical-align:top; width:100%; position:absolute; z-index:999;">
+	<table style="width:100%;">
+        <tr>
+        	<td colspan="2" style="height:2px; font-size:6px;">&nbsp;
+            	
+            </td>
+        </tr>
+    	<tr>
+        	<td colspan="2">
+            </td>
+        </tr>
+        <tr>
+        	<td colspan="2" style="height:2px; font-size:2px;">&nbsp;
+            	
+            </td>
+        </tr>
+        <tr>
+        	<td style="text-align:left; font-size:20px;">
+            <a href="javascript:swapSetting(false);">
+            <img style="padding-top:5px; border:none;" width="24" height="20" src="images/btnBack.png" />
+             返回
+             </a>
+            </td>
+            <td style="text-align:right; font-size:20px;">
+            </td>
+        </tr>
+        <tr>
+        	<td colspan="2" style="font-size:16px;">
+            	<div id="div_bookmark" style="display:none;">
+                    <font style="font-size:24px; font-weight:bold"> 
+                    <img style="padding-top:5px; border:none;" width="16" height="16" src="images/bookmark.png" /> <u>我的書籤</u> 
+                    </font>
+                    <div id="div_bookmark_content" class="history_div">
+                    </div>
+					<br/>
+					&nbsp;
+                 </div>
+            </td>
+        </tr>
+        <tr>
+        	<td colspan="2" style="font-size:16px;">
+                    <font style="font-size:24px; font-weight:bold"> 
+                    <img style="padding-top:5px; border:none;" width="16" height="16" src="images/history.png" />
+					<u>瀏覽記錄</u> 
+                    </font>
+            	<div id="div_history">
+                    <div id="div_history_content" class="history_div">
+                    </div>
+                 </div>
+            </td>
+        </tr>
+        <tr>
+        	<td colspan="2" style="text-align:left; font-size:20px;">
+            <a href="javascript:swapSetting(false);">
+            <img style="padding-top:5px; border:none;" width="24" height="20" src="images/btnBack.png" />
+             返回
+             </a>
+            </td>
+        </tr>
+        <tr>
+        	<td colspan="2" style="height:20px">&nbsp;
+            	
+            </td>
+        </tr>
+    </table>
+</div>
+<div id="pl_setting" style="display:none; text-align:center; vertical-align:top; width:100%; position:absolute; z-index:999;">
+	<table style="width:100%;">
+        <tr>
+        	<td colspan="2" style="height:2px; font-size:6px;">&nbsp;
+            	
+            </td>
+        </tr>
+    	<tr>
+        	<td colspan="2">
+            
+            	<font style="font-size:24px; font-weight:bold"> 
+                <img style="padding-top:5px;" width="20" height="20" src="images/setting.png" />
+                <u>設定</u> 
+                </font>
+            </td>
+        </tr>
+        <tr>
+        	<td colspan="2" style="height:2px; font-size:2px;">&nbsp;
+            	
+            </td>
+        </tr>
+        <tr>
+        	<td style="text-align:left; font-size:20px; min-width:120px;">
+            <a href="javascript:swapSetting(false);">
+            <img style="padding-top:5px; border:none;" width="24" height="20" src="images/btnBack.png" />
+             返回
+             </a>
+            </td>
+            <td style="text-align:right; font-size:20px;">
+            	<a href="https://www.facebook.com/sharer/sharer.php?u=http://www.pechymn.com/fb_feed.html" target="_blank" class="web_only">
+            		<img style="padding-top:5px; border:none;" src="images/facebook.png" />&nbsp;
+                </a>
+            </td>
+        </tr>
+        <tr>
+        	<td colspan="2" style="height:2px; font-size:2px;">&nbsp;
+            	
+            </td>
+        </tr>
+    	<tr>
+        	<td class="setting_td" style="font-size:16px;">
+                <img style="padding-top:5px;" width="20" src="images/font.png" />
+            	文字大小 :
+            </td>
+            <td class="setting_td" style="text-align:center;">
+                <table border="0" padding="0" margin="0" style="width:100%; text-align:center;">
+                <tr>
+                	<td style="font-size:1px; width:1px;">&nbsp;</td>
+                    <td class="font_option font14" onclick="changeFontSize(14);swapSetting(false);">
+                        <font style="font-size:20px">2</font>
+                    </td>
+                    <td class="font_option font18" onclick="changeFontSize(18);swapSetting(false);">
+                        <font style="font-size:20px">3</font>
+                    </td>
+                    <td class="font_option font23" onclick="changeFontSize(23);swapSetting(false);">
+                        <font style="font-size:20px">4</font>
+                    </td>
+                    <td class="font_option font28" onclick="changeFontSize(28);swapSetting(false);">
+                        <font style="font-size:20px">5</font>
+                    </td>
+                    <td class="font_option font32" onclick="changeFontSize(32);swapSetting(false);">
+                        <font style="font-size:20px">6</font>
+                    </td>
+                    <td class="font_option font46" onclick="changeFontSize(46);swapSetting(false);">
+                        <font style="font-size:20px">7</font>
+                    </td>
+                    <td class="font_option font70" onclick="changeFontSize(70);swapSetting(false);">
+                        <font style="font-size:20px">8</font>
+                    </td>
+                	<td style="font-size:1px; width:1px;">&nbsp;</td>
+                </tr>
+                </table>
+                <table border="0" padding="0" margin="0" style="width:100%; text-align:center;">
+                <tr>
+                	<td style="width:5%;">&nbsp;</td>
+                    <td class="font_weight normal" onclick="changeFontWeight('normal');swapSetting(false);">
+                        <font style="font-weight:normal">正常</font>
+                    </td>
+                    <td class="font_weight bold" onclick="changeFontWeight('bold');swapSetting(false);">
+                        <font style="font-weight:bold">粗體</font>
+                    </td>
+                	<td style="width:5%;">&nbsp;</td>
+                </tr>
+                </table>
+            </td>
+        </tr>
+    	<tr>
+        	<td class="setting_td" style="font-size:16px;">
+                <img style="padding-top:5px;" width="20" src="images/theme.png" />
+            	主題色彩 :
+            </td>
+            <td class="setting_td">
+            	<a class="skipSetting" onClick="changeColor('#FFFFFF','#555555','#FFCA5E');swapSetting(false);" style="font-size:18px; background-color:white; color:#555555;">純白</a>
+                 &nbsp; &nbsp; &nbsp;
+            	<a class="skipSetting" onClick="changeColor('#000000','#FFFFFF','#777777');swapSetting(false);" style="font-size:18px; background-color:black; color:#DDDDDD;">黑夜</a>
+                 &nbsp; &nbsp; &nbsp;
+            	<a class="skipSetting" onClick="changeColor('#FFFFDD','#743A00','#F90');swapSetting(false);" style="font-size:18px; background-color:#FFFFDD; color:#743A00;">淡黃</a>
+                <br/><br/>
+            	<a class="skipSetting" onClick="changeColor('#D7FBC6','#743A00','#060');swapSetting(false);" style="font-size:18px; background-color:#D7FBC6; color:#743A00;">草林</a>
+                 &nbsp; &nbsp; &nbsp;
+            	<a class="skipSetting" onClick="changeColor('#FAE1E0','#981E1B','#F66');swapSetting(false);" style="font-size:18px; background-color:#FAE1E0; color:#981E1B;">紅莓</a>
+                 &nbsp; &nbsp; &nbsp;
+            	<a class="skipSetting" onClick="changeColor('#F4FEFD','#03C','#06C');swapSetting(false);" style="font-size:18px; background-color:#F4FEFD; color:#03C;">藍天</a>
+                <br/><br/>
+            	<a class="skipSetting" onClick="changeColor('#f7cefc','#681771','#681771');swapSetting(false);" style="font-size:18px; background-color:#f7cefc; color:#681771;">迷紫</a>
+                 &nbsp; &nbsp; &nbsp;
+            	<a class="skipSetting" onClick="changeColor('#FFEB99','#995C00','#995C00');swapSetting(false);" style="font-size:18px; background-color:#FFEB99; color:#995C00;">香橙</a>
+            </td>
+        </tr>
+		<tr>
+        	<td class="setting_td" style="font-size:16px;">
+                快捷列位置 :
+            </td>
+            <td class="setting_td" style="text-align:center;">
+                <table border="0" padding="0" margin="0" style="width:100%; text-align:center;">
+                <tr>
+                	<td style="width:5%;">&nbsp;</td>
+                    <td class="bar_option bottom" onclick="changeBarPosition('bottom');swapSetting(false);">
+                        <font style="font-size:19px">▼置底</font>
+                    </td>
+                    <td class="bar_option top" style="font-size:20px" onclick="changeBarPosition('top');swapSetting(false);">
+                        <font style="font-size:19px">▲置頂</font>
+                    </td>
+                	<td style="width:5%;">&nbsp;</td>
+                </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+        	<td class="setting_td" style="font-size:16px;">
+                語言 :
+            </td>
+            <td class="setting_td" style="text-align:center;">
+                <table border="0" padding="0" margin="0" style="width:100%; text-align:center;">
+                <tr>
+                	<td style="width:5%;">&nbsp;</td>
+                    <td class="lang_option big5" onclick="changeGBBig5('big5');swapSetting(false);">
+                        <font style="font-size:19px">繁體</font>
+                    </td>
+                    <td class="lang_option gb" style="font-size:20px" onclick="changeGBBig5('gb');swapSetting(false);">
+                        <font style="font-size:19px">簡體</font>
+                    </td>
+                	<td style="width:5%;">&nbsp;</td>
+                </tr>
+                </table>
+            </td>
+        </tr>
+        <tr id="setting_split_mode">
+        	<td class="setting_td" style="font-size:16px;">
+                分割視窗 :
+            </td>
+            <td class="setting_td" style="text-align:center;">
+                須於大螢幕上才會顯示：如平板(橫向模式)或電腦
+                <table border="0" padding="0" margin="0" style="width:100%; text-align:center;">
+                <tr>
+                	<td style="width:5%;">&nbsp;</td>
+                    <td class="split_mode_option on" onclick="changeSplitMode(true);swapSetting(false);">
+                        <font style="font-size:20px">啟用</font>
+                    </td>
+                    <td class="split_mode_option off" style="font-size:20px" onclick="changeSplitMode(false);swapSetting(false);">
+                        <font style="font-size:20px">停用</font>
+                    </td>
+                	<td style="width:5%;">&nbsp;</td>
+                </tr>
+                </table>
+            </td>
+        </tr>
+        <tr class="web_only">
+            <td class="setting_td" style="font-size:16px;">
+            	系統功能 :
+            </td>
+        	<td class="setting_td">
+            	<table border="0" padding="0" margin="0" style="width:100%">
+                <tr>
+                <td style="font-size:14px;">
+					<div id="div_offline_on"><a href="javascript:alert('離線瀏覽: 讓您在沒有網絡連結的情況下仍能隨時使用本網頁');">
+                    &nbsp;離線瀏覽</a>
+                    </div>
+                </td>
+                <td style="font-size:14px;">
+					<div id="div_setting_on"><a href="javascript:alert('設置存取：把您習慣使用的文字大小、主題風格等設定記錄下來，令下次瀏覽更方便');">
+                    設置存取</a>
+                    </div>
+                </td>
+                </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+        	<td colspan="2" style="height:2px; font-size:2px;">&nbsp;
+            	
+            </td>
+        </tr>
+        <tr>
+        	<td colspan="2" style="text-align:left; font-size:20px;">
+            <a href="javascript:swapSetting(false);">
+            <img style="padding-top:5px; border:none;" width="24" height="20" src="images/btnBack.png" />
+             返回
+             </a>
+            </td>
+        </tr>
+        <tr>
+        	<td colspan="2" style="height:20px">&nbsp;
+            	
+            </td>
+        </tr>
+        <tr>
+        	<td colspan="2" style="height:80px; text-align:center; font-size:11px;">
+                <div id="div_version"></div>
+            <br/><br/>
+			輸入以下網址可前往網頁版: <br/>http://www.pechymn.com/
+			<br/><br/><img style="border:none;" alt="Peace Hymn" src="qr_code.png" /><br/>&nbsp;
+            </td>
+        </tr>
+    </table>
+</div>
+<div id="pl_main_body" class="main_body" data-role="page" style="display:none;">
+    <div id="div_toolbar" class="footer_grad skipSetting" style="font-size:20px; text-align:center; position:fixed; width:100%; z-index:99999;" >
+        <div>
+        <table id="tblToolbar" border="0" padding="0" margin="0">
+        <tr>
+        <td class="hymntype hymn_a" style="background-color:#CCC; border: #666 1px solid;" onclick="swapHymn('hymn_a')">
+            <font style="font-size:27px" id="hymn_font1">平</font>
+        </td>
+        <td style="width:1px;"></td>
+        <td class="hymntype hymn_b" style="background-color:#CCC; border: #666 1px solid;" onclick="swapHymn('hymn_b')">
+            <font style="font-size:27px" id="hymn_font2">敬</font>
+        </td>
+        <td style="width:1px;"></td>
+        <td class="hymntype hymn_c" style="background-color:#CCC; border: #666 1px solid;" onclick="swapHymn('hymn_c')">
+            <font style="font-size:27px" id="hymn_font3">詩</font>
+        </td>
+        <td style="width:1px;"></td>
+        <td style="text-align:right; vertical-align:bottom;">
+            <a href="javascript:swapBookmark(true);">
+            <img id="img_Bookmark" style="padding-top:2px;" height="30" src="images/my_bookmark.png" />
+            </a>
+        </td>
+        <td style="text-align:right; vertical-align:bottom; width:80px;">
+        <a id="btn_search" onclick="onSearchAgainClick();">
+                <img height="30" src="images/search.png" />
+              </a>
+        </td>
+        </tr>
+        </table>
+        </div>
+    </div>
+    
+    
+	<div>
+		<div id="topPadding">&nbsp;</div>
+		<table border="0" padding="0" margin="0" style="width:100%; vertical-align:top; padding-left:5px; padding-right:5px;">
+		<tr style="font-size: 15px;"><td colspan="2" style="text-align:center;"><a href="news.html" class="news-link skipSetting" target="_blank">消息公告: 關於平安詩集網站及手機應用程式之安排</a></td></tr>
+		<tr>
+		<td co style="text-align:left; vertical-align:middle;">
+		<input id="txt_search" type="search" style="" onblur="if(version_type.toUpperCase() != 'ANDROID') onSearch();" placeholder="曲目/關鍵字" data-theme="c" />
+		</td>
+		<td style="text-align:right; width:35px; vertical-align:middle;">
+			<a href="javascript:swapSetting(true);" id="btn_setting">
+			<img style="padding-top:2px;" width="30" height="30" src="images/setting.png" />
+			</a>
+		</td>
+		</tr>
+		</table>
+		<div style="height:5px;">&nbsp;</div>
+	</div>
+
+	<div id="div_data_body">
+
+		<div id="div_title" style="display:none; overflow-x:hidden; overflow-y:auto;" data-role="content">
+		</div>
+		<div id="div_content" style="display:none; overflow-x:hidden; overflow-y:auto;" data-role="content">
+			<div id="div_content_header">
+				<table width="100%">
+				<tr>
+				<td style="text-align:left;">
+					<a href="javascript:onClickBack();" class="cls_btn_back hide_on_splitmode">
+						<img style="padding-top:5px; border:none;" width="24" height="20" src="images/btnBack.png" />
+						 <font class="skipSetting" style="font-size:20px;">返回</font>
+					</a>
+				</td>
+				<td style="text-align:right;">
+				
+					<a id="btn_report_err" href="javascript:clickSetBookmark();">
+						<img style="padding-top:5px; border:none;" width="16" height="16" src="images/bookmark.png" />
+						 <font class="skipSetting" style="font-size:15px;">加到書籤</font>
+					</a>
+				</td>
+				</tr>
+				</table>
+			</div>
+			<div>
+				<table class="title_list"><tr><td class="title_list_td">
+				<div id="div_content_body"></div>
+				</td></tr></table>
+			</div>
+			<div id="div_content_footer">
+				<table width="100%">
+				<tr>
+				<td style="text-align:left;">
+				  <a href="javascript:onClickBack();" class="cls_btn_back hide_on_splitmode">
+					<img style="padding-top:5px; border:none;" width="24" height="20" src="images/btnBack.png" />
+					 <font class="skipSetting" style="font-size:20px;">返回</font>
+				  </a>
+				</td>
+				<td style="text-align:right;">
+				  
+					<a id="btn_report_err" href="mailto:hkpec.hymn@gmail.com?subject=平安詩集 - 錯誤回報&body=錯誤詳情: (請填寫)">
+						<img style="padding-top:5px; border:none;" width="16" height="16" src="images/err_report.png" />
+						 <font class="skipSetting" style="font-size:15px;">錯誤回報</font>
+					</a>
+				</td>
+				</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="div_group" style="display:none; text-align:center;" data-role="content">
+		<div id="hymn_a_group" class="hymn_group">
+		<table class="title_list" style="border-top-color: rgb(255, 153, 0); border-right-color: rgb(255, 153, 0); border-bottom-color: rgb(255, 153, 0); border-left-color: rgb(255, 153, 0); ">
+		<tbody>
+		<tr><td class="title_list_td" style="border-top-color: rgb(255, 153, 0); border-right-color: rgb(255, 153, 0); border-bottom-color: rgb(255, 153, 0); border-left-color: rgb(255, 153, 0); ">  <a href="javascript:#;" onclick="onGroupSearch('');" style="color: rgb(116, 58, 0); "><div style="width:100%">全部</div></a>  </td></tr>
+		<tr><td class="title_list_td" style="border-top-color: rgb(255, 153, 0); border-right-color: rgb(255, 153, 0); border-bottom-color: rgb(255, 153, 0); border-left-color: rgb(255, 153, 0); ">  <a href="javascript:#;" onclick="onGroupSearch('1-21');" style="color: rgb(116, 58, 0); "><div style="width:100%">頌讚 - 父神</div></a>  </td></tr>
+		<tr><td class="title_list_td" style="border-top-color: rgb(255, 153, 0); border-right-color: rgb(255, 153, 0); border-bottom-color: rgb(255, 153, 0); border-left-color: rgb(255, 153, 0); ">  <a href="javascript:#;" onclick="onGroupSearch('22-96');" style="color: rgb(116, 58, 0); "><div style="width:100%">頌讚 - 耶穌基督</div></a>  </td></tr>
+		<tr><td class="title_list_td" style="border-top-color: rgb(255, 153, 0); border-right-color: rgb(255, 153, 0); border-bottom-color: rgb(255, 153, 0); border-left-color: rgb(255, 153, 0); ">  <a href="javascript:#;" onclick="onGroupSearch('97-105');" style="color: rgb(116, 58, 0); "><div style="width:100%">頌讚 - 聖靈</div></a>  </td></tr>
+		<tr><td class="title_list_td" style="border-top-color: rgb(255, 153, 0); border-right-color: rgb(255, 153, 0); border-bottom-color: rgb(255, 153, 0); border-left-color: rgb(255, 153, 0); ">  <a href="javascript:#;" onclick="onGroupSearch('106-154');" style="color: rgb(116, 58, 0); "><div style="width:100%">福音</div></a>  </td></tr>
+		<tr><td class="title_list_td" style="border-top-color: rgb(255, 153, 0); border-right-color: rgb(255, 153, 0); border-bottom-color: rgb(255, 153, 0); border-left-color: rgb(255, 153, 0); ">  <a href="javascript:#;" onclick="onGroupSearch('155-193');" style="color: rgb(116, 58, 0); "><div style="width:100%">道路 - 奉獻</div></a>  </td></tr>
+		<tr><td class="title_list_td" style="border-top-color: rgb(255, 153, 0); border-right-color: rgb(255, 153, 0); border-bottom-color: rgb(255, 153, 0); border-left-color: rgb(255, 153, 0); ">  <a href="javascript:#;" onclick="onGroupSearch('194-218');" style="color: rgb(116, 58, 0); "><div style="width:100%">道路 - 信靠</div></a>  </td></tr>
+		<tr><td class="title_list_td" style="border-top-color: rgb(255, 153, 0); border-right-color: rgb(255, 153, 0); border-bottom-color: rgb(255, 153, 0); border-left-color: rgb(255, 153, 0); ">  <a href="javascript:#;" onclick="onGroupSearch('219-242');" style="color: rgb(116, 58, 0); "><div style="width:100%">道路 - 引導</div></a>  </td></tr>
+		<tr><td class="title_list_td" style="border-top-color: rgb(255, 153, 0); border-right-color: rgb(255, 153, 0); border-bottom-color: rgb(255, 153, 0); border-left-color: rgb(255, 153, 0); ">  <a href="javascript:#;" onclick="onGroupSearch('243-261');" style="color: rgb(116, 58, 0); "><div style="width:100%">道路 - 順服</div></a>  </td></tr>
+		<tr><td class="title_list_td" style="border-top-color: rgb(255, 153, 0); border-right-color: rgb(255, 153, 0); border-bottom-color: rgb(255, 153, 0); border-left-color: rgb(255, 153, 0); ">  <a href="javascript:#;" onclick="onGroupSearch('262-273');" style="color: rgb(116, 58, 0); "><div style="width:100%">道路 - 受苦</div></a>  </td></tr>
+		<tr><td class="title_list_td" style="border-top-color: rgb(255, 153, 0); border-right-color: rgb(255, 153, 0); border-bottom-color: rgb(255, 153, 0); border-left-color: rgb(255, 153, 0); ">  <a href="javascript:#;" onclick="onGroupSearch('274-308');" style="color: rgb(116, 58, 0); "><div style="width:100%">道路 - 安慰</div></a>  </td></tr>
+		<tr><td class="title_list_td" style="border-top-color: rgb(255, 153, 0); border-right-color: rgb(255, 153, 0); border-bottom-color: rgb(255, 153, 0); border-left-color: rgb(255, 153, 0); ">  <a href="javascript:#;" onclick="onGroupSearch('309-326');" style="color: rgb(116, 58, 0); "><div style="width:100%">靈交 - 追求聖潔</div></a>  </td></tr>
+		<tr><td class="title_list_td" style="border-top-color: rgb(255, 153, 0); border-right-color: rgb(255, 153, 0); border-bottom-color: rgb(255, 153, 0); border-left-color: rgb(255, 153, 0); ">  <a href="javascript:#;" onclick="onGroupSearch('327-390');" style="color: rgb(116, 58, 0); "><div style="width:100%">靈交 - 與神合一</div></a>  </td></tr>
+		<tr><td class="title_list_td" style="border-top-color: rgb(255, 153, 0); border-right-color: rgb(255, 153, 0); border-bottom-color: rgb(255, 153, 0); border-left-color: rgb(255, 153, 0); ">  <a href="javascript:#;" onclick="onGroupSearch('391-412');" style="color: rgb(116, 58, 0); "><div style="width:100%">靈交 - 禱告交通</div></a>  </td></tr>
+		<tr><td class="title_list_td" style="border-top-color: rgb(255, 153, 0); border-right-color: rgb(255, 153, 0); border-bottom-color: rgb(255, 153, 0); border-left-color: rgb(255, 153, 0); ">  <a href="javascript:#;" onclick="onGroupSearch('413-429');" style="color: rgb(116, 58, 0); "><div style="width:100%">教會 - 教會生活</div></a>  </td></tr>
+		<tr><td class="title_list_td" style="border-top-color: rgb(255, 153, 0); border-right-color: rgb(255, 153, 0); border-bottom-color: rgb(255, 153, 0); border-left-color: rgb(255, 153, 0); ">  <a href="javascript:#;" onclick="onGroupSearch('430-447');" style="color: rgb(116, 58, 0); "><div style="width:100%">教會 - 爭戰</div></a>  </td></tr>
+		<tr><td class="title_list_td" style="border-top-color: rgb(255, 153, 0); border-right-color: rgb(255, 153, 0); border-bottom-color: rgb(255, 153, 0); border-left-color: rgb(255, 153, 0); ">  <a href="javascript:#;" onclick="onGroupSearch('448-471');" style="color: rgb(116, 58, 0); "><div style="width:100%">教會 - 盼望</div></a>  </td></tr>
+		<tr><td class="title_list_td" style="border-top-color: rgb(255, 153, 0); border-right-color: rgb(255, 153, 0); border-bottom-color: rgb(255, 153, 0); border-left-color: rgb(255, 153, 0); ">  <a href="javascript:#;" onclick="onGroupSearch('472-500');" style="color: rgb(116, 58, 0); "><div style="width:100%">教會 - 佈道</div></a>  </td></tr>
+		</tbody>
+		</table>
+		</div>
+		<div id="hymn_b_group" class="hymn_group">
+		<table class="title_list" style="border-top-color: rgb(255, 153, 0); border-right-color: rgb(255, 153, 0); border-bottom-color: rgb(255, 153, 0); border-left-color: rgb(255, 153, 0); ">
+		<tbody>
+		<tr><td class="title_list_td" style="border-top-color: rgb(255, 153, 0); border-right-color: rgb(255, 153, 0); border-bottom-color: rgb(255, 153, 0); border-left-color: rgb(255, 153, 0); ">  <a href="javascript:#;" onclick="onGroupSearch('');" style="color: rgb(116, 58, 0); "><div style="width:100%">全部</div></a>  </td></tr>
+		<tr><td class="title_list_td" style="border-top-color: rgb(255, 153, 0); border-right-color: rgb(255, 153, 0); border-bottom-color: rgb(255, 153, 0); border-left-color: rgb(255, 153, 0); ">  <a href="javascript:#;" onclick="onGroupSearch('1-33');" style="color: rgb(116, 58, 0); "><div style="width:100%">敬拜真神</div></a>  </td></tr>
+		<tr><td class="title_list_td" style="border-top-color: rgb(255, 153, 0); border-right-color: rgb(255, 153, 0); border-bottom-color: rgb(255, 153, 0); border-left-color: rgb(255, 153, 0); ">  <a href="javascript:#;" onclick="onGroupSearch('34-44');" style="color: rgb(116, 58, 0); "><div style="width:100%">頌讚父神</div></a>  </td></tr>
+		<tr><td class="title_list_td" style="border-top-color: rgb(255, 153, 0); border-right-color: rgb(255, 153, 0); border-bottom-color: rgb(255, 153, 0); border-left-color: rgb(255, 153, 0); ">  <a href="javascript:#;" onclick="onGroupSearch('45-110');" style="color: rgb(116, 58, 0); "><div style="width:100%">頌讚基督</div></a>  </td></tr>
+		<tr><td class="title_list_td" style="border-top-color: rgb(255, 153, 0); border-right-color: rgb(255, 153, 0); border-bottom-color: rgb(255, 153, 0); border-left-color: rgb(255, 153, 0); ">  <a href="javascript:#;" onclick="onGroupSearch('111-128');" style="color: rgb(116, 58, 0); "><div style="width:100%">基督降生</div></a>  </td></tr>
+		<tr><td class="title_list_td" style="border-top-color: rgb(255, 153, 0); border-right-color: rgb(255, 153, 0); border-bottom-color: rgb(255, 153, 0); border-left-color: rgb(255, 153, 0); ">  <a href="javascript:#;" onclick="onGroupSearch('129-152');" style="color: rgb(116, 58, 0); "><div style="width:100%">基督受苦</div></a>  </td></tr>
+		<tr><td class="title_list_td" style="border-top-color: rgb(255, 153, 0); border-right-color: rgb(255, 153, 0); border-bottom-color: rgb(255, 153, 0); border-left-color: rgb(255, 153, 0); ">  <a href="javascript:#;" onclick="onGroupSearch('153-159');" style="color: rgb(116, 58, 0); "><div style="width:100%">基督復活</div></a>  </td></tr>
+		<tr><td class="title_list_td" style="border-top-color: rgb(255, 153, 0); border-right-color: rgb(255, 153, 0); border-bottom-color: rgb(255, 153, 0); border-left-color: rgb(255, 153, 0); ">  <a href="javascript:#;" onclick="onGroupSearch('160-162');" style="color: rgb(116, 58, 0); "><div style="width:100%">基督再來</div></a>  </td></tr>
+		<tr><td class="title_list_td" style="border-top-color: rgb(255, 153, 0); border-right-color: rgb(255, 153, 0); border-bottom-color: rgb(255, 153, 0); border-left-color: rgb(255, 153, 0); ">  <a href="javascript:#;" onclick="onGroupSearch('163-196');" style="color: rgb(116, 58, 0); "><div style="width:100%">唱頌救恩</div></a>  </td></tr>
+		<tr><td class="title_list_td" style="border-top-color: rgb(255, 153, 0); border-right-color: rgb(255, 153, 0); border-bottom-color: rgb(255, 153, 0); border-left-color: rgb(255, 153, 0); ">  <a href="javascript:#;" onclick="onGroupSearch('197-250');" style="color: rgb(116, 58, 0); "><div style="width:100%">崇拜特輯</div></a>  </td></tr>
+		</tbody>
+		</table>
+		</div>
+		<div id="hymn_c_group" class="hymn_group">
+		<table class="title_list" style="border-top-color: rgb(255, 153, 0); border-right-color: rgb(255, 153, 0); border-bottom-color: rgb(255, 153, 0); border-left-color: rgb(255, 153, 0); ">
+		<tbody>
+		<tr><td class="title_list_td" style="border-top-color: rgb(255, 153, 0); border-right-color: rgb(255, 153, 0); border-bottom-color: rgb(255, 153, 0); border-left-color: rgb(255, 153, 0); ">  <a href="javascript:#;" onclick="onGroupSearch('');" style="color: rgb(116, 58, 0); "><div style="width:100%">全部</div></a>  </td></tr>
+		</tbody>
+		</table>
+		</div>
+	</div>
+
+	
+
+
+
+	<span class="hide_on_splitmode"><br/>&nbsp;
+	<br/>&nbsp;</span>
+		<div id="bottomPadding">&nbsp;</div>
+
+</div>
+
+
+
+
+
+</body>
+</html>
