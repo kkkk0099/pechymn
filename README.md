@@ -6,8 +6,17 @@
 	網頁, 手機應用程式(React Native) 及 中/英歌詞的公開資源數據
 </p>
 
+
 ## Statistic
 /statistic : 平安詩集/敬拜頌歌的使用數據(數據至2017年)
+
+
+## Lyrics
+/lyrics : 中英文版歌詞 (JSON格式)
+- hymn_a_lyrics.json : 平安詩集
+- hymn_b_lyrics.json : 敬拜頌歌
+- hymn_c_lyrics.json : 詩歌集
+
 
 ## Website
 /website : 平安詩集網頁版源始碼，包含後台php
