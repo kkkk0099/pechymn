@@ -8,7 +8,7 @@
 
 
 ## Statistic
-/statistic : 平安詩集/敬拜頌歌的使用數據(數據至2017年)
+/statistic : 平安詩集/敬拜頌歌的使用數據(數據至2023年)
 
 
 ## Lyrics
