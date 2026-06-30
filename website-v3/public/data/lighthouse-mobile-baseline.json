@@ -1,0 +1,20 @@
+{
+  "generatedAt": "2026-06-12T10:09:44.948Z",
+  "targetUrl": "http://localhost:4324/",
+  "status": "ok",
+  "lighthouseVersion": "13.4.0",
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/149.0.0.0 Safari/537.36",
+  "categories": {
+    "performance": 75,
+    "accessibility": 100,
+    "bestPractices": 100,
+    "seo": 100
+  },
+  "metrics": {
+    "firstContentfulPaintMs": 1206.16,
+    "largestContentfulPaintMs": 9609.24,
+    "totalBlockingTimeMs": 0,
+    "cumulativeLayoutShift": 0.00009116266647145862,
+    "speedIndexMs": 1206.16
+  }
+}

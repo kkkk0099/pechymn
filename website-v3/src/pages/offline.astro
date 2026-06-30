@@ -1,0 +1,24 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const baseUrl = import.meta.env.BASE_URL;
+const toBase = (path = '') => `${baseUrl}${String(path).replace(/^\/+/, '')}`;
+---
+
+<BaseLayout
+  title="目前離線中 | 平安詩集"
+  description="裝置目前離線，請稍後重試或返回已快取內容。"
+>
+  <section class="header card">
+    <span class="badge">Offline Mode</span>
+    <h1>目前離線中</h1>
+    <p>
+      網路連線暫時不可用。你仍可瀏覽已快取內容；恢復連線後，資料會自動更新。
+    </p>
+    <div class="nav-row">
+      <a class="nav-chip" href={toBase('')}>返回首頁</a>
+      <a class="nav-chip" href={toBase('news/')}>更新記錄</a>
+      <a class="nav-chip" href={toBase('privacy/')}>隱私頁面</a>
+    </div>
+  </section>
+</BaseLayout>

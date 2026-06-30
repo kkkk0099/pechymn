@@ -1,0 +1,133 @@
+---
+import '../styles/site.css';
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const {
+  title,
+  description = '平安詩集現代化重構版，保留舊站功能語義與資料。',
+} = Astro.props;
+
+const metaDescription =
+  '包含平安詩集、敬拜頌歌、詩歌集(葵平/涌平)、沙平匯曲(沙平)，及收錄在敬拜頌歌的英文歌詞，以曲目/歌名/歌詞搜索詩歌快捷方便。';
+
+const ogDescription =
+  '包含平安詩集、敬拜頌歌、詩歌集(葵平/涌平)、沙平匯曲(沙平)，及收錄在敬拜頌歌的英文歌詞，以曲目/歌名/歌詞搜索詩歌快捷方便。';
+
+const buildVersion = import.meta.env.PUBLIC_BUILD_VERSION || __APP_BUILD_VERSION__;
+const baseUrl = import.meta.env.BASE_URL;
+const isDev = import.meta.env.DEV;
+const toBase = (path = '') => `${baseUrl}${String(path).replace(/^\/+/, '')}`;
+---
+
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={metaDescription} />
+    <meta name="copyright" content="HKPEC: http://www.hkpec.org/" />
+    <meta name="author" content="HKPEC: http://www.hkpec.org/" />
+    <meta property="og:title" content="平安詩集" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="http://www.pechymn.com/favicon.svg" />
+    <meta property="og:site_name" content="平安詩集" />
+    <meta property="og:description" content={ogDescription} />
+    <meta name="theme-color" content="#f2e1c2" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <link rel="manifest" href={toBase('manifest.webmanifest')} />
+    <link rel="icon" href={toBase('favicon.ico')} sizes="any" />
+    <link rel="icon" href={toBase('favicon.svg')} type="image/svg+xml" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <div id="legacy-browser-notice" class="legacy-browser-notice" hidden>
+      <div class="legacy-browser-card" role="alert" aria-live="assertive">
+        <h2>目前瀏覽器版本過舊</h2>
+        <p>你使用的瀏覽器不支援新版平安詩集，請改用較新版本瀏覽器，或前往舊版網站繼續使用。</p>
+        <p>
+          <a id="legacy-browser-link" class="nav-chip" href={toBase('v2/')}>前往舊版網站（/v2）</a>
+        </p>
+        <p id="legacy-browser-countdown">5 秒後將自動跳轉至舊版網站。</p>
+      </div>
+    </div>
+    <script is:inline define:vars={{ baseUrl }}>
+      (function () {
+        var appBaseUrl = String(baseUrl || '/');
+        var legacyUrl = appBaseUrl + 'v2/';
+        var fallbackShown = false;
+        var timerId = null;
+
+        window.__LEGACY_SITE_URL__ = legacyUrl;
+
+        window.__activateLegacyFallback = function () {
+          if (fallbackShown) return;
+          fallbackShown = true;
+
+          var notice = document.getElementById('legacy-browser-notice');
+          var countdownText = document.getElementById('legacy-browser-countdown');
+          var link = document.getElementById('legacy-browser-link');
+
+          if (link) {
+            link.setAttribute('href', legacyUrl);
+          }
+
+          if (notice) {
+            notice.hidden = false;
+            notice.classList.add('is-active');
+          }
+
+          var seconds = 5;
+          if (countdownText) {
+            countdownText.textContent = seconds + ' 秒後將自動跳轉至舊版網站。';
+          }
+
+          timerId = window.setInterval(function () {
+            seconds -= 1;
+            if (countdownText && seconds > 0) {
+              countdownText.textContent = seconds + ' 秒後將自動跳轉至舊版網站。';
+            }
+            if (seconds <= 0) {
+              if (timerId) {
+                window.clearInterval(timerId);
+                timerId = null;
+              }
+              window.location.href = legacyUrl;
+            }
+          }, 1000);
+        };
+      })();
+    </script>
+    <script is:inline nomodule>
+      if (typeof window.__activateLegacyFallback === 'function') {
+        window.__activateLegacyFallback();
+      }
+    </script>
+    <div class="grain"></div>
+    <main class="page-shell">
+      <slot />
+    </main>
+    <script is:inline define:vars={{ buildVersion, baseUrl, isDev }}>
+      if ('serviceWorker' in navigator) {
+        if (isDev) {
+          // Avoid stale production SW cache affecting local dev behavior.
+          navigator.serviceWorker.getRegistrations().then((registrations) => {
+            registrations.forEach((registration) => registration.unregister());
+          });
+        } else {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker
+            .register(`${baseUrl}sw.js?v=${buildVersion}`, { updateViaCache: 'none' })
+            .catch(() => {
+            // Ignore SW registration errors in unsupported/private contexts.
+          });
+        });
+        }
+      }
+    </script>
+  </body>
+</html>

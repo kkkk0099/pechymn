@@ -1,0 +1,26 @@
+{
+  "name": "new_hymn",
+  "type": "module",
+  "version": "3.0.0",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "deploy:azure": "bash ./scripts/deploy-azure.sh",
+    "generate:data": "node ./scripts/convert-hymn-data.mjs",
+    "audit:assets": "node ./scripts/audit-assets.mjs",
+    "lighthouse:mobile": "node ./scripts/lighthouse-mobile-baseline.mjs"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.9.9",
+    "astro": "^6.4.6",
+    "typescript": "^6.0.3"
+  },
+  "devDependencies": {
+    "@types/node": "^25.9.3"
+  }
+}

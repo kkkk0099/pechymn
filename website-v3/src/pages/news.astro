@@ -1,0 +1,44 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const baseUrl = import.meta.env.BASE_URL;
+const toBase = (path = '') => `${baseUrl}${String(path).replace(/^\/+/, '')}`;
+---
+
+<BaseLayout title="平安詩集 | 消息公告">
+  <section class="card header">
+    <span class="badge">News</span>
+    <h1>消息公告</h1>
+    <p>此頁保留舊站公告內容，並整理為新版本版面。</p>
+    <div class="nav-row">
+      <a class="nav-chip" href={toBase('')}>返回主頁</a>
+      <a class="nav-chip" href={toBase('privacy/')}>隱私政策</a>
+    </div>
+  </section>
+
+  <section class="grid single">
+    <article class="card tile">
+      <ol>
+        <li>
+          由於平安詩集伺服器有所調動，平安詩集網址為
+          <a href="https://www.pechymn.com">www.pechymn.com</a>
+        </li>
+        <li>
+          手機行動版程式：
+          <br />
+          Android 版已於 2023 年 9 月由 Google Play Store 下架。
+          <br />
+          iOS 版已於 2024 年 5 月由 App Store 下架。
+        </li>
+        <li>
+          問題回報或其他相關事宜，請電郵至
+          <a href="mailto:hkpec.hymn@gmail.com?subject=平安詩集 - (請填寫)&body=詳情: (請填寫)">hkpec.hymn@gmail.com</a>
+        </li>
+        <li>
+          平安詩集資料檔、音訊、以及手機與網頁應用程式原始碼已公開於
+          <a href="https://github.com/kkkk0099/pechymn">GitHub 倉庫</a>，歡迎延伸開發。
+        </li>
+      </ol>
+    </article>
+  </section>
+</BaseLayout>
