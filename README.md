@@ -19,7 +19,17 @@
 
 
 ## Website
-/website : 平安詩集網頁版源始碼，包含後台php
+/website-v3 : 新版平安詩集靜態網站源始碼，使用 Astro 建構，可直接部署為靜態網站
+
+Astro 版本: 6.x
+
+- public/data : 預先生成的歌詞與索引 JSON
+- src/pages : 網站頁面模板
+- scripts/deploy-azure.sh : Azure Blob 靜態網站部署腳本
+
+
+
+/website : 舊版平安詩集網頁版源始碼(v2)，包含後台php
 
 PHP 版本: 5.x
 
