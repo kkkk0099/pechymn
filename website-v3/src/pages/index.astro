@@ -1920,6 +1920,8 @@ const toBase = (path = '') => `${baseUrl}${String(path).replace(/^\/+/, '')}`;
 
 				closeSettingsPanel();
 				openLyricOverlay();
+				lyricViewer.innerHTML = '<div class="empty-state">&nbsp;</div>';
+				lyricViewer.dataset.currentId = '';
 				setResultActive(item.id);
 				stopActiveAudio();
 
