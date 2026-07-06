@@ -1200,11 +1200,65 @@ body.has-quickbar {
   flex-shrink: 0;
 }
 
-.audio-link {
-  width: fit-content;
-  font-weight: 700;
-  font-size: 0.9rem;
-}
+ /* Congregation prompt (first-visit chooser) */
+ .congregation-prompt {
+   position: fixed;
+   left: 0;
+   right: 0;
+   bottom: calc(env(safe-area-inset-bottom) + 60px);
+   z-index: 60;
+   width: 100%;
+   display: grid;
+   grid-template-columns: 1fr;
+   gap: 0.55rem;
+   padding: 0.8rem 1rem;
+   border: 1px solid var(--line);
+   border-radius: 0;
+   background: linear-gradient(180deg, rgba(255,250,240,0.98), rgba(255,246,230,0.98));
+   box-shadow: 0 12px 28px rgba(70,36,16,0.18);
+   opacity: 0;
+   transform: translateY(0.75rem);
+   transition: opacity 220ms ease, transform 220ms ease;
+ }
+ .congregation-prompt.is-visible {
+   opacity: 1;
+   transform: translateY(0);
+ }
+ .congregation-prompt.hidden {
+   display: none;
+ }
+ .congregation-prompt-label {
+   font-weight: 800;
+   color: var(--ink);
+ }
+ .congregation-prompt-actions {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 0.5rem;
+ }
+ .congregation-prompt-btn {
+   flex: 1 1 0;
+   min-width: 0;
+   border: 1px solid var(--line);
+   border-radius: 999px;
+   background: rgba(255,255,255,0.92);
+   padding: 0.7rem 0.9rem;
+   font-size: 1rem;
+   font-weight: 800;
+   cursor: pointer;
+   text-align: center;
+   color: #6b3c22;
+ }
+ .congregation-prompt-btn:active {
+   transform: translateY(1px);
+ }
+ .congregation-prompt-btn[data-congreg="other"] {
+   color: #d9542b;
+ }
+ .congregation-prompt-btn[data-congreg="kp_yp"],
+ .congregation-prompt-btn[data-congreg="sht"] {
+   color: #6b3c22;
+ }
 
 .audio-link.mute {
   color: var(--ink-soft);

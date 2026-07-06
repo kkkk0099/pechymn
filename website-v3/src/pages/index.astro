@@ -60,6 +60,16 @@ const toBase = (path = '') => `${baseUrl}${String(path).replace(/^\/+/, '')}`;
 		</div>
 	</div>
 
+	<!-- Congregation prompt shown on first visit -->
+	<div id="congregation-prompt" class="congregation-prompt hidden" aria-hidden="true">
+		<div class="congregation-prompt-label">你所屬的堂會是：</div>
+		<div class="congregation-prompt-actions">
+			<button type="button" data-congreg="other" class="congregation-prompt-btn">其他堂會</button>
+			<button type="button" data-congreg="kp_yp" class="congregation-prompt-btn">葵平/涌平</button>
+			<button type="button" data-congreg="sht" class="congregation-prompt-btn">沙平</button>
+		</div>
+	</div>
+
 	<section class="search-layout" id="hymn-app">
 		<article class="card panel search-panel">
 			<div id="result-list" class="result-list" aria-live="polite"></div>
@@ -2337,6 +2347,7 @@ const toBase = (path = '') => `${baseUrl}${String(path).replace(/^\/+/, '')}`;
 			closeLyricOverlay({ immediate: true });
 			closeBookmarkOverlay({ immediate: true });
 			currentLyricId = '';
+			applyStateToUI();
 			renderQuickbar();
 			renderGroupList();
 			renderShelves();
@@ -2350,6 +2361,44 @@ const toBase = (path = '') => `${baseUrl}${String(path).replace(/^\/+/, '')}`;
 				if (!option.checked) return;
 				applyCongregationChange(option.value);
 			});
+		}
+
+		// Initialize congregation prompt shown to first-time visitors.
+		function initCongregationPrompt() {
+			const PROMPT_KEY = 'hymn_congregation_prompt_shown_v1';
+			if (typeof localStorage === 'undefined') return;
+			if (localStorage.getItem(PROMPT_KEY)) return;
+			const promptEl = document.getElementById('congregation-prompt');
+			if (!promptEl) return;
+			promptEl.classList.remove('hidden');
+			promptEl.classList.add('is-visible');
+			promptEl.setAttribute('aria-hidden', 'false');
+			let autoTimer = null;
+
+			function closePrompt(selectDefault = true) {
+				if (!promptEl) return;
+				promptEl.classList.remove('is-visible');
+				promptEl.setAttribute('aria-hidden', 'true');
+				localStorage.setItem(PROMPT_KEY, '1');
+				if (autoTimer) {
+					clearTimeout(autoTimer);
+					autoTimer = null;
+				}
+				if (selectDefault) applyCongregationChange(CONGREGATION_OTHER);
+				setTimeout(() => {
+					if (promptEl.matches('.is-visible')) return;
+					promptEl.classList.add('hidden');
+				}, 240);
+			}
+
+			const buttons = Array.from(promptEl.querySelectorAll('button[data-congreg]'));
+			for (const btn of buttons) {
+				btn.addEventListener('click', () => {
+					const val = btn.getAttribute('data-congreg') || CONGREGATION_OTHER;
+					applyCongregationChange(val);
+					closePrompt(false);
+				});
+			}
 		}
 
 		lyricViewer.addEventListener('pointerdown', handleLyricSwipePointerDown);
@@ -2369,6 +2418,8 @@ const toBase = (path = '') => `${baseUrl}${String(path).replace(/^\/+/, '')}`;
 			}
 			document.body.classList.add('has-quickbar');
 			applyStateToUI();
+			// Show congregation prompt for first-time visitors
+			initCongregationPrompt();
 			updateResultViewportLayout();
 			renderShelves();
 			renderQuickbar();
