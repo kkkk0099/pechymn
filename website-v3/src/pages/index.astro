@@ -122,6 +122,17 @@ const toBase = (path = '') => `${baseUrl}${String(path).replace(/^\/+/, '')}`;
 			<div id="lyric-viewer" class="lyric-viewer" data-current-id="">
 				<div class="empty-state">請先在左側搜尋並點選一首詩歌。</div>
 			</div>
+			<div id="song-info-dialog" class="song-info-dialog hidden-panel" aria-hidden="true">
+				<div class="song-info-card" role="dialog" aria-modal="true" aria-label="歌曲資料">
+					<button id="song-info-close" type="button" class="song-info-close" aria-label="關閉歌曲資料視窗">
+						<svg class="close-btn-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+							<path d="M5 5L19 19M19 5L5 19"></path>
+						</svg>
+					</button>
+					<h3 id="song-info-title" class="song-info-title"></h3>
+					<div id="song-info-content" class="song-info-content"></div>
+				</div>
+			</div>
 		</div>
 	</div>
 
@@ -240,6 +251,11 @@ const toBase = (path = '') => `${baseUrl}${String(path).replace(/^\/+/, '')}`;
 		const bookmarkList = document.getElementById('bookmark-list');
 		const historyList = document.getElementById('history-list');
 		const lyricViewer = document.getElementById('lyric-viewer');
+		const songInfoDialog = document.getElementById('song-info-dialog');
+		const songInfoCard = songInfoDialog ? songInfoDialog.querySelector('.song-info-card') : null;
+		const songInfoClose = document.getElementById('song-info-close');
+		const songInfoTitle = document.getElementById('song-info-title');
+		const songInfoContent = document.getElementById('song-info-content');
 		const bookmarkTitle = document.getElementById('bookmark-title');
 		const historyTitle = document.getElementById('history-title');
 
@@ -329,6 +345,28 @@ const toBase = (path = '') => `${baseUrl}${String(path).replace(/^\/+/, '')}`;
 			hymn_c: toBasePath('data/hymn-c-full.json'),
 			hymn_d: toBasePath('data/hymn-d-full.json'),
 		};
+		const HYMN_METADATA_PATH = toBasePath('data/hymn-a-metadata.json');
+		const HYMN_METADATA_ID_SET = new Set([
+			'hymn_a_1',
+			'hymn_a_2',
+			'hymn_a_3',
+			'hymn_a_7',
+			'hymn_a_8',
+			'hymn_a_10',
+			'hymn_a_11',
+			'hymn_a_12',
+			'hymn_a_14',
+			'hymn_a_16',
+			'hymn_a_17',
+			'hymn_a_18',
+			'hymn_a_23',
+			'hymn_a_24',
+			'hymn_a_25',
+			'hymn_a_26',
+			'hymn_a_27',
+			'hymn_a_28',
+			'hymn_a_30',
+		]);
 
 		let indexItems = [];
 		let currentResults = [];
@@ -346,6 +384,8 @@ const toBase = (path = '') => `${baseUrl}${String(path).replace(/^\/+/, '')}`;
 			horizontal: false,
 		};
 		const lyricCacheRaw = new Map();
+		const hymnMetadataById = new Map();
+		let hymnMetadataLoadPromise = null;
 		const lyricCollectionLoadPromises = new Map();
 		let activeAudio = null;
 		let activeAudioPath = '';
@@ -1262,6 +1302,7 @@ const toBase = (path = '') => `${baseUrl}${String(path).replace(/^\/+/, '')}`;
 
 		function closeLyricOverlay(options = {}) {
 			clearHistoryAutoAddTimer();
+			closeSongInfoDialog();
 			hideOverlay(lyricOverlay, options);
 			lyricSwipeAnimating = false;
 			resetLyricSwipePosition();
@@ -1527,6 +1568,224 @@ const toBase = (path = '') => `${baseUrl}${String(path).replace(/^\/+/, '')}`;
 			`;
 		}
 
+		function isValidSourceUrl(url) {
+			if (!url) return false;
+			try {
+				const parsed = new URL(normalizeSourceUrl(url));
+				return parsed.protocol === 'http:' || parsed.protocol === 'https:';
+			} catch {
+				return false;
+			}
+		}
+
+		function normalizeSourceUrl(url) {
+			return String(url || '')
+				.trim()
+				.replace(/[。．，,；;：:！!？?]+$/u, '');
+		}
+
+		function getSourceSiteName(url, sourceLabel = '') {
+			const normalizedLabel = String(sourceLabel || '').trim().toLowerCase().replace(/^www\./, '');
+			if (normalizedLabel) {
+				if (normalizedLabel.includes('wikipedia')) return 'wikipedia';
+				return normalizedLabel.split('.')[0] || normalizedLabel;
+			}
+
+			try {
+				const hostname = new URL(String(url || '').trim()).hostname.toLowerCase().replace(/^www\./, '');
+				if (hostname.includes('wikipedia.org')) return 'wikipedia';
+				return hostname.split('.')[0] || hostname;
+			} catch {
+				return 'website';
+			}
+		}
+
+		function formatSourceUrlForDisplay(url) {
+			const normalized = normalizeSourceUrl(url);
+			const MAX_DISPLAY_CHARS = 92;
+			if (normalized.length <= MAX_DISPLAY_CHARS) {
+				return {
+					text: normalized,
+					truncated: false,
+				};
+			}
+
+			return {
+				text: `${normalized.slice(0, MAX_DISPLAY_CHARS - 3)}...`,
+				truncated: true,
+			};
+		}
+
+		function sanitizeMetadataEntry(rawEntry) {
+			if (!rawEntry || typeof rawEntry !== 'object' || !rawEntry.id) return null;
+
+			const fields = Array.isArray(rawEntry.fields)
+				? rawEntry.fields
+						.map((field) => {
+							if (!field || typeof field !== 'object') return null;
+							const label = String(field.label || '').trim();
+							const value = String(field.value || '').trim();
+							const sourceUrl = normalizeSourceUrl(field.sourceUrl);
+							if (!label || !value || !isValidSourceUrl(sourceUrl)) return null;
+							return {
+								key: String(field.key || '').trim(),
+								label,
+								value,
+								sourceUrl,
+								sourceLabel: String(field.sourceLabel || '').trim(),
+							};
+						})
+						.filter(Boolean)
+				: [];
+
+			const allSources = Array.isArray(rawEntry.allSources)
+				? Array.from(
+						new Set(
+							rawEntry.allSources
+								.map((url) => normalizeSourceUrl(url))
+								.filter((url) => isValidSourceUrl(url)),
+						),
+				  )
+				: [];
+
+			if (!fields.length && !allSources.length) return null;
+
+			return {
+				id: String(rawEntry.id),
+				collection: String(rawEntry.collection || ''),
+				hymnAbbr: String(rawEntry.hymnAbbr || '').trim(),
+				number: String(rawEntry.number || '').trim(),
+				fields,
+				allSources,
+			};
+		}
+
+		async function ensureHymnMetadataLoaded() {
+			if (hymnMetadataById.size > 0) return;
+			if (hymnMetadataLoadPromise) {
+				await hymnMetadataLoadPromise;
+				return;
+			}
+
+			hymnMetadataLoadPromise = (async () => {
+				const resp = await fetch(HYMN_METADATA_PATH, { cache: 'force-cache' });
+				if (!resp.ok) {
+					throw new Error('無法載入詩歌資料來源索引');
+				}
+				const data = await resp.json();
+				const items = Array.isArray(data?.items) ? data.items : [];
+				for (const rawEntry of items) {
+					const entry = sanitizeMetadataEntry(rawEntry);
+					if (entry) hymnMetadataById.set(entry.id, entry);
+				}
+			})();
+
+			try {
+				await hymnMetadataLoadPromise;
+			} finally {
+				hymnMetadataLoadPromise = null;
+			}
+		}
+
+		function getHymnMetadataById(id) {
+			if (!id) return null;
+			return hymnMetadataById.get(id) || null;
+		}
+
+		function isSongInfoDialogOpen() {
+			return Boolean(songInfoDialog && !songInfoDialog.classList.contains('hidden-panel'));
+		}
+
+		function closeSongInfoDialog() {
+			if (!songInfoDialog) return;
+			songInfoDialog.classList.add('hidden-panel');
+			songInfoDialog.classList.remove('is-open');
+			songInfoDialog.setAttribute('aria-hidden', 'true');
+			setSongInfoButtonActiveState(false);
+			const buttons = document.querySelectorAll('.song-info-open-btn-floating');
+			buttons.forEach((btn) => btn.blur());
+		}
+
+		function setSongInfoButtonActiveState(isActive) {
+			const buttons = document.querySelectorAll('#song-info-floating-open');
+			if (!buttons.length) return;
+			buttons.forEach((btn) => {
+				btn.classList.toggle('is-active', Boolean(isActive));
+				btn.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+			});
+		}
+
+		function resetSongInfoDialogScrollTop() {
+			if (songInfoDialog) songInfoDialog.scrollTop = 0;
+			if (songInfoCard) songInfoCard.scrollTop = 0;
+		}
+
+		function openSongInfoDialog(payload, metadata) {
+			if (!songInfoDialog || !songInfoTitle || !songInfoContent || !payload || !metadata) return;
+
+			const hymnAbbr = metadata.hymnAbbr || convertByLang(getCollectionShortLabel(payload.collection), state.languageMode);
+			const number = metadata.number || String(payload.number || '').trim();
+			const title = convertByLang(payload.title || '', state.languageMode);
+			songInfoTitle.textContent = `${number} ${title}`.trim();
+			const reportSongNumber = `${hymnAbbr}${number}`;
+			const reportSubject = '平安詩集 - 錯誤回報';
+			const reportBody = `${reportSongNumber} - 資料錯誤詳情: `;
+			const reportHref = `mailto:hkpec.hymn@gmail.com?subject=${encodeURIComponent(reportSubject)}&body=${encodeURIComponent(reportBody)}`;
+
+			const fieldsHtml = (metadata.fields || [])
+				.map((field) => {
+					const label = convertByLang(field.label, state.languageMode);
+					const value = convertByLang(field.value, state.languageMode);
+					const sourceSiteName = getSourceSiteName(field.sourceUrl, field.sourceLabel);
+					const sourceBtnText = `${convertByLang('來源', state.languageMode)}: ${sourceSiteName}`;
+					const sourceBtn = isValidSourceUrl(field.sourceUrl)
+						? `<a class="search-btn subtle song-info-source-btn" href="${escapeHtml(field.sourceUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(sourceBtnText)}</a>`
+						: '';
+
+					return `
+						<section class="song-info-field">
+							<div class="song-info-field-header">
+								<h4>${escapeHtml(label)}</h4>
+								${sourceBtn}
+							</div>
+							<p>${escapeHtml(value)}</p>
+						</section>
+					`;
+				})
+				.join('');
+
+			const sources = Array.from(new Set((metadata.allSources || []).filter((url) => isValidSourceUrl(url))));
+			const allSourcesHtml = sources.length
+				? `
+					<section class="song-info-all-sources">
+						<h4>${escapeHtml(convertByLang('資料來源', state.languageMode))}</h4>
+						<ul>
+							${sources
+								.map((url) => {
+									const rendered = formatSourceUrlForDisplay(url);
+									return `<li><a class="${rendered.truncated ? 'is-truncated' : ''}" href="${escapeHtml(url)}" title="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(rendered.text)}</a></li>`;
+								})
+								.join('')}
+						</ul>
+					</section>
+				`
+				: `<div class="empty-state compact">${escapeHtml(convertByLang('暫未找到可用的公開資料', state.languageMode))}</div>`;
+			const disclaimerHtml = `
+				<section class="song-info-disclaimer">
+					<p>${escapeHtml(convertByLang('資料已經初步核對，但仍可能存在錯誤。如發現資料有誤，請點擊下方按鈕回報，謝謝。', state.languageMode))}</p>
+					<a class="search-btn subtle song-info-report-btn" href="${escapeHtml(reportHref)}">${escapeHtml(convertByLang('問題回報', state.languageMode))}</a>
+				</section>
+			`;
+
+			songInfoContent.innerHTML = `${fieldsHtml}${allSourcesHtml}${disclaimerHtml}`;
+			songInfoDialog.classList.remove('hidden-panel');
+			songInfoDialog.classList.add('is-open');
+			songInfoDialog.setAttribute('aria-hidden', 'false');
+			resetSongInfoDialogScrollTop();
+			requestAnimationFrame(resetSongInfoDialogScrollTop);
+			setSongInfoButtonActiveState(true);
+		}
+
 		function renderLyric(payload, navInfo, sidePayloads = {}) {
 			const convertedTitle = convertByLang(payload.title, state.languageMode);
 			const convertedLyricsHtml = convertLyricsHtmlByLang(payload.lyricsHtml, state.languageMode, payload.collection);
@@ -1543,6 +1802,21 @@ const toBase = (path = '') => `${baseUrl}${String(path).replace(/^\/+/, '')}`;
 				: '';
 			const bookmarked = isBookmarked(payload.id);
 			const bookmarkLabel = bookmarked ? '取消書籤' : '加入書籤';
+			const hasSongInfo = HYMN_METADATA_ID_SET.has(payload.id);
+			const songInfoButton = hasSongInfo
+				? `
+					<button
+						type="button"
+						id="song-info-floating-open"
+						class="song-info-open-btn song-info-open-btn-floating"
+						data-id="${payload.id}"
+						aria-label="查看歌曲資料"
+						title="查看歌曲資料"
+					>
+						i
+					</button>
+				`
+				: '';
 			const prevAttrs = navInfo?.prevItem ? '' : 'hidden aria-hidden="true" tabindex="-1"';
 			const nextAttrs = navInfo?.nextItem ? '' : 'hidden aria-hidden="true" tabindex="-1"';
 			const prevHtml = renderSwipeSide(sidePayloads.prevPayload || null, '已是第一首');
@@ -1586,11 +1860,13 @@ const toBase = (path = '') => `${baseUrl}${String(path).replace(/^\/+/, '')}`;
 							${nextHtml}
 						</section>
 					</div>
+					${songInfoButton}
 					</div>
 			`;
 			lyricViewer.dataset.currentId = payload.id;
 			updateAudioControlsUI(payload.audioPath);
 			updateLyricStageHeight('current', true);
+			setSongInfoButtonActiveState(false);
 			requestAnimationFrame(updateLyricSideNavBounds);
 		}
 
@@ -1912,6 +2188,7 @@ const toBase = (path = '') => `${baseUrl}${String(path).replace(/^\/+/, '')}`;
 		async function openLyric(item, options = {}) {
 			try {
 				clearHistoryAutoAddTimer();
+				closeSongInfoDialog();
 				const source = options.source || lyricNavSource || 'search';
 				lyricNavSource = source;
 				if (source !== 'search') {
@@ -2120,6 +2397,10 @@ const toBase = (path = '') => `${baseUrl}${String(path).replace(/^\/+/, '')}`;
 
 		document.addEventListener('keydown', (event) => {
 			if (event.key === 'Escape') {
+				if (isSongInfoDialogOpen()) {
+					closeSongInfoDialog();
+					return;
+				}
 				if (lyricOverlay.classList.contains('overlay-visible')) {
 					closeLyricOverlay();
 					return;
@@ -2140,7 +2421,7 @@ const toBase = (path = '') => `${baseUrl}${String(path).replace(/^\/+/, '')}`;
 			}
 		});
 
-		lyricViewer.addEventListener('click', (event) => {
+		lyricViewer.addEventListener('click', async (event) => {
 			if (event.target.closest('#lyric-prev')) {
 				animateLyricSwipe('prev');
 				return;
@@ -2160,6 +2441,28 @@ const toBase = (path = '') => `${baseUrl}${String(path).replace(/^\/+/, '')}`;
 
 			if (event.target.closest('#audio-stop')) {
 				stopActiveAudio();
+				return;
+			}
+
+			if (event.target.closest('#song-info-floating-open')) {
+				if (!currentLyricId) return;
+				const payload = lyricCacheRaw.get(currentLyricId);
+				if (!payload) return;
+
+				if (isSongInfoDialogOpen()) {
+					closeSongInfoDialog();
+					return;
+				}
+
+				try {
+					await ensureHymnMetadataLoaded();
+				} catch {
+					return;
+				}
+
+				const metadata = getHymnMetadataById(currentLyricId);
+				if (!payload || !metadata || !metadata.fields?.length) return;
+				openSongInfoDialog(payload, metadata);
 				return;
 			}
 
@@ -2191,6 +2494,16 @@ const toBase = (path = '') => `${baseUrl}${String(path).replace(/^\/+/, '')}`;
 				const nextPayload = navInfo.nextItem ? lyricCacheRaw.get(navInfo.nextItem.id) || null : null;
 				renderLyric(raw, navInfo, { prevPayload, nextPayload });
 				resetLyricSwipePosition();
+			}
+		});
+
+		songInfoClose?.addEventListener('click', () => {
+			closeSongInfoDialog();
+		});
+
+		songInfoDialog?.addEventListener('click', (event) => {
+			if (event.target === songInfoDialog) {
+				closeSongInfoDialog();
 			}
 		});
 
@@ -2327,9 +2640,13 @@ const toBase = (path = '') => `${baseUrl}${String(path).replace(/^\/+/, '')}`;
 				const navInfo = getLyricNavInfo(currentLyricId, lyricNavSource);
 				const prevPayload = navInfo.prevItem ? lyricCacheRaw.get(navInfo.prevItem.id) || null : null;
 				const nextPayload = navInfo.nextItem ? lyricCacheRaw.get(navInfo.nextItem.id) || null : null;
+				const metadata = getHymnMetadataById(currentLyricId);
 				renderLyric(raw, navInfo, { prevPayload, nextPayload });
 				resetLyricSwipePosition();
 				updateLyricStageHeight('current', true);
+				if (isSongInfoDialogOpen() && metadata) {
+					openSongInfoDialog(raw, metadata);
+				}
 			}
 			renderShelves();
 			saveState();

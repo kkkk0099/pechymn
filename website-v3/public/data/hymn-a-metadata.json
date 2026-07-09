@@ -1,0 +1,925 @@
+{
+  "generatedAt": "2026-07-09T04:07:12.998Z",
+  "sourceFile": "平安詩集_詩歌資料核實結果.txt",
+  "collection": "hymn_a",
+  "totalSongs": 17,
+  "items": [
+    {
+      "id": "hymn_a_1",
+      "collection": "hymn_a",
+      "hymnAbbr": "平",
+      "number": "001",
+      "fields": [
+        {
+          "key": "titleOriginal",
+          "label": "原文歌名",
+          "value": "Glory to God in the highest",
+          "sourceUrl": "https://hymnary.org/text/rongyao_gui_yu_zhigao_shen",
+          "sourceLabel": "hymnary.org"
+        },
+        {
+          "key": "lyricist",
+          "label": "作詞",
+          "value": "B. E. Warren",
+          "sourceUrl": "https://hymnary.org/person/Warren_Barney",
+          "sourceLabel": "hymnary.org"
+        },
+        {
+          "key": "composer",
+          "label": "作曲",
+          "value": "William B. Bradbury（曲調：Glory to God in the highest）",
+          "sourceUrl": "https://hymnary.org/tune/glory_to_god_in_the_highest_bradbury",
+          "sourceLabel": "hymnary.org"
+        },
+        {
+          "key": "year",
+          "label": "原作年份",
+          "value": "1934（可核實到的最早收錄：晨星短歌 Morning Star Choruses）",
+          "sourceUrl": "https://hymnary.org/hymn/MSC1934/page/5",
+          "sourceLabel": "hymnary.org"
+        },
+        {
+          "key": "themes",
+          "label": "主題標籤",
+          "value": "敬拜讚美、三一頌讚",
+          "sourceUrl": "https://hymnary.org/text/rongyao_gui_yu_zhigao_shen",
+          "sourceLabel": "hymnary.org"
+        }
+      ],
+      "allSources": [
+        "https://hymnary.org/text/rongyao_gui_yu_zhigao_shen",
+        "https://hymnary.org/person/Warren_Barney",
+        "https://hymnary.org/tune/glory_to_god_in_the_highest_bradbury",
+        "https://hymnary.org/hymn/MSC1934/page/5",
+        "https://hymnary.org/hymn/PH1977/1"
+      ]
+    },
+    {
+      "id": "hymn_a_2",
+      "collection": "hymn_a",
+      "hymnAbbr": "平",
+      "number": "002",
+      "fields": [
+        {
+          "key": "titleOriginal",
+          "label": "原文歌名",
+          "value": "All Hail the Power of Jesus' Name",
+          "sourceUrl": "https://hymnary.org/text/all_hail_the_power_of_jesus_name",
+          "sourceLabel": "hymnary.org"
+        },
+        {
+          "key": "lyricist",
+          "label": "作詞",
+          "value": "Edward Perronet",
+          "sourceUrl": "https://hymnary.org/text/all_hail_the_power_of_jesus_name",
+          "sourceLabel": "hymnary.org"
+        },
+        {
+          "key": "composer",
+          "label": "作曲",
+          "value": "Oliver Holden（曲調：CORONATION）",
+          "sourceUrl": "https://www.cpdl.org/wiki/index.php/Coronation_(Oliver_Holden)",
+          "sourceLabel": "cpdl.org"
+        },
+        {
+          "key": "year",
+          "label": "原作年份",
+          "value": "1779（歌詞首次刊載於 Gospel Magazine）",
+          "sourceUrl": "https://en.wikipedia.org/wiki/All_Hail_the_Power_of_Jesus'_Name",
+          "sourceLabel": "en.wikipedia.org"
+        },
+        {
+          "key": "themes",
+          "label": "主題標籤",
+          "value": "尊主為王、敬拜讚美",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/all-hail-the-power-of-jesus-name/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "background",
+          "label": "背景故事摘要",
+          "value": "Edward Perronet 於 18 世紀寫成此詩，早期刊於《Gospel Magazine》，原有 8 節，後常節錄使用。因其強烈的基督君王頌讚主題，常被稱為「基督教世界的國歌」之一，並配多種曲調流傳。",
+          "sourceUrl": "https://en.wikipedia.org/wiki/All_Hail_the_Power_of_Jesus'_Name",
+          "sourceLabel": "en.wikipedia.org"
+        }
+      ],
+      "allSources": [
+        "https://hymnary.org/hymn/PH1977/2",
+        "https://hymnary.org/text/dazai_shengzai_yesu_zhi_ming_tianshi_dou",
+        "https://hymnary.org/text/all_hail_the_power_of_jesus_name",
+        "https://www.hymnallibrary.org/hymns/all-hail-the-power-of-jesus-name/",
+        "https://www.cpdl.org/wiki/index.php/All_hail_the_power_of_Jesus%27_name",
+        "https://www.cpdl.org/wiki/index.php/Coronation_(Oliver_Holden)",
+        "https://en.wikipedia.org/wiki/All_Hail_the_Power_of_Jesus'_Name"
+      ]
+    },
+    {
+      "id": "hymn_a_3",
+      "collection": "hymn_a",
+      "hymnAbbr": "平",
+      "number": "003",
+      "fields": [
+        {
+          "key": "titleOriginal",
+          "label": "原文歌名",
+          "value": "Holy, Holy, Holy! Lord God Almighty!",
+          "sourceUrl": "https://hymnary.org/text/holy_holy_holy_lord_god_almighty",
+          "sourceLabel": "hymnary.org"
+        },
+        {
+          "key": "lyricist",
+          "label": "作詞",
+          "value": "Reginald Heber",
+          "sourceUrl": "https://hymnary.org/text/holy_holy_holy_lord_god_almighty",
+          "sourceLabel": "hymnary.org"
+        },
+        {
+          "key": "composer",
+          "label": "作曲",
+          "value": "John Bacchus Dykes（曲調：NICAEA）",
+          "sourceUrl": "https://hymnary.org/tune/nicaea_dykes",
+          "sourceLabel": "hymnary.org"
+        },
+        {
+          "key": "year",
+          "label": "原作年份",
+          "value": "詞（1820年代，常見註記 1823/1826）；曲（1861）（註：年份差異來自不同來源版本）",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Holy,_Holy,_Holy!_Lord_God_Almighty",
+          "sourceLabel": "en.wikipedia.org"
+        },
+        {
+          "key": "themes",
+          "label": "主題標籤",
+          "value": "三一敬拜、聖哉頌讚",
+          "sourceUrl": "https://hymnary.org/text/holy_holy_holy_lord_god_almighty",
+          "sourceLabel": "hymnary.org"
+        },
+        {
+          "key": "background",
+          "label": "背景故事摘要",
+          "value": "英國聖公會主教 Reginald Heber 於19世紀初創作的著名聖詩，原為三一主日（Trinity Sunday）崇拜而寫，內容呼應《啟示錄》第4章，頌讚聖父、聖子、聖靈三位一體的神。此詩於 Heber 逝世後在1826年首次出版，後配上 John Bacchus Dykes 創作的《Nicaea》旋律而廣為流傳。雖然當時英國聖公會對教會唱聖詩有所保留，但其優美且莊嚴的歌詞深受歡迎。",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Holy,_Holy,_Holy!_Lord_God_Almighty",
+          "sourceLabel": "en.wikipedia.org"
+        },
+        {
+          "key": "scripture",
+          "label": "相關經文",
+          "value": "以賽亞書 6:3；啟示錄 4:8",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Holy,_Holy,_Holy!_Lord_God_Almighty",
+          "sourceLabel": "en.wikipedia.org"
+        }
+      ],
+      "allSources": [
+        "https://hymnary.org/hymn/PH1977/3",
+        "https://hymnary.org/text/sheng_zai_sheng_zai_sheng_zai_quanquan",
+        "https://hymnary.org/text/holy_holy_holy_lord_god_almighty",
+        "https://hymnary.org/tune/nicaea_dykes",
+        "https://en.wikipedia.org/wiki/Holy,_Holy,_Holy!_Lord_God_Almighty"
+      ]
+    },
+    {
+      "id": "hymn_a_7",
+      "collection": "hymn_a",
+      "hymnAbbr": "平",
+      "number": "007",
+      "fields": [
+        {
+          "key": "titleOriginal",
+          "label": "原文歌名",
+          "value": "To God Be the Glory",
+          "sourceUrl": "https://hymnary.org/text/rongyao_guizhen_shen_ta_chengjiu_dashi",
+          "sourceLabel": "hymnary.org"
+        },
+        {
+          "key": "lyricist",
+          "label": "作詞",
+          "value": "Fanny Crosby",
+          "sourceUrl": "https://hymnary.org/text/rongyao_guizhen_shen_ta_chengjiu_dashi",
+          "sourceLabel": "hymnary.org"
+        },
+        {
+          "key": "composer",
+          "label": "作曲",
+          "value": "William Howard Doane（曲調：To God Be the Glory）",
+          "sourceUrl": "https://en.wikipedia.org/wiki/To_God_Be_the_Glory",
+          "sourceLabel": "en.wikipedia.org"
+        },
+        {
+          "key": "year",
+          "label": "原作年份",
+          "value": "1875（首次出版）",
+          "sourceUrl": "https://en.wikipedia.org/wiki/To_God_Be_the_Glory",
+          "sourceLabel": "en.wikipedia.org"
+        },
+        {
+          "key": "themes",
+          "label": "主題標籤",
+          "value": "敬拜讚美、救恩",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/to-god-be-the-glory/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "background",
+          "label": "背景故事摘要",
+          "value": "由著名聖詩作家 Fanny Crosby 作詞的基督教聖詩。歌曲主題是將一切榮耀歸於神，讚美祂藉耶穌基督所成就的救恩，並邀請信徒以喜樂和感恩回應神的恩典。此詩早期在英國已相當流行，然而在美國初期反應平平，鮮少被收入聖詩集。直到1954年，Billy Graham 團隊的領詩員 Cliff Barrows 將其用於倫敦佈道會，獲得熱烈迴響，其後迅速傳播至全球，成為現代教會最廣為收錄和傳唱的經典聖詩之一。",
+          "sourceUrl": "https://en.wikipedia.org/wiki/To_God_Be_the_Glory",
+          "sourceLabel": "en.wikipedia.org"
+        },
+        {
+          "key": "scripture",
+          "label": "相關經文",
+          "value": "加拉太書 1:4-5",
+          "sourceUrl": "https://en.wikipedia.org/wiki/To_God_Be_the_Glory",
+          "sourceLabel": "en.wikipedia.org"
+        }
+      ],
+      "allSources": [
+        "https://hymnary.org/hymn/PH1977/7",
+        "https://hymnary.org/text/rongyao_guizhen_shen_ta_chengjiu_dashi",
+        "https://www.hymnallibrary.org/hymns/to-god-be-the-glory/",
+        "https://en.wikipedia.org/wiki/To_God_Be_the_Glory"
+      ]
+    },
+    {
+      "id": "hymn_a_8",
+      "collection": "hymn_a",
+      "hymnAbbr": "平",
+      "number": "008",
+      "fields": [
+        {
+          "key": "titleOriginal",
+          "label": "原文歌名",
+          "value": "Father, Long Before Creation",
+          "sourceUrl": "https://hymnary.org/text/father_long_before_creation",
+          "sourceLabel": "hymnary.org"
+        },
+        {
+          "key": "lyricist",
+          "label": "作詞",
+          "value": "佚名 (英譯: Francis P. Jones)",
+          "sourceUrl": "https://hymnary.org/text/father_long_before_creation",
+          "sourceLabel": "hymnary.org"
+        },
+        {
+          "key": "year",
+          "label": "原作年份",
+          "value": "約 1951",
+          "sourceUrl": "https://hymnary.org/text/father_long_before_creation",
+          "sourceLabel": "hymnary.org"
+        },
+        {
+          "key": "background",
+          "label": "背景故事摘要",
+          "value": "這首聖詩原為中國基督徒所使用的無名作品，據記載於1952至1953年間在北京一個查經聚會中傳唱，後由曾在中國宣教的 Francis P. Jones 翻譯成英文，並於1953年發表，之後被收錄於多本聖詩集。詩歌背景與中國共產政權早期對宗教的限制有關，因此其信仰宣告更顯堅定。",
+          "sourceUrl": "https://hymnary.org/text/father_long_before_creation",
+          "sourceLabel": "hymnary.org"
+        },
+        {
+          "key": "scripture",
+          "label": "相關經文",
+          "value": "約翰福音 3:16；以弗所書 1:4",
+          "sourceUrl": "https://hymnary.org/text/father_long_before_creation",
+          "sourceLabel": "hymnary.org"
+        }
+      ],
+      "allSources": [
+        "https://hymnary.org/text/father_long_before_creation"
+      ]
+    },
+    {
+      "id": "hymn_a_10",
+      "collection": "hymn_a",
+      "hymnAbbr": "平",
+      "number": "010",
+      "fields": [
+        {
+          "key": "titleOriginal",
+          "label": "原文歌名",
+          "value": "Great Is Thy Faithfulness",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Great_Is_Thy_Faithfulness",
+          "sourceLabel": "en.wikipedia.org"
+        },
+        {
+          "key": "lyricist",
+          "label": "作詞",
+          "value": "Thomas O. Chisholm",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Great_Is_Thy_Faithfulness",
+          "sourceLabel": "en.wikipedia.org"
+        },
+        {
+          "key": "composer",
+          "label": "作曲",
+          "value": "William M. Runyan（曲調：Faithfulness）",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Great_Is_Thy_Faithfulness",
+          "sourceLabel": "en.wikipedia.org"
+        },
+        {
+          "key": "year",
+          "label": "原作年份",
+          "value": "1923（由 Hope Publishing 出版）",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Great_Is_Thy_Faithfulness",
+          "sourceLabel": "en.wikipedia.org"
+        },
+        {
+          "key": "themes",
+          "label": "主題標籤",
+          "value": "信實、安慰與盼望",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/great-is-thy-faithfulness/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "background",
+          "label": "背景故事摘要",
+          "value": "Thomas O. Chisholm 在1923年回顧自己的人生時寫下這首詩。雖然一生飽受健康問題困擾、收入有限，但他始終相信神的信實與看顧從未改變。同年他將詩作寄給William M. Runyan，後者深受感動並譜上旋律。詩歌出版後廣受歡迎，成為眾多教會喜愛的讚美詩。",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/great-is-thy-faithfulness/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "scripture",
+          "label": "相關經文",
+          "value": "耶利米哀歌 3:23",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Great_Is_Thy_Faithfulness",
+          "sourceLabel": "en.wikipedia.org"
+        }
+      ],
+      "allSources": [
+        "https://en.wikipedia.org/wiki/Great_Is_Thy_Faithfulness",
+        "https://www.hymnallibrary.org/hymns/great-is-thy-faithfulness/"
+      ]
+    },
+    {
+      "id": "hymn_a_11",
+      "collection": "hymn_a",
+      "hymnAbbr": "平",
+      "number": "011",
+      "fields": [
+        {
+          "key": "titleOriginal",
+          "label": "原文歌名",
+          "value": "O for a Thousand Tongues to Sing",
+          "sourceUrl": "https://en.wikipedia.org/wiki/O_for_a_Thousand_Tongues_to_Sing",
+          "sourceLabel": "en.wikipedia.org"
+        },
+        {
+          "key": "lyricist",
+          "label": "作詞",
+          "value": "Charles Wesley",
+          "sourceUrl": "https://en.wikipedia.org/wiki/O_for_a_Thousand_Tongues_to_Sing",
+          "sourceLabel": "en.wikipedia.org"
+        },
+        {
+          "key": "composer",
+          "label": "作曲",
+          "value": "Carl G. Glaser（曲調：AZMON；Lowell Mason 編配）",
+          "sourceUrl": "https://en.wikipedia.org/wiki/O_for_a_Thousand_Tongues_to_Sing",
+          "sourceLabel": "en.wikipedia.org"
+        },
+        {
+          "key": "year",
+          "label": "原作年份",
+          "value": "1739",
+          "sourceUrl": "https://en.wikipedia.org/wiki/O_for_a_Thousand_Tongues_to_Sing",
+          "sourceLabel": "en.wikipedia.org"
+        },
+        {
+          "key": "themes",
+          "label": "主題標籤",
+          "value": "頌讚救主、恩典釋放、更新見證",
+          "sourceUrl": "https://en.wikipedia.org/wiki/O_for_a_Thousand_Tongues_to_Sing",
+          "sourceLabel": "en.wikipedia.org"
+        },
+        {
+          "key": "background",
+          "label": "背景故事摘要",
+          "value": "Charles Wesley在1738年患病期間的屬靈經歷。當時他因胸膜炎臥病在床，並對信仰充滿疑惑；然而在基督徒朋友的關懷、閱讀聖經及 Peter Boehler 的教導下，他重新經歷上帝的恩典與平安。為紀念信仰更新一周年，Charles Wesley 寫下這首讚美詩。其中著名歌詞「O for a thousand tongues to sing」靈感來自 Peter Boehler 的一句話，表達對上帝救恩與恩典無限的感恩和讚美。",
+          "sourceUrl": "https://en.wikipedia.org/wiki/O_for_a_Thousand_Tongues_to_Sing",
+          "sourceLabel": "en.wikipedia.org"
+        },
+        {
+          "key": "scripture",
+          "label": "相關經文",
+          "value": "詩篇 35:28",
+          "sourceUrl": "https://en.wikipedia.org/wiki/O_for_a_Thousand_Tongues_to_Sing",
+          "sourceLabel": "en.wikipedia.org"
+        }
+      ],
+      "allSources": [
+        "https://en.wikipedia.org/wiki/O_for_a_Thousand_Tongues_to_Sing"
+      ]
+    },
+    {
+      "id": "hymn_a_12",
+      "collection": "hymn_a",
+      "hymnAbbr": "平",
+      "number": "012",
+      "fields": [
+        {
+          "key": "titleOriginal",
+          "label": "原文歌名",
+          "value": "Thanks to God for My Redeemer",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/thanks-to-god-for-my-redeemer/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "lyricist",
+          "label": "作詞",
+          "value": "August Ludvig Storm",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/thanks-to-god-for-my-redeemer/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "composer",
+          "label": "作曲",
+          "value": "J. A. Hultman（曲調：TACK, O GUD）",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/thanks-to-god-for-my-redeemer/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "year",
+          "label": "原作年份",
+          "value": "1891",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/thanks-to-god-for-my-redeemer/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "themes",
+          "label": "主題標籤",
+          "value": "感恩、神的供應、苦樂中的信靠",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/thanks-to-god-for-my-redeemer/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "background",
+          "label": "背景故事摘要",
+          "value": "此詩以真摯感恩的心情讚美上帝，感謝祂賜下耶穌基督作為救主與救贖主。歌詞強調基督犧牲帶來的救恩、上帝豐盛的恩典，以及信徒因得著永生盼望而發出的感謝。整首詩歌洋溢著喜樂與敬拜的氣氛，鼓勵信徒常常數算主恩，並以感恩回應神的愛。August Ludvig Storm 的作品深受挪威信義宗傳統影響，同時結合淺白易懂的表達方式，因此廣受歡迎。",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/thanks-to-god-for-my-redeemer/",
+          "sourceLabel": "hymnallibrary.org"
+        }
+      ],
+      "allSources": [
+        "https://www.hymnallibrary.org/hymns/thanks-to-god-for-my-redeemer/"
+      ]
+    },
+    {
+      "id": "hymn_a_14",
+      "collection": "hymn_a",
+      "hymnAbbr": "平",
+      "number": "014",
+      "fields": [
+        {
+          "key": "titleOriginal",
+          "label": "原文歌名",
+          "value": "How Great Thou Art",
+          "sourceUrl": "https://en.wikipedia.org/wiki/How_Great_Thou_Art",
+          "sourceLabel": "en.wikipedia.org"
+        },
+        {
+          "key": "lyricist",
+          "label": "作詞",
+          "value": "Carl Boberg（英語版本：Stuart K. Hine）",
+          "sourceUrl": "https://en.wikipedia.org/wiki/How_Great_Thou_Art",
+          "sourceLabel": "en.wikipedia.org"
+        },
+        {
+          "key": "composer",
+          "label": "作曲",
+          "value": "瑞典民謠（曲調：How Great Thou Art；Stuart K. Hine 整理流傳版本）",
+          "sourceUrl": "https://en.wikipedia.org/wiki/How_Great_Thou_Art",
+          "sourceLabel": "en.wikipedia.org"
+        },
+        {
+          "key": "year",
+          "label": "原作年份",
+          "value": "1885（瑞典原詩；1886 首次刊行，1949 年英語版本廣傳）",
+          "sourceUrl": "https://en.wikipedia.org/wiki/How_Great_Thou_Art",
+          "sourceLabel": "en.wikipedia.org"
+        },
+        {
+          "key": "themes",
+          "label": "主題標籤",
+          "value": "創造頌讚、十架救恩、再臨盼望",
+          "sourceUrl": "https://en.wikipedia.org/wiki/How_Great_Thou_Art",
+          "sourceLabel": "en.wikipedia.org"
+        },
+        {
+          "key": "background",
+          "label": "背景故事摘要",
+          "value": "Carl Boberg 在瑞典參加禮拜後返家途中，目睹暴風雨驟起又迅速平息，隨後看見彩虹、平靜海灣，並聽見鳥鳴與教堂鐘聲。這一連串大自然景象與寧靜氛圍，使他深受感動，當晚便寫下《O Store Gud》，藉此讚美上帝創造萬物的偉大與榮耀。詩歌後來經 George Beverly Shea、Cliff Barrows 及 Billy Graham 的佈道聚會廣泛傳播，成為全球最受歡迎的聖詩之一。",
+          "sourceUrl": "https://en.wikipedia.org/wiki/How_Great_Thou_Art",
+          "sourceLabel": "en.wikipedia.org"
+        },
+        {
+          "key": "scripture",
+          "label": "相關經文",
+          "value": "詩篇 8 篇",
+          "sourceUrl": "https://en.wikipedia.org/wiki/How_Great_Thou_Art",
+          "sourceLabel": "en.wikipedia.org"
+        }
+      ],
+      "allSources": [
+        "https://en.wikipedia.org/wiki/How_Great_Thou_Art"
+      ]
+    },
+    {
+      "id": "hymn_a_16",
+      "collection": "hymn_a",
+      "hymnAbbr": "平",
+      "number": "016",
+      "fields": [
+        {
+          "key": "titleOriginal",
+          "label": "原文歌名",
+          "value": "The Love of God",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/the-love-of-god/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "lyricist",
+          "label": "作詞",
+          "value": "Frederick M. Lehman",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/the-love-of-god/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "year",
+          "label": "原作年份",
+          "value": "1917",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/the-love-of-god/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "themes",
+          "label": "主題標籤",
+          "value": "神愛浩大、永恆不變、頌讚敬拜",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/the-love-of-god/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "background",
+          "label": "背景故事摘要",
+          "value": "《The Love of God》是 Frederick M. Lehman 於1917年創作的著名聖詩，讚頌上帝對世人無窮、永恆且不變的愛。Lehman 在經歷困境期間受啟發寫下此曲，其中最著名的第三節改編自一首古老猶太詩，以「縱使海洋盡為墨水、天空盡作紙張」的意象描繪神愛之浩瀚無法盡述。詩歌結合《以弗所書》與《羅馬書》的教導，強調沒有任何事物能使信徒與神的愛隔絕。",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/the-love-of-god/",
+          "sourceLabel": "hymnallibrary.org"
+        }
+      ],
+      "allSources": [
+        "https://www.hymnallibrary.org/hymns/the-love-of-god/"
+      ]
+    },
+    {
+      "id": "hymn_a_17",
+      "collection": "hymn_a",
+      "hymnAbbr": "平",
+      "number": "017",
+      "fields": [
+        {
+          "key": "titleOriginal",
+          "label": "原文歌名",
+          "value": "This Is My Father's World",
+          "sourceUrl": "https://en.wikipedia.org/wiki/This_Is_My_Father%27s_World",
+          "sourceLabel": "en.wikipedia.org"
+        },
+        {
+          "key": "lyricist",
+          "label": "作詞",
+          "value": "Maltbie D. Babcock",
+          "sourceUrl": "https://en.wikipedia.org/wiki/This_Is_My_Father%27s_World",
+          "sourceLabel": "en.wikipedia.org"
+        },
+        {
+          "key": "composer",
+          "label": "作曲",
+          "value": "Franklin L. Sheppard（曲調：Terra Beata）",
+          "sourceUrl": "https://en.wikipedia.org/wiki/This_Is_My_Father%27s_World",
+          "sourceLabel": "en.wikipedia.org"
+        },
+        {
+          "key": "year",
+          "label": "原作年份",
+          "value": "1901",
+          "sourceUrl": "https://en.wikipedia.org/wiki/This_Is_My_Father%27s_World",
+          "sourceLabel": "en.wikipedia.org"
+        },
+        {
+          "key": "themes",
+          "label": "主題標籤",
+          "value": "創造主權、自然見證、信心安息",
+          "sourceUrl": "https://en.wikipedia.org/wiki/This_Is_My_Father%27s_World",
+          "sourceLabel": "en.wikipedia.org"
+        },
+        {
+          "key": "background",
+          "label": "背景故事摘要",
+          "value": "由美國牧師 Maltbie D. Babcock 他居住在紐約州時，經常到 Niagara Escarpment 一帶散步，欣賞湖泊與大自然景色。每次出門前，他都會對妻子 Katherine 說自己要去「看看天父的世界」。這些親近自然的經歷，成為他創作詩歌的靈感來源。Babcock 於1901年42歲時逝世，妻子其後出版其文集，當中收錄了詩作〈My Father's World〉。1915年，Babcock 的朋友 Franklin L. Sheppard 將其譜曲，成為讚美上帝創造之美的聖詩。",
+          "sourceUrl": "https://en.wikipedia.org/wiki/This_Is_My_Father%27s_World",
+          "sourceLabel": "en.wikipedia.org"
+        },
+        {
+          "key": "scripture",
+          "label": "相關經文",
+          "value": "創世記 1:1",
+          "sourceUrl": "https://en.wikipedia.org/wiki/This_Is_My_Father%27s_World",
+          "sourceLabel": "en.wikipedia.org"
+        }
+      ],
+      "allSources": [
+        "https://en.wikipedia.org/wiki/This_Is_My_Father%27s_World"
+      ]
+    },
+    {
+      "id": "hymn_a_18",
+      "collection": "hymn_a",
+      "hymnAbbr": "平",
+      "number": "018",
+      "fields": [
+        {
+          "key": "titleOriginal",
+          "label": "原文歌名",
+          "value": "Lobe den Herren, den mächtigen König der Ehren（英：Praise to the Lord, the Almighty）",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Praise_to_the_Lord,_the_Almighty",
+          "sourceLabel": "en.wikipedia.org"
+        },
+        {
+          "key": "lyricist",
+          "label": "作詞",
+          "value": "Joachim Neander（英譯：Catherine Winkworth）",
+          "sourceUrl": "https://www.hymnwiki.org/Praise_to_the_Lord,_the_Almighty",
+          "sourceLabel": "hymnwiki.org"
+        },
+        {
+          "key": "composer",
+          "label": "作曲",
+          "value": "德國聖詩曲調 Lobe den Herren（1665《Stralsund Gesangbuch》；William S. Bennett 與 Otto Goldschmidt 編配）",
+          "sourceUrl": "https://www.hymnwiki.org/Praise_to_the_Lord,_the_Almighty",
+          "sourceLabel": "hymnwiki.org"
+        },
+        {
+          "key": "year",
+          "label": "原作年份",
+          "value": "1680（常見為 Neander 詩作年代；曲調可追溯至 1665）",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Praise_to_the_Lord,_the_Almighty",
+          "sourceLabel": "en.wikipedia.org"
+        },
+        {
+          "key": "themes",
+          "label": "主題標籤",
+          "value": "讚美敬拜、神的護理、全地同頌",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Praise_to_the_Lord,_the_Almighty",
+          "sourceLabel": "en.wikipedia.org"
+        },
+        {
+          "key": "background",
+          "label": "背景故事摘要",
+          "value": "此詩源於德語讚美詩傳統，由 Joachim Neander 所作，後經 Catherine Winkworth 英譯而進入英語教會；曲調 Lobe den Herren 的歷史可追至 17 世紀。整首歌以頌讚上帝全能、護理與眷顧為核心，被譽為最優秀的讚美詩之一，甚至是普魯士國王 Frederick William III 最喜愛的聖詩。",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Praise_to_the_Lord,_the_Almighty",
+          "sourceLabel": "en.wikipedia.org"
+        },
+        {
+          "key": "scripture",
+          "label": "相關經文",
+          "value": "詩篇 103 篇；詩篇 150 篇",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Praise_to_the_Lord,_the_Almighty",
+          "sourceLabel": "en.wikipedia.org"
+        }
+      ],
+      "allSources": [
+        "https://en.wikipedia.org/wiki/Praise_to_the_Lord,_the_Almighty",
+        "https://www.hymnwiki.org/Praise_to_the_Lord,_the_Almighty"
+      ]
+    },
+    {
+      "id": "hymn_a_23",
+      "collection": "hymn_a",
+      "hymnAbbr": "平",
+      "number": "023",
+      "fields": [
+        {
+          "key": "titleOriginal",
+          "label": "原文歌名",
+          "value": "The Lily of the Valley",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/the-lily-of-the-valley/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "lyricist",
+          "label": "作詞",
+          "value": "Charles W. Fry",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/the-lily-of-the-valley/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "year",
+          "label": "原作年份",
+          "value": "1881",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/the-lily-of-the-valley/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "themes",
+          "label": "主題標籤",
+          "value": "基督同在、安慰扶持、屬靈倚靠",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/the-lily-of-the-valley/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "background",
+          "label": "背景故事摘要",
+          "value": "詩歌以雅歌2:1「谷中的百合花」為意象，象徵耶穌基督的美善、純潔與慈愛。歌詞以見證方式表達信徒對基督的信靠，宣告耶穌是生命中最寶貴的朋友，能擔當重擔、安慰憂傷，並在患難中賜下力量與引導。其中「祂是我靈魂深愛的萬人中最美者」深刻表達對主的愛慕。",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/the-lily-of-the-valley/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "scripture",
+          "label": "相關經文",
+          "value": "雅歌2:1",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/the-lily-of-the-valley/",
+          "sourceLabel": "hymnallibrary.org"
+        }
+      ],
+      "allSources": [
+        "https://www.hymnallibrary.org/hymns/the-lily-of-the-valley/"
+      ]
+    },
+    {
+      "id": "hymn_a_24",
+      "collection": "hymn_a",
+      "hymnAbbr": "平",
+      "number": "024",
+      "fields": [
+        {
+          "key": "titleOriginal",
+          "label": "原文歌名",
+          "value": "Thank You, Lord, for Saving My Soul",
+          "sourceUrl": "https://hymnary.org/text/thank_you_lord_for_saving_my_soul",
+          "sourceLabel": "hymnary.org"
+        },
+        {
+          "key": "lyricist",
+          "label": "作詞",
+          "value": "Seth Sykes；Bessie Sykes",
+          "sourceUrl": "https://hymnary.org/text/thank_you_lord_for_saving_my_soul",
+          "sourceLabel": "hymnary.org"
+        },
+        {
+          "key": "composer",
+          "label": "作曲",
+          "value": "Seth Sykes（曲調：Thank you, Lord, for saving my soul）",
+          "sourceUrl": "https://hymnary.org/text/thank_you_lord_for_saving_my_soul",
+          "sourceLabel": "hymnary.org"
+        },
+        {
+          "key": "year",
+          "label": "原作年份",
+          "value": "1940",
+          "sourceUrl": "https://hymnary.org/text/thank_you_lord_for_saving_my_soul",
+          "sourceLabel": "hymnary.org"
+        },
+        {
+          "key": "themes",
+          "label": "主題標籤",
+          "value": "感恩、救恩確據、見證讚美",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/thank-you-lord-for-saving-my-soul/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "background",
+          "label": "背景故事摘要",
+          "value": "由蘇格蘭佈道家 Seth Sykes 於20世紀中葉創作的福音詩歌。他與妻子 Bessie Sykes 長年在英國從事巡迴佈道事工，透過講道、音樂及影像輔助傳福音。詩歌歌詞簡潔真摯，以「感謝主救了我的靈魂，使我得完全」為核心，表達信徒因耶穌基督救恩而發出的感恩與讚美。",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/thank-you-lord-for-saving-my-soul/",
+          "sourceLabel": "hymnallibrary.org"
+        }
+      ],
+      "allSources": [
+        "https://hymnary.org/text/thank_you_lord_for_saving_my_soul",
+        "https://www.hymnallibrary.org/hymns/thank-you-lord-for-saving-my-soul/"
+      ]
+    },
+    {
+      "id": "hymn_a_25",
+      "collection": "hymn_a",
+      "hymnAbbr": "平",
+      "number": "025",
+      "fields": [
+        {
+          "key": "titleOriginal",
+          "label": "原文歌名",
+          "value": "願祢為大 (Be Thou supreme, o Jesus Christ)",
+          "sourceUrl": "https://hymnary.org/text/yuan_ni_wei_da_o_zhu_yesu",
+          "sourceLabel": "hymnary.org"
+        },
+        {
+          "key": "lyricist",
+          "label": "作詞",
+          "value": "John Temperley Grey",
+          "sourceUrl": "https://hymnary.org/text/yuan_ni_wei_da_o_zhu_yesu",
+          "sourceLabel": "hymnary.org"
+        },
+        {
+          "key": "composer",
+          "label": "作曲",
+          "value": "Phyllis Skene（曲調：REDCLIFFE）",
+          "sourceUrl": "https://hymnary.org/tune/redcliffe_skene",
+          "sourceLabel": "hymnary.org"
+        }
+      ],
+      "allSources": [
+        "https://hymnary.org/hymn/PH1977/25",
+        "https://hymnary.org/text/yuan_ni_wei_da_o_zhu_yesu",
+        "https://hymnary.org/tune/redcliffe_skene"
+      ]
+    },
+    {
+      "id": "hymn_a_26",
+      "collection": "hymn_a",
+      "hymnAbbr": "平",
+      "number": "026",
+      "fields": [
+        {
+          "key": "titleOriginal",
+          "label": "原文歌名",
+          "value": "Praise Him! Praise Him! (Jesus, our blessed Redeemer!)",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/praise-him-praise-him-jesus-our-blessed-redeemer/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "lyricist",
+          "label": "作詞",
+          "value": "Fanny Crosby",
+          "sourceUrl": "https://hymnary.org/hymn/HHNO1908/162",
+          "sourceLabel": "hymnary.org"
+        },
+        {
+          "key": "composer",
+          "label": "作曲",
+          "value": "Chester G. Allen（曲調：JOYFUL SONG / ALLEN）",
+          "sourceUrl": "https://hymnary.org/hymn/HHNO1908/162",
+          "sourceLabel": "hymnary.org"
+        },
+        {
+          "key": "year",
+          "label": "原作年份",
+          "value": "1869",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/praise-him-praise-him-jesus-our-blessed-redeemer/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "themes",
+          "label": "主題標籤",
+          "value": "讚美敬拜、救主救恩、再臨盼望",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/praise-him-praise-him-jesus-our-blessed-redeemer/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "background",
+          "label": "背景故事摘要",
+          "value": "是著名聖詩作家 Fanny J. Crosby 於1869年創作的讚美詩。詩歌以熱切的呼召開始，邀請信徒一同讚美耶穌，頌揚祂作為救主、牧者和君王的身份。詩中多次強調耶穌對信徒的慈愛與看顧，將祂比喻為溫柔牧養群羊的好牧人，同時宣告祂戰勝罪惡與死亡的得勝。",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/praise-him-praise-him-jesus-our-blessed-redeemer/",
+          "sourceLabel": "hymnallibrary.org"
+        }
+      ],
+      "allSources": [
+        "https://www.hymnallibrary.org/hymns/praise-him-praise-him-jesus-our-blessed-redeemer/",
+        "https://hymnary.org/hymn/HHNO1908/162"
+      ]
+    },
+    {
+      "id": "hymn_a_27",
+      "collection": "hymn_a",
+      "hymnAbbr": "平",
+      "number": "027",
+      "fields": [
+        {
+          "key": "titleOriginal",
+          "label": "原文歌名",
+          "value": "Hark, ten thousand voices sounding",
+          "sourceUrl": "https://hymnary.org/text/hark_ten_thousand_voices_sounding",
+          "sourceLabel": "hymnary.org"
+        },
+        {
+          "key": "lyricist",
+          "label": "作詞",
+          "value": "Thomas Kelly",
+          "sourceUrl": "https://hymnary.org/text/hark_ten_thousand_voices_sounding",
+          "sourceLabel": "hymnary.org"
+        },
+        {
+          "key": "themes",
+          "label": "主題標籤",
+          "value": "羔羊頌讚、天上敬拜、基督榮耀",
+          "sourceUrl": "https://hymnary.org/text/hark_ten_thousand_voices_sounding",
+          "sourceLabel": "hymnary.org"
+        },
+        {
+          "key": "background",
+          "label": "背景故事摘要",
+          "value": "是 Thomas Kelly 創作的復活節聖詩，最早收錄於1806年出版的《Hymns》。詩歌以「千萬聲音呼喊」為開端，宣告耶穌已從死裡復活，戰勝罪惡與死亡，不再受死亡轄制。此詩後來被多本聖詩集收錄和修改，其中部分版本重寫了第一節歌詞，以配合更規整的韻律。無論版本如何調整，核心信息始終圍繞基督的復活得勝、升天掌權，以及信徒對祂的敬拜與頌讚。",
+          "sourceUrl": "https://hymnary.org/text/hark_ten_thousand_voices_sounding",
+          "sourceLabel": "hymnary.org"
+        }
+      ],
+      "allSources": [
+        "https://hymnary.org/text/hark_ten_thousand_voices_sounding"
+      ]
+    }
+  ]
+}
