@@ -665,6 +665,7 @@ body.has-quickbar {
   border-radius: 0;
   padding: 0;
   opacity: 1;
+  touch-action: pan-y;
 }
 
 .lyric-overlay-open .floating-quickbar {

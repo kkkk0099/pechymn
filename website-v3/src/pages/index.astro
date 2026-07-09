@@ -346,27 +346,6 @@ const toBase = (path = '') => `${baseUrl}${String(path).replace(/^\/+/, '')}`;
 			hymn_d: toBasePath('data/hymn-d-full.json'),
 		};
 		const HYMN_METADATA_PATH = toBasePath('data/hymn-a-metadata.json');
-		const HYMN_METADATA_ID_SET = new Set([
-			'hymn_a_1',
-			'hymn_a_2',
-			'hymn_a_3',
-			'hymn_a_7',
-			'hymn_a_8',
-			'hymn_a_10',
-			'hymn_a_11',
-			'hymn_a_12',
-			'hymn_a_14',
-			'hymn_a_16',
-			'hymn_a_17',
-			'hymn_a_18',
-			'hymn_a_23',
-			'hymn_a_24',
-			'hymn_a_25',
-			'hymn_a_26',
-			'hymn_a_27',
-			'hymn_a_28',
-			'hymn_a_30',
-		]);
 
 		let indexItems = [];
 		let currentResults = [];
@@ -1692,6 +1671,11 @@ const toBase = (path = '') => `${baseUrl}${String(path).replace(/^\/+/, '')}`;
 			return hymnMetadataById.get(id) || null;
 		}
 
+		function hasHymnMetadata(id) {
+			const metadata = getHymnMetadataById(id);
+			return Boolean(metadata && Array.isArray(metadata.fields) && metadata.fields.length > 0);
+		}
+
 		function isSongInfoDialogOpen() {
 			return Boolean(songInfoDialog && !songInfoDialog.classList.contains('hidden-panel'));
 		}
@@ -1802,7 +1786,7 @@ const toBase = (path = '') => `${baseUrl}${String(path).replace(/^\/+/, '')}`;
 				: '';
 			const bookmarked = isBookmarked(payload.id);
 			const bookmarkLabel = bookmarked ? '取消書籤' : '加入書籤';
-			const hasSongInfo = HYMN_METADATA_ID_SET.has(payload.id);
+			const hasSongInfo = hasHymnMetadata(payload.id);
 			const songInfoButton = hasSongInfo
 				? `
 					<button
@@ -1966,8 +1950,18 @@ const toBase = (path = '') => `${baseUrl}${String(path).replace(/^\/+/, '')}`;
 		function handleLyricSwipePointerDown(event) {
 			if (event.pointerType !== 'touch' || lyricSwipeAnimating) return;
 			if (!lyricOverlay || !lyricOverlay.classList.contains('overlay-visible')) return;
-			if (!event.target.closest('.lyric-swipe-stage')) return;
+			if (!currentLyricId) return;
+			if (!lyricViewer?.querySelector('.lyric-swipe-stage')) return;
+			if (!event.target.closest('.lyric-overlay-card')) return;
+			if (event.target.closest('#song-info-dialog')) return;
 			if (event.target.closest('button, a, input, select, textarea')) return;
+			if (lyricOverlayCard?.setPointerCapture) {
+				try {
+					lyricOverlayCard.setPointerCapture(event.pointerId);
+				} catch {
+					// Ignore platforms that reject capture for this pointer state.
+				}
+			}
 
 			lyricSwipeState.pointerId = event.pointerId;
 			lyricSwipeState.startX = event.clientX;
@@ -2009,6 +2003,13 @@ const toBase = (path = '') => `${baseUrl}${String(path).replace(/^\/+/, '')}`;
 
 		function handleLyricSwipePointerEnd(event) {
 			if (lyricSwipeState.pointerId !== event.pointerId) return;
+			if (lyricOverlayCard?.releasePointerCapture) {
+				try {
+					lyricOverlayCard.releasePointerCapture(event.pointerId);
+				} catch {
+					// Ignore if pointer capture is already released.
+				}
+			}
 			const stage = lyricViewer.querySelector('.lyric-swipe-stage');
 			const width = stage ? Math.max(1, stage.getBoundingClientRect().width) : 1;
 			const threshold = Math.max(60, width * 0.18);
@@ -2718,10 +2719,10 @@ const toBase = (path = '') => `${baseUrl}${String(path).replace(/^\/+/, '')}`;
 			}
 		}
 
-		lyricViewer.addEventListener('pointerdown', handleLyricSwipePointerDown);
-		lyricViewer.addEventListener('pointermove', handleLyricSwipePointerMove);
-		lyricViewer.addEventListener('pointerup', handleLyricSwipePointerEnd);
-		lyricViewer.addEventListener('pointercancel', handleLyricSwipePointerEnd);
+		lyricOverlayCard?.addEventListener('pointerdown', handleLyricSwipePointerDown);
+		lyricOverlayCard?.addEventListener('pointermove', handleLyricSwipePointerMove);
+		lyricOverlayCard?.addEventListener('pointerup', handleLyricSwipePointerEnd);
+		lyricOverlayCard?.addEventListener('pointercancel', handleLyricSwipePointerEnd);
 
 		(async function bootstrap() {
 			loadState();
@@ -2742,6 +2743,7 @@ const toBase = (path = '') => `${baseUrl}${String(path).replace(/^\/+/, '')}`;
 			renderQuickbar();
 			renderGroupList();
 			resultList.innerHTML = '<div class="empty-state">正在載入詩歌資料...</div>';
+			await ensureHymnMetadataLoaded().catch(() => null);
 
 			try {
 				const resp = await fetch(toBasePath('data/search-index-lite.json'), { cache: 'force-cache' });
