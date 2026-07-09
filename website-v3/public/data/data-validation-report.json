@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-23T10:33:06.332Z",
-  "sourceFile": "/Users/kening.li/Desktop/Repo/pechymn_website/hymn_script.js",
-  "totalSongs": 913,
+  "generatedAt": "2026-07-09T06:50:12.112Z",
+  "sourceFile": "/Users/kening.li/Desktop/Repo/pechymn/website/hymn_script.js",
+  "totalSongs": 1164,
   "collections": {
     "hymn_a": {
       "count": 500,
@@ -16,6 +16,11 @@
     "hymn_c": {
       "count": 163,
       "range": "001-156",
+      "missingAudioCount": 0
+    },
+    "hymn_d": {
+      "count": 251,
+      "range": "001-251",
       "missingAudioCount": 0
     }
   },
