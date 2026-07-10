@@ -142,11 +142,17 @@ const toBase = (path = '') => `${baseUrl}${String(path).replace(/^\/+/, '')}`;
 	</div>
 
 	<script src={`${toBase('langConvert.js')}?v=${buildVersion}`} is:inline></script>
-	<script type="module" is:inline define:vars={{ baseUrl }}>
+	<script type="module" is:inline define:vars={{ baseUrl, buildVersion }}>
 		const STORAGE_KEY = 'hymn_app_state_v2';
 		const STATE_VERSION = 2;
 		const APP_BASE_URL = String(baseUrl || '/');
+		const DATA_BUILD_VERSION = String(buildVersion || 'dev');
 		const toBasePath = (path = '') => `${APP_BASE_URL}${String(path).replace(/^\/+/, '')}`;
+		const toVersionedDataPath = (path = '') => {
+			const basePath = toBasePath(path);
+			const separator = basePath.includes('?') ? '&' : '?';
+			return `${basePath}${separator}v=${encodeURIComponent(DATA_BUILD_VERSION)}`;
+		};
 		const isBrowserSupported =
 			typeof Promise === 'function' &&
 			typeof fetch === 'function' &&
@@ -358,13 +364,13 @@ const toBase = (path = '') => `${baseUrl}${String(path).replace(/^\/+/, '')}`;
 			],
 		};
 		const COLLECTION_FULL_PATHS = {
-			hymn_a: toBasePath('data/hymn-a-full.json'),
-			hymn_b: toBasePath('data/hymn-b-full.json'),
-			hymn_c: toBasePath('data/hymn-c-full.json'),
-			hymn_d: toBasePath('data/hymn-d-full.json'),
-			hymn_e: toBasePath('data/hymn-e-full.json'),
+			hymn_a: toVersionedDataPath('data/hymn-a-full.json'),
+			hymn_b: toVersionedDataPath('data/hymn-b-full.json'),
+			hymn_c: toVersionedDataPath('data/hymn-c-full.json'),
+			hymn_d: toVersionedDataPath('data/hymn-d-full.json'),
+			hymn_e: toVersionedDataPath('data/hymn-e-full.json'),
 		};
-		const HYMN_METADATA_PATH = toBasePath('data/hymn-a-metadata.json');
+		const HYMN_METADATA_PATH = toVersionedDataPath('data/hymn-a-metadata.json');
 
 		let indexItems = [];
 		let currentResults = [];
@@ -2802,7 +2808,7 @@ const toBase = (path = '') => `${baseUrl}${String(path).replace(/^\/+/, '')}`;
 			resultList.innerHTML = '<div class="empty-state">正在載入詩歌資料...</div>';
 
 			try {
-				const resp = await fetch(toBasePath('data/search-index-lite.json'), { cache: 'force-cache' });
+				const resp = await fetch(toVersionedDataPath('data/search-index-lite.json'), { cache: 'force-cache' });
 				if (!resp.ok) {
 					throw new Error('無法載入全文索引');
 				}
