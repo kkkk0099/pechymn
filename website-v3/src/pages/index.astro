@@ -1709,9 +1709,6 @@ const toBase = (path = '') => `${baseUrl}${String(path).replace(/^\/+/, '')}`;
 
 		function shouldShowSongInfoButton(payload) {
 			if (!payload?.id) return false;
-			if (hymnMetadataById.size === 0) {
-				return payload.collection === 'hymn_a';
-			}
 			return hasHymnMetadata(payload.id);
 		}
 
@@ -2268,6 +2265,19 @@ const toBase = (path = '') => `${baseUrl}${String(path).replace(/^\/+/, '')}`;
 				saveState();
 
 				renderLyric(payload, navInfoBeforeLoad, { prevPayload, nextPayload });
+				const hadSongInfoButton = shouldShowSongInfoButton(payload);
+				if (!hadSongInfoButton) {
+					ensureHymnMetadataLoaded()
+						.then(() => {
+							if (currentLyricId !== payload.id) return;
+							if (!shouldShowSongInfoButton(payload)) return;
+							renderLyric(payload, navInfoBeforeLoad, { prevPayload, nextPayload });
+							resetLyricSwipePosition();
+						})
+						.catch(() => {
+							// Keep lyrics usable even when optional metadata cannot be loaded.
+						});
+				}
 				resetLyricSwipePosition();
 				resetLyricOverlayScroll();
 				scheduleHistoryAutoAdd(payload);
