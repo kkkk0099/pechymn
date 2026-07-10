@@ -1676,6 +1676,14 @@ const toBase = (path = '') => `${baseUrl}${String(path).replace(/^\/+/, '')}`;
 			return Boolean(metadata && Array.isArray(metadata.fields) && metadata.fields.length > 0);
 		}
 
+		function shouldShowSongInfoButton(payload) {
+			if (!payload?.id) return false;
+			if (hymnMetadataById.size === 0) {
+				return payload.collection === 'hymn_a';
+			}
+			return hasHymnMetadata(payload.id);
+		}
+
 		function isSongInfoDialogOpen() {
 			return Boolean(songInfoDialog && !songInfoDialog.classList.contains('hidden-panel'));
 		}
@@ -1786,7 +1794,7 @@ const toBase = (path = '') => `${baseUrl}${String(path).replace(/^\/+/, '')}`;
 				: '';
 			const bookmarked = isBookmarked(payload.id);
 			const bookmarkLabel = bookmarked ? '取消書籤' : '加入書籤';
-			const hasSongInfo = hasHymnMetadata(payload.id);
+			const hasSongInfo = shouldShowSongInfoButton(payload);
 			const songInfoButton = hasSongInfo
 				? `
 					<button
@@ -2461,8 +2469,14 @@ const toBase = (path = '') => `${baseUrl}${String(path).replace(/^\/+/, '')}`;
 					return;
 				}
 
-				const metadata = getHymnMetadataById(currentLyricId);
-				if (!payload || !metadata || !metadata.fields?.length) return;
+				const metadata = getHymnMetadataById(currentLyricId) || {
+					id: payload.id,
+					collection: payload.collection,
+					hymnAbbr: getCollectionShortLabel(payload.collection),
+					number: String(payload.number || '').trim(),
+					fields: [],
+					allSources: [],
+				};
 				openSongInfoDialog(payload, metadata);
 				return;
 			}
@@ -2729,6 +2743,8 @@ const toBase = (path = '') => `${baseUrl}${String(path).replace(/^\/+/, '')}`;
 			const congregationFromHash = getCongregationFromHash();
 			if (congregationFromHash) {
 				state.settings.congregation = congregationFromHash;
+			} else {
+				syncHashByCongregation(normalizeCongregation(state.settings.congregation));
 			}
 			sanitizeFiltersForCongregation();
 			if (!getActiveGroup()) {
@@ -2743,7 +2759,6 @@ const toBase = (path = '') => `${baseUrl}${String(path).replace(/^\/+/, '')}`;
 			renderQuickbar();
 			renderGroupList();
 			resultList.innerHTML = '<div class="empty-state">正在載入詩歌資料...</div>';
-			await ensureHymnMetadataLoaded().catch(() => null);
 
 			try {
 				const resp = await fetch(toBasePath('data/search-index-lite.json'), { cache: 'force-cache' });
