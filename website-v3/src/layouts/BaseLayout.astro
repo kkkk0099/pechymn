@@ -8,14 +8,11 @@ interface Props {
 
 const {
   title,
-  description = '平安詩集現代化重構版，保留舊站功能語義與資料。',
+  description = '包含平安詩集、敬拜頌歌、詩歌集(葵平/涌平)、沙平匯曲(沙平)、彩虹詩集(海平)，及收錄在敬拜頌歌的英文歌詞，以曲目/歌名/歌詞搜索詩歌快捷方便。',
 } = Astro.props;
 
-const metaDescription =
-  '包含平安詩集、敬拜頌歌、詩歌集(葵平/涌平)、沙平匯曲(沙平)，及收錄在敬拜頌歌的英文歌詞，以曲目/歌名/歌詞搜索詩歌快捷方便。';
-
-const ogDescription =
-  '包含平安詩集、敬拜頌歌、詩歌集(葵平/涌平)、沙平匯曲(沙平)，及收錄在敬拜頌歌的英文歌詞，以曲目/歌名/歌詞搜索詩歌快捷方便。';
+const metaDescription = description;
+const ogDescription = description;
 
 const buildVersion = import.meta.env.PUBLIC_BUILD_VERSION || __APP_BUILD_VERSION__;
 const baseUrl = import.meta.env.BASE_URL;
