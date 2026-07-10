@@ -1462,8 +1462,8 @@ body.has-quickbar {
    gap: 0.5rem;
  }
  .congregation-prompt-btn {
-   flex: 1 1 0;
-   min-width: 0;
+   flex: 1 1 9rem;
+   min-width: 8.2rem;
    border: 1px solid var(--line);
    border-radius: 999px;
    background: rgba(255,255,255,0.92);
@@ -1481,7 +1481,8 @@ body.has-quickbar {
    color: #d9542b;
  }
  .congregation-prompt-btn[data-congreg="kp_yp"],
- .congregation-prompt-btn[data-congreg="sht"] {
+ .congregation-prompt-btn[data-congreg="sht"],
+ .congregation-prompt-btn[data-congreg="hp"] {
    color: #6b3c22;
  }
 

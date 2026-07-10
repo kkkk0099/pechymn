@@ -52,6 +52,10 @@ const toBase = (path = '') => `${baseUrl}${String(path).replace(/^\/+/, '')}`;
 								<input type="radio" name="setting-congregation" value="sht" />
 								<span id="label-congregation-sht">沙平</span>
 							</label>
+							<label class="congregation-option">
+								<input type="radio" name="setting-congregation" value="hp" />
+								<span id="label-congregation-hp">海平</span>
+							</label>
 						</div>
 					</label>
 				</div>
@@ -67,6 +71,7 @@ const toBase = (path = '') => `${baseUrl}${String(path).replace(/^\/+/, '')}`;
 			<button type="button" data-congreg="other" class="congregation-prompt-btn">其他堂會</button>
 			<button type="button" data-congreg="kp_yp" class="congregation-prompt-btn">葵平/涌平</button>
 			<button type="button" data-congreg="sht" class="congregation-prompt-btn">沙平</button>
+			<button type="button" data-congreg="hp" class="congregation-prompt-btn">海平</button>
 		</div>
 	</div>
 
@@ -178,10 +183,13 @@ const toBase = (path = '') => `${baseUrl}${String(path).replace(/^\/+/, '')}`;
 		const CONGREGATION_OTHER = 'other';
 		const CONGREGATION_KP_YP = 'kp_yp';
 		const CONGREGATION_SHT = 'sht';
+		const CONGREGATION_HP = 'hp';
 		const CONGREGATION_HASH_KP_YP = 'kwcskc';
 		const CONGREGATION_HASH_KP = 'kwc';
 		const CONGREGATION_HASH_SKC = 'skc';
 		const CONGREGATION_HASH_SHT = 'sht';
+		const CONGREGATION_HASH_HP_DEFAULT = 'rig';
+		const CONGREGATION_HASH_HP_ALT = 'rg';
 
 		function interpolateResponsiveFontSize(width, anchors) {
 			if (!Array.isArray(anchors) || anchors.length < 2) return 23;
@@ -234,6 +242,7 @@ const toBase = (path = '') => `${baseUrl}${String(path).replace(/^\/+/, '')}`;
 		const congregationOtherLabel = document.getElementById('label-congregation-other');
 		const congregationKpypLabel = document.getElementById('label-congregation-kpyp');
 		const congregationShtLabel = document.getElementById('label-congregation-sht');
+		const congregationHpLabel = document.getElementById('label-congregation-hp');
 		const congregationRadioOptions = Array.from(document.querySelectorAll('input[name="setting-congregation"]'));
 		const hymnApp = document.getElementById('hymn-app');
 		const topControlsOverlay = document.getElementById('top-controls-overlay');
@@ -824,6 +833,7 @@ const toBase = (path = '') => `${baseUrl}${String(path).replace(/^\/+/, '')}`;
 			if (congregationOtherLabel) congregationOtherLabel.textContent = convert('其他堂會');
 			if (congregationKpypLabel) congregationKpypLabel.textContent = convert('葵平/涌平');
 			if (congregationShtLabel) congregationShtLabel.textContent = convert('沙平');
+			if (congregationHpLabel) congregationHpLabel.textContent = convert('海平');
 			const big5Option = settingLanguage.querySelector('option[value="big5"]');
 			const gbOption = settingLanguage.querySelector('option[value="gb"]');
 			if (big5Option) big5Option.textContent = convert('繁體');
@@ -839,6 +849,7 @@ const toBase = (path = '') => `${baseUrl}${String(path).replace(/^\/+/, '')}`;
 		function normalizeCongregation(value) {
 			if (value === CONGREGATION_KP_YP) return CONGREGATION_KP_YP;
 			if (value === CONGREGATION_SHT) return CONGREGATION_SHT;
+			if (value === CONGREGATION_HP) return CONGREGATION_HP;
 			return CONGREGATION_OTHER;
 		}
 
@@ -942,6 +953,9 @@ const toBase = (path = '') => `${baseUrl}${String(path).replace(/^\/+/, '')}`;
 			if (rawHash === CONGREGATION_HASH_SHT) {
 				return CONGREGATION_SHT;
 			}
+			if (rawHash === CONGREGATION_HASH_HP_DEFAULT || rawHash === CONGREGATION_HASH_HP_ALT) {
+				return CONGREGATION_HP;
+			}
 			return '';
 		}
 
@@ -951,6 +965,8 @@ const toBase = (path = '') => `${baseUrl}${String(path).replace(/^\/+/, '')}`;
 				nextHash = `#${CONGREGATION_HASH_KP_YP}`;
 			} else if (congregation === CONGREGATION_SHT) {
 				nextHash = `#${CONGREGATION_HASH_SHT}`;
+			} else if (congregation === CONGREGATION_HP) {
+				nextHash = `#${CONGREGATION_HASH_HP_DEFAULT}`;
 			}
 			if (window.location.hash === nextHash) return;
 
@@ -965,6 +981,9 @@ const toBase = (path = '') => `${baseUrl}${String(path).replace(/^\/+/, '')}`;
 			}
 			if (congregation === CONGREGATION_SHT) {
 				return ['hymn_a', 'hymn_b', 'hymn_d'];
+			}
+			if (congregation === CONGREGATION_HP) {
+				return ['hymn_a', 'hymn_b', 'hymn_c'];
 			}
 			return ['hymn_a', 'hymn_b'];
 		}
