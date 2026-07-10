@@ -24,7 +24,8 @@ const collectionDefs = [
 ];
 
 const supplementalCollectionDefs = [
-  { collection: 'hymn_d', fileName: 'hymn-d-full.json' },
+  { collection: 'hymn_d', fileName: 'hymn-d-full.json', source: 'json' },
+  { collection: 'hymn_e', fileName: 'rig.txt', source: 'rig' },
 ];
 
 function ensureDir(dirPath) {
@@ -144,7 +145,104 @@ function getCollectionFullFileName(collection) {
   if (collection === 'hymn_b') return 'hymn-b-full.json';
   if (collection === 'hymn_c') return 'hymn-c-full.json';
   if (collection === 'hymn_d') return 'hymn-d-full.json';
+  if (collection === 'hymn_e') return 'hymn-e-full.json';
   return `${collection}-full.json`;
+}
+
+function trimBlankEdges(lines) {
+  let start = 0;
+  let end = lines.length;
+
+  while (start < end && !lines[start].trim()) {
+    start += 1;
+  }
+
+  while (end > start && !lines[end - 1].trim()) {
+    end -= 1;
+  }
+
+  return lines.slice(start, end);
+}
+
+function categoryRangeForHymnE(number) {
+  const value = Number.parseInt(String(number || '').trim(), 10);
+  if (Number.isNaN(value)) return '';
+  if (value >= 1 && value <= 51) return '001-051';
+  if (value >= 52 && value <= 96) return '052-096';
+  if (value >= 97 && value <= 118) return '097-118';
+  if (value >= 119 && value <= 131) return '119-131';
+  if (value >= 132 && value <= 144) return '132-144';
+  return '';
+}
+
+function parseRigCollection(filePath) {
+  if (!fs.existsSync(filePath)) {
+    throw new Error(`Rig source file not found: ${filePath}`);
+  }
+
+  const raw = fs.readFileSync(filePath, 'utf8').replace(/\r\n/g, '\n').replace(/\r/g, '\n');
+  const sections = raw
+    .split(/^\s*-{8,}\s*$/gm)
+    .map((block) => block.trim())
+    .filter(Boolean);
+
+  const items = [];
+
+  for (const section of sections) {
+    const numberMatch = section.match(/(?:^|\n)編號：\s*([^\n]+)/);
+    const titleMatch = section.match(/(?:^|\n)歌名：\s*([^\n]+)/);
+    const lyricsMarkerIndex = section.indexOf('歌詞：');
+
+    if (!numberMatch || !titleMatch || lyricsMarkerIndex < 0) {
+      continue;
+    }
+
+    const numberRaw = String(numberMatch[1] || '').trim();
+    const numberInt = Number.parseInt(numberRaw, 10);
+    const number = Number.isNaN(numberInt) ? numberRaw : pad3(numberInt);
+    const idSuffix = Number.isNaN(numberInt) ? numberRaw : String(numberInt);
+    const title = String(titleMatch[1] || '').trim();
+
+    const bodyRaw = section.slice(lyricsMarkerIndex + '歌詞：'.length);
+    const bodyLines = trimBlankEdges(bodyRaw.split('\n').map((line) => line.trimEnd()));
+
+    let sourceLine = '';
+    let lyricLines = bodyLines;
+    if (bodyLines.length > 0) {
+      const firstLine = bodyLines[0].trim();
+      if (/^詩集：/.test(firstLine)) {
+        sourceLine = firstLine.replace(/^詩集：\s*/, '').trim();
+        lyricLines = bodyLines.slice(1);
+      }
+    }
+
+    lyricLines = trimBlankEdges(lyricLines);
+
+    const htmlLines = [];
+    if (sourceLine) {
+      htmlLines.push(sourceLine, '');
+    }
+    htmlLines.push(...lyricLines);
+
+    items.push({
+      id: `hymn_e_${idSuffix}`,
+      collection: 'hymn_e',
+      number,
+      title,
+      lyricsHtml: htmlLines.join('<br>'),
+      categoryRange: categoryRangeForHymnE(number),
+      audioPath: '',
+    });
+  }
+
+  items.sort((a, b) => {
+    if (a.number !== b.number) {
+      return String(a.number).localeCompare(String(b.number), undefined, { numeric: true });
+    }
+    return String(a.id).localeCompare(String(b.id));
+  });
+
+  return items;
 }
 
 function mergeSupplementalCollectionItems(collection, items) {
@@ -200,16 +298,24 @@ function loadSupplementalCollections() {
   const out = [];
 
   for (const def of supplementalCollectionDefs) {
-    const filePath = path.join(outputRoot, def.fileName);
-    if (!fs.existsSync(filePath)) {
-      continue;
+    let items = [];
+    let filePath = '';
+
+    if (def.source === 'json') {
+      filePath = path.join(outputRoot, def.fileName);
+      if (!fs.existsSync(filePath)) {
+        continue;
+      }
+      const payload = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+      items = mergeSupplementalCollectionItems(
+        def.collection,
+        Array.isArray(payload?.items) ? payload.items : [],
+      );
+    } else if (def.source === 'rig') {
+      filePath = path.join(projectRoot, def.fileName);
+      items = parseRigCollection(filePath);
     }
 
-    const payload = JSON.parse(fs.readFileSync(filePath, 'utf8'));
-    const items = mergeSupplementalCollectionItems(
-      def.collection,
-      Array.isArray(payload?.items) ? payload.items : [],
-    );
     out.push({
       ...def,
       filePath,

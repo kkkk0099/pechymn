@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-09T06:50:12.178Z",
+  "generatedAt": "2026-07-10T08:11:54.985Z",
   "collections": {
     "hymn_a": {
       "count": 500,
@@ -19,6 +19,11 @@
     "hymn_d": {
       "count": 251,
       "range": "001-251",
+      "missingAudioCount": 0
+    },
+    "hymn_e": {
+      "count": 88,
+      "range": "001-144",
       "missingAudioCount": 0
     }
   }

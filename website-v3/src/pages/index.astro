@@ -347,12 +347,22 @@ const toBase = (path = '') => `${baseUrl}${String(path).replace(/^\/+/, '')}`;
 				{ key: 'category_default', label: '─ 詩歌類別 ─' },
 				{ key: 'all', label: '全部' },
 			],
+			hymn_e: [
+				{ key: 'category_default', label: '─ 詩歌類別 ─' },
+				{ key: 'all', label: '全部' },
+				{ key: 'e_001_051', label: '讚美', range: [1, 51] },
+				{ key: 'e_052_096', label: '信仰生活', range: [52, 96] },
+				{ key: 'e_097_118', label: '信靠與確據', range: [97, 118] },
+				{ key: 'e_119_131', label: '團契教導', range: [119, 131] },
+				{ key: 'e_132_144', label: '神的愛', range: [132, 144] },
+			],
 		};
 		const COLLECTION_FULL_PATHS = {
 			hymn_a: toBasePath('data/hymn-a-full.json'),
 			hymn_b: toBasePath('data/hymn-b-full.json'),
 			hymn_c: toBasePath('data/hymn-c-full.json'),
 			hymn_d: toBasePath('data/hymn-d-full.json'),
+			hymn_e: toBasePath('data/hymn-e-full.json'),
 		};
 		const HYMN_METADATA_PATH = toBasePath('data/hymn-a-metadata.json');
 
@@ -535,7 +545,7 @@ const toBase = (path = '') => `${baseUrl}${String(path).replace(/^\/+/, '')}`;
 
 		function extractLegacySongId(raw) {
 			if (!raw) return '';
-			const matched = String(raw).match(/hymn_[abc]_\d+[a-z]?/i);
+			const matched = String(raw).match(/hymn_[a-z]_\d+[a-z]?/i);
 			return matched ? matched[0].toLowerCase() : '';
 		}
 
@@ -926,6 +936,7 @@ const toBase = (path = '') => `${baseUrl}${String(path).replace(/^\/+/, '')}`;
 			if (collection === 'hymn_b') return '敬拜頌歌';
 			if (collection === 'hymn_c') return '詩歌集';
 			if (collection === 'hymn_d') return '沙平匯曲';
+			if (collection === 'hymn_e') return '彩虹詩集';
 			return collection;
 		}
 
@@ -934,6 +945,7 @@ const toBase = (path = '') => `${baseUrl}${String(path).replace(/^\/+/, '')}`;
 			if (collection === 'hymn_b') return '敬';
 			if (collection === 'hymn_c') return '詩';
 			if (collection === 'hymn_d') return '沙';
+			if (collection === 'hymn_e') return '彩';
 			return getCollectionLabel(collection);
 		}
 
@@ -983,7 +995,7 @@ const toBase = (path = '') => `${baseUrl}${String(path).replace(/^\/+/, '')}`;
 				return ['hymn_a', 'hymn_b', 'hymn_d'];
 			}
 			if (congregation === CONGREGATION_HP) {
-				return ['hymn_a', 'hymn_b', 'hymn_c'];
+				return ['hymn_a', 'hymn_b', 'hymn_e'];
 			}
 			return ['hymn_a', 'hymn_b'];
 		}
