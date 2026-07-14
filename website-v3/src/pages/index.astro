@@ -399,6 +399,7 @@ const toBase = (path = '') => `${baseUrl}${String(path).replace(/^\/+/, '')}`;
 		const HISTORY_AUTO_ADD_DELAY_MS = 5000;
 		let bookmarkOverlayCloseTimer = null;
 		let lyricOverlayCloseTimer = null;
+		let songInfoDialogCloseTimer = null;
 		let historyAutoAddTimer = null;
 		let historyAutoAddSongId = '';
 		let settingsLayoutSyncRafId = 0;
@@ -1719,14 +1720,20 @@ const toBase = (path = '') => `${baseUrl}${String(path).replace(/^\/+/, '')}`;
 		}
 
 		function isSongInfoDialogOpen() {
-			return Boolean(songInfoDialog && !songInfoDialog.classList.contains('hidden-panel'));
+			return Boolean(songInfoDialog && songInfoDialog.classList.contains('is-open'));
 		}
 
 		function closeSongInfoDialog() {
 			if (!songInfoDialog) return;
-			songInfoDialog.classList.add('hidden-panel');
 			songInfoDialog.classList.remove('is-open');
 			songInfoDialog.setAttribute('aria-hidden', 'true');
+			if (songInfoDialogCloseTimer) {
+				clearTimeout(songInfoDialogCloseTimer);
+			}
+			songInfoDialogCloseTimer = setTimeout(() => {
+				songInfoDialog.classList.add('hidden-panel');
+				songInfoDialogCloseTimer = null;
+			}, OVERLAY_FADE_MS);
 			setSongInfoButtonActiveState(false);
 			const buttons = document.querySelectorAll('.song-info-open-btn-floating');
 			buttons.forEach((btn) => btn.blur());
@@ -1748,6 +1755,10 @@ const toBase = (path = '') => `${baseUrl}${String(path).replace(/^\/+/, '')}`;
 
 		function openSongInfoDialog(payload, metadata) {
 			if (!songInfoDialog || !songInfoTitle || !songInfoContent || !payload || !metadata) return;
+			if (songInfoDialogCloseTimer) {
+				clearTimeout(songInfoDialogCloseTimer);
+				songInfoDialogCloseTimer = null;
+			}
 
 			const hymnAbbr = metadata.hymnAbbr || convertByLang(getCollectionShortLabel(payload.collection), state.languageMode);
 			const number = metadata.number || String(payload.number || '').trim();
@@ -1805,7 +1816,9 @@ const toBase = (path = '') => `${baseUrl}${String(path).replace(/^\/+/, '')}`;
 
 			songInfoContent.innerHTML = `${fieldsHtml}${allSourcesHtml}${disclaimerHtml}`;
 			songInfoDialog.classList.remove('hidden-panel');
-			songInfoDialog.classList.add('is-open');
+			requestAnimationFrame(() => {
+				songInfoDialog.classList.add('is-open');
+			});
 			songInfoDialog.setAttribute('aria-hidden', 'false');
 			resetSongInfoDialogScrollTop();
 			requestAnimationFrame(resetSongInfoDialogScrollTop);

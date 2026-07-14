@@ -2,7 +2,7 @@
   "generatedAt": "2026-07-09T04:07:12.998Z",
   "sourceFile": "平安詩集_詩歌資料核實結果.txt",
   "collection": "hymn_a",
-  "totalSongs": 17,
+  "totalSongs": 30,
   "items": [
     {
       "id": "hymn_a_1",
@@ -919,6 +919,620 @@
       ],
       "allSources": [
         "https://hymnary.org/text/hark_ten_thousand_voices_sounding"
+      ]
+    },
+    {
+      "id": "hymn_a_36",
+      "collection": "hymn_a",
+      "hymnAbbr": "平",
+      "number": "036",
+      "fields": [
+        {
+          "key": "titleOriginal",
+          "label": "原文歌名",
+          "value": "Crown Him with Many Crowns",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/crown-him-with-many-crowns/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "lyricist",
+          "label": "作詞",
+          "value": "Matthew Bridges（後增修：Godfrey Thring）",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/crown-him-with-many-crowns/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "composer",
+          "label": "作曲",
+          "value": "George Job Elvey（曲調：DIADEMATA）",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/crown-him-with-many-crowns/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "year",
+          "label": "原作年份",
+          "value": "1851",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/crown-him-with-many-crowns/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "themes",
+          "label": "主題標籤",
+          "value": "基督為王、復活得勝、天上敬拜",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/crown-him-with-many-crowns/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "background",
+          "label": "背景故事摘要",
+          "value": "由 Matthew Bridges 於1851年創作，靈感來自《啟示錄》中基督戴著眾多冠冕的形象。詩歌透過不同段落頌揚基督的復活得勝、救贖大愛、天上統治及永恆祭司職分，展現其多方面的君王身份。莊嚴宏偉的旋律配合深厚的神學內容，使其成為各宗派廣泛傳唱的聖詩，激勵信徒以敬畏、喜樂和讚美之心敬拜「萬王之王、萬主之主」耶穌基督。",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/crown-him-with-many-crowns/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "scripture",
+          "label": "相關經文",
+          "value": "啟示錄 19:12",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/crown-him-with-many-crowns/",
+          "sourceLabel": "hymnallibrary.org"
+        }
+      ],
+      "allSources": [
+        "https://www.hymnallibrary.org/hymns/crown-him-with-many-crowns/"
+      ]
+    },
+    {
+      "id": "hymn_a_37",
+      "collection": "hymn_a",
+      "hymnAbbr": "平",
+      "number": "037",
+      "fields": [
+        {
+          "key": "titleOriginal",
+          "label": "原文歌名",
+          "value": "At the Name of Jesus",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/at-the-name-of-jesus/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "lyricist",
+          "label": "作詞",
+          "value": "Caroline M. Noel",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/at-the-name-of-jesus/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "year",
+          "label": "原作年份",
+          "value": "1870",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/at-the-name-of-jesus/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "themes",
+          "label": "主題標籤",
+          "value": "基督升高、萬膝跪拜、主權宣認",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/at-the-name-of-jesus/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "background",
+          "label": "背景故事摘要",
+          "value": "由 Caroline Maria Noel 於1870年創作，內容取材自《腓立比書》2:9-11，頌揚耶穌基督被神高舉、超乎萬名之上的尊榮地位。此詩原為升天節禮儀而寫，雖然 Noel 晚年因長期病患而多在家中休養，但歌詞卻充滿得勝與讚美的信息。詩歌循序描繪基督永恆的神性、道成肉身的謙卑、順服至死，以及最終得榮耀的過程。",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/at-the-name-of-jesus/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "scripture",
+          "label": "相關經文",
+          "value": "腓立比書 2:9-11",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/at-the-name-of-jesus/",
+          "sourceLabel": "hymnallibrary.org"
+        }
+      ],
+      "allSources": [
+        "https://www.hymnallibrary.org/hymns/at-the-name-of-jesus/"
+      ]
+    },
+    {
+      "id": "hymn_a_39",
+      "collection": "hymn_a",
+      "hymnAbbr": "平",
+      "number": "039",
+      "fields": [
+        {
+          "key": "titleOriginal",
+          "label": "原文歌名",
+          "value": "Jesus Is All the World to Me",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/jesus-is-all-the-world-to-me/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "lyricist",
+          "label": "作詞",
+          "value": "Will L. Thompson",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/jesus-is-all-the-world-to-me/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "year",
+          "label": "原作年份",
+          "value": "1904",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/jesus-is-all-the-world-to-me/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "themes",
+          "label": "主題標籤",
+          "value": "基督充足、信靠倚靠、永生盼望",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/jesus-is-all-the-world-to-me/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "background",
+          "label": "背景故事摘要",
+          "value": "《Jesus Is All the World to Me》是一首表達信徒對基督完全信靠與滿足的福音聖詩。歌詞以第一人稱述說耶穌是生命、喜樂、一切所需的源頭，同時也是朋友、引導者、力量與永恆盼望。詩歌不迴避人生的憂傷與試煉，卻強調基督始終信實同行，賜下不斷的恩典與扶持。最後更將焦點轉向永恆，宣告信徒在人生終結後仍將與主同在。",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/jesus-is-all-the-world-to-me/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "scripture",
+          "label": "相關經文",
+          "value": "腓立比書 1:21",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/jesus-is-all-the-world-to-me/",
+          "sourceLabel": "hymnallibrary.org"
+        }
+      ],
+      "allSources": [
+        "https://www.hymnallibrary.org/hymns/jesus-is-all-the-world-to-me/"
+      ]
+    },
+    {
+      "id": "hymn_a_41",
+      "collection": "hymn_a",
+      "hymnAbbr": "平",
+      "number": "041",
+      "fields": [
+        {
+          "key": "titleOriginal",
+          "label": "原文歌名",
+          "value": "Sweeter as the Years Go By",
+          "sourceUrl": "https://hymnary.org/text/of_jesus_love_that_sought_me",
+          "sourceLabel": "hymnary.org"
+        },
+        {
+          "key": "lyricist",
+          "label": "作詞",
+          "value": "Lelia N. Morris",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Sweeter_as_the_Years_Go_By",
+          "sourceLabel": "en.wikipedia.org"
+        },
+        {
+          "key": "year",
+          "label": "原作年份",
+          "value": "1912",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Sweeter_as_the_Years_Go_By",
+          "sourceLabel": "en.wikipedia.org"
+        },
+        {
+          "key": "themes",
+          "label": "主題標籤",
+          "value": "主愛、讚美、救贖感恩",
+          "sourceUrl": "https://hymnary.org/text/of_jesus_love_that_sought_me",
+          "sourceLabel": "hymnary.org"
+        }
+      ],
+      "allSources": [
+        "https://hymnary.org/text/of_jesus_love_that_sought_me",
+        "https://en.wikipedia.org/wiki/Sweeter_as_the_Years_Go_By"
+      ]
+    },
+    {
+      "id": "hymn_a_42",
+      "collection": "hymn_a",
+      "hymnAbbr": "平",
+      "number": "042",
+      "fields": [
+        {
+          "key": "titleOriginal",
+          "label": "原文歌名",
+          "value": "The Love that Jesus Had for Me",
+          "sourceUrl": "https://hymnary.org/text/ye_su_xiang_wo_guang_shi_en_ai",
+          "sourceLabel": "hymnary.org"
+        },
+        {
+          "key": "lyricist",
+          "label": "作詞",
+          "value": "J. E. Hall",
+          "sourceUrl": "https://hymnary.org/text/ye_su_xiang_wo_guang_shi_en_ai",
+          "sourceLabel": "hymnary.org"
+        }
+      ],
+      "allSources": [
+        "https://hymnary.org/text/ye_su_xiang_wo_guang_shi_en_ai"
+      ]
+    },
+    {
+      "id": "hymn_a_43",
+      "collection": "hymn_a",
+      "hymnAbbr": "平",
+      "number": "043",
+      "fields": [
+        {
+          "key": "titleOriginal",
+          "label": "原文歌名",
+          "value": "I Will Praise Him",
+          "sourceUrl": "https://hymnary.org/text/when_i_saw_the_cleansing_fountain",
+          "sourceLabel": "hymnary.org"
+        },
+        {
+          "key": "lyricist",
+          "label": "作詞",
+          "value": "M. J. Harris",
+          "sourceUrl": "https://hymnary.org/text/when_i_saw_the_cleansing_fountain",
+          "sourceLabel": "hymnary.org"
+        },
+        {
+          "key": "composer",
+          "label": "作曲",
+          "value": "M. J. Harris（曲調：When I saw the cleansing fountain）",
+          "sourceUrl": "https://hymnary.org/tune/when_i_saw_the_cleansing_fountain_harris",
+          "sourceLabel": "hymnary.org"
+        },
+        {
+          "key": "year",
+          "label": "原作年份",
+          "value": "1898",
+          "sourceUrl": "https://hymnary.org/text/when_i_saw_the_cleansing_fountain",
+          "sourceLabel": "hymnary.org"
+        },
+        {
+          "key": "themes",
+          "label": "主題標籤",
+          "value": "寶血潔淨、救恩見證、讚美感恩",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/i-will-praise-him/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "background",
+          "label": "背景故事摘要",
+          "value": "此詩由 Margaret J. Harris 創作，核心是回應基督救贖與寶血洗淨。歌詞由個人得救經歷出發，從認罪、順服到公開讚美，並以副歌反覆宣告對主的感謝，故在復興聚會與見證性敬拜中常被使用。",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/i-will-praise-him/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "scripture",
+          "label": "相關經文",
+          "value": "詩篇 146:2",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/i-will-praise-him/",
+          "sourceLabel": "hymnallibrary.org"
+        }
+      ],
+      "allSources": [
+        "https://hymnary.org/text/when_i_saw_the_cleansing_fountain",
+        "https://www.hymnallibrary.org/hymns/i-will-praise-him/"
+      ]
+    },
+    {
+      "id": "hymn_a_44",
+      "collection": "hymn_a",
+      "hymnAbbr": "平",
+      "number": "044",
+      "fields": [
+        {
+          "key": "titleOriginal",
+          "label": "原文歌名",
+          "value": "O the Deep, Deep Love of Jesus!",
+          "sourceUrl": "https://hymnary.org/text/o_the_deep_deep_love_of_jesus",
+          "sourceLabel": "hymnary.org"
+        },
+        {
+          "key": "lyricist",
+          "label": "作詞",
+          "value": "Samuel Trevor Francis",
+          "sourceUrl": "https://en.wikipedia.org/wiki/O_the_Deep,_Deep_Love_of_Jesus",
+          "sourceLabel": "en.wikipedia.org"
+        },
+        {
+          "key": "composer",
+          "label": "作曲",
+          "value": "Thomas John Williams（曲調：EBENEZER / TON-Y-BOTEL）",
+          "sourceUrl": "https://en.wikipedia.org/wiki/O_the_Deep,_Deep_Love_of_Jesus",
+          "sourceLabel": "en.wikipedia.org"
+        },
+        {
+          "key": "year",
+          "label": "原作年份",
+          "value": "1875（詞）；1890（常用配曲）",
+          "sourceUrl": "https://en.wikipedia.org/wiki/O_the_Deep,_Deep_Love_of_Jesus",
+          "sourceLabel": "en.wikipedia.org"
+        },
+        {
+          "key": "themes",
+          "label": "主題標籤",
+          "value": "基督大愛、恩典、安息盼望",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/o-the-deep-deep-love-of-jesus/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "background",
+          "label": "背景故事摘要",
+          "value": "Samuel Trevor Francis 以「深不可測的主愛」為主軸寫成此詩，將基督之愛描繪為廣闊海洋，強調其保守、引導與永恆安息。後來常與 Welsh tune EBENEZER 配搭傳唱，成為英語教會中極具代表性的基督大愛聖詩。",
+          "sourceUrl": "https://en.wikipedia.org/wiki/O_the_Deep,_Deep_Love_of_Jesus",
+          "sourceLabel": "en.wikipedia.org"
+        },
+        {
+          "key": "scripture",
+          "label": "相關經文",
+          "value": "以弗所書 3:18-19",
+          "sourceUrl": "https://hymnary.org/text/o_the_deep_deep_love_of_jesus",
+          "sourceLabel": "hymnary.org"
+        }
+      ],
+      "allSources": [
+        "https://hymnary.org/text/o_the_deep_deep_love_of_jesus",
+        "https://en.wikipedia.org/wiki/O_the_Deep,_Deep_Love_of_Jesus",
+        "https://www.hymnallibrary.org/hymns/o-the-deep-deep-love-of-jesus/"
+      ]
+    },
+    {
+      "id": "hymn_a_45",
+      "collection": "hymn_a",
+      "hymnAbbr": "平",
+      "number": "045",
+      "fields": [
+        {
+          "key": "titleOriginal",
+          "label": "原文歌名",
+          "value": "How pleasant is the sound of praise",
+          "sourceUrl": "https://hymnary.org/text/song_zan_shengyin_hedeng_nande",
+          "sourceLabel": "hymnary.org"
+        },
+        {
+          "key": "lyricist",
+          "label": "作詞",
+          "value": "Thomas Kelly",
+          "sourceUrl": "https://hymnary.org/text/how_pleasant_is_the_sound_of_praise",
+          "sourceLabel": "hymnary.org"
+        },
+        {
+          "key": "composer",
+          "label": "作曲",
+          "value": "George Hews",
+          "sourceUrl": "https://www.hymnal.net/en/hymn/h/113",
+          "sourceLabel": "hymnal.net"
+        },
+        {
+          "key": "themes",
+          "label": "主題標籤",
+          "value": "頌讚、救恩、寶血功效",
+          "sourceUrl": "https://hymnary.org/text/song_zan_shengyin_hedeng_nande",
+          "sourceLabel": "hymnary.org"
+        }
+      ],
+      "allSources": [
+        "https://hymnary.org/text/song_zan_shengyin_hedeng_nande",
+        "https://hymnary.org/text/how_pleasant_is_the_sound_of_praise",
+        "https://www.hymnal.net/en/hymn/h/113"
+      ]
+    },
+    {
+      "id": "hymn_a_46",
+      "collection": "hymn_a",
+      "hymnAbbr": "平",
+      "number": "046",
+      "fields": [
+        {
+          "key": "titleOriginal",
+          "label": "原文歌名",
+          "value": "Thy Name We Love, Lord Jesus",
+          "sourceUrl": "https://hymnary.org/text/thy_name_we_love_lord_jesus",
+          "sourceLabel": "hymnary.org"
+        },
+        {
+          "key": "lyricist",
+          "label": "作詞",
+          "value": "W. Yerbury",
+          "sourceUrl": "https://hymnary.org/text/thy_name_we_love_lord_jesus",
+          "sourceLabel": "hymnary.org"
+        },
+        {
+          "key": "themes",
+          "label": "主題標籤",
+          "value": "耶穌聖名、敬拜、救贖感恩",
+          "sourceUrl": "https://hymnary.org/text/zhu_yesu_wo_ai_ni_ming",
+          "sourceLabel": "hymnary.org"
+        }
+      ],
+      "allSources": [
+        "https://hymnary.org/text/thy_name_we_love_lord_jesus",
+        "https://hymnary.org/text/zhu_yesu_wo_ai_ni_ming"
+      ]
+    },
+    {
+      "id": "hymn_a_47",
+      "collection": "hymn_a",
+      "hymnAbbr": "平",
+      "number": "047",
+      "fields": [
+        {
+          "key": "titleOriginal",
+          "label": "原文歌名",
+          "value": "Lord, Thou art worthy",
+          "sourceUrl": "https://hymnary.org/text/o_zhu_yesu_wo_de_xin_xiangzhe",
+          "sourceLabel": "hymnary.org"
+        },
+        {
+          "key": "lyricist",
+          "label": "作詞",
+          "value": "H. D'A. Champney",
+          "sourceUrl": "https://hymnary.org/text/thy_name_we_love_lord_jesus",
+          "sourceLabel": "hymnary.org"
+        },
+        {
+          "key": "composer",
+          "label": "作曲",
+          "value": "Ira David Sankey",
+          "sourceUrl": "https://www.hymnal.net/en/hymn/h/180",
+          "sourceLabel": "hymnal.net"
+        },
+        {
+          "key": "themes",
+          "label": "主題標籤",
+          "value": "敬拜、基督配得、十架得勝",
+          "sourceUrl": "https://hymnary.org/text/o_zhu_yesu_wo_de_xin_xiangzhe",
+          "sourceLabel": "hymnary.org"
+        }
+      ],
+      "allSources": [
+        "https://hymnary.org/text/thy_name_we_love_lord_jesus",
+        "https://hymnary.org/text/o_zhu_yesu_wo_de_xin_xiangzhe",
+        "https://www.hymnal.net/en/hymn/h/180"
+      ]
+    },
+    {
+      "id": "hymn_a_48",
+      "collection": "hymn_a",
+      "hymnAbbr": "平",
+      "number": "048",
+      "fields": [
+        {
+          "key": "titleOriginal",
+          "label": "原文歌名",
+          "value": "Thy love, O Lord (恩念主愛)",
+          "sourceUrl": "https://hymnary.org/text/thy_name_we_love_lord_jesus",
+          "sourceLabel": "hymnary.org"
+        },
+        {
+          "key": "lyricist",
+          "label": "作詞",
+          "value": "H. D'A. Champney",
+          "sourceUrl": "https://hymnary.org/text/thy_name_we_love_lord_jesus",
+          "sourceLabel": "hymnary.org"
+        },
+        {
+          "key": "themes",
+          "label": "主題標籤",
+          "value": "思想主愛、十架救恩、天家盼望",
+          "sourceUrl": "https://hymnary.org/text/thy_name_we_love_lord_jesus",
+          "sourceLabel": "hymnary.org"
+        }
+      ],
+      "allSources": [
+        "https://hymnary.org/text/thy_name_we_love_lord_jesus"
+      ]
+    },
+    {
+      "id": "hymn_a_52",
+      "collection": "hymn_a",
+      "hymnAbbr": "平",
+      "number": "052",
+      "fields": [
+        {
+          "key": "titleOriginal",
+          "label": "原文歌名",
+          "value": "Yesterday, Today, Forever",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/yesterday-today-forever/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "lyricist",
+          "label": "作詞",
+          "value": "Albert B. Simpson",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/yesterday-today-forever/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "composer",
+          "label": "作曲",
+          "value": "Albert B. Simpson",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/yesterday-today-forever/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "year",
+          "label": "原作年份",
+          "value": "1890",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/yesterday-today-forever/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "themes",
+          "label": "主題標籤",
+          "value": "基督永不改變、信心安慰、救恩能力",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/yesterday-today-forever/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "background",
+          "label": "背景故事摘要",
+          "value": "此詩由 Albert B. Simpson 所作，核心信息是希伯來書 13:8 所述「耶穌基督昨日今日一直到永遠是一樣的」。歌詞以基督不變的性情與作為，安慰在變動世代中的信徒，強調祂昔日如何施恩，今日仍然施恩。",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/yesterday-today-forever/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "scripture",
+          "label": "相關經文",
+          "value": "希伯來書 13:8",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/yesterday-today-forever/",
+          "sourceLabel": "hymnallibrary.org"
+        }
+      ],
+      "allSources": [
+        "https://www.hymnallibrary.org/hymns/yesterday-today-forever/"
+      ]
+    },
+    {
+      "id": "hymn_a_58",
+      "collection": "hymn_a",
+      "hymnAbbr": "平",
+      "number": "058",
+      "fields": [
+        {
+          "key": "titleOriginal",
+          "label": "原文歌名",
+          "value": "No One Ever Cared for Me Like Jesus",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/no-one-ever-cared-for-me-like-jesus/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "lyricist",
+          "label": "作詞",
+          "value": "Charles F. Weigle",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/no-one-ever-cared-for-me-like-jesus/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "composer",
+          "label": "作曲",
+          "value": "Charles F. Weigle",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/no-one-ever-cared-for-me-like-jesus/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "year",
+          "label": "原作年份",
+          "value": "1932",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/no-one-ever-cared-for-me-like-jesus/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "themes",
+          "label": "主題標籤",
+          "value": "主愛不變、傷痛中的安慰、生命更新",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/no-one-ever-cared-for-me-like-jesus/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "background",
+          "label": "背景故事摘要",
+          "value": "由 Charles F. Weigle 於1932年創作，是一首見證基督慈愛與信實的福音詩歌。Weigle 曾經歷妻子離去及長期低潮，但在痛苦中深深體會到耶穌的安慰與陪伴，因此寫下此詩。歌詞強調耶穌對罪人與受苦者獨特且持續的愛顧，指出在人的關係失落時，主的憐憫與扶持仍不離開。",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/no-one-ever-cared-for-me-like-jesus/",
+          "sourceLabel": "hymnallibrary.org"
+        }
+      ],
+      "allSources": [
+        "https://www.hymnallibrary.org/hymns/no-one-ever-cared-for-me-like-jesus/"
       ]
     }
   ]

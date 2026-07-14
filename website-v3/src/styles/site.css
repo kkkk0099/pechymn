@@ -690,6 +690,17 @@ body.has-quickbar {
   z-index: 55;
   background: transparent;
   padding: 0;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 220ms ease, visibility 0s linear 220ms;
+}
+
+.song-info-dialog.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transition: opacity 220ms ease;
 }
 
 .song-info-dialog.hidden-panel {
