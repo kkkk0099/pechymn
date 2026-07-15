@@ -2,7 +2,7 @@
   "generatedAt": "2026-07-09T04:07:12.998Z",
   "sourceFile": "平安詩集_詩歌資料核實結果.txt",
   "collection": "hymn_a",
-  "totalSongs": 30,
+  "totalSongs": 41,
   "items": [
     {
       "id": "hymn_a_1",
@@ -1533,6 +1533,606 @@
       ],
       "allSources": [
         "https://www.hymnallibrary.org/hymns/no-one-ever-cared-for-me-like-jesus/"
+      ]
+    },
+    {
+      "id": "hymn_a_72",
+      "collection": "hymn_a",
+      "hymnAbbr": "平",
+      "number": "072",
+      "fields": [
+        {
+          "key": "titleOriginal",
+          "label": "原文歌名",
+          "value": "Beneath the Cross of Jesus",
+          "sourceUrl": "https://hymnary.org/text/beneath_the_cross_of_jesus_i_fain_would",
+          "sourceLabel": "hymnary.org"
+        },
+        {
+          "key": "lyricist",
+          "label": "作詞",
+          "value": "Elizabeth Cecilia Clephane",
+          "sourceUrl": "https://hymnary.org/text/beneath_the_cross_of_jesus_i_fain_would",
+          "sourceLabel": "hymnary.org"
+        },
+        {
+          "key": "composer",
+          "label": "作曲",
+          "value": "ST. CHRISTOPHER (Maker)",
+          "sourceUrl": "https://hymnary.org/text/beneath_the_cross_of_jesus_i_fain_would",
+          "sourceLabel": "hymnary.org"
+        },
+        {
+          "key": "year",
+          "label": "原作年份",
+          "value": "1868",
+          "sourceUrl": "https://hymnary.org/text/beneath_the_cross_of_jesus_i_fain_would",
+          "sourceLabel": "hymnary.org"
+        },
+        {
+          "key": "themes",
+          "label": "主題標籤",
+          "value": "十字架、信心、主愛蔭庇",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/beneath-the-cross-of-jesus/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "background",
+          "label": "背景故事摘要",
+          "value": "《Beneath the Cross of Jesus》由蘇格蘭詩人 Elizabeth Cecilia Clephane 於1868年創作，是一首以十字架為中心的默想聖詩。Clephane 雖長期體弱多病，卻熱心服事貧困和病患，因此被稱為「Sunbeam」。詩歌大量引用聖經意象，將十字架描繪為疲憊人生中的避難所、安息之地與永恆盼望的源頭，表達對基督犧牲之愛的深切感恩與信靠。其後由 Frederick Charles Maker 譜寫曲調〈St. Christopher〉，莊重虔敬的旋律與歌詞相得益彰。",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/beneath-the-cross-of-jesus/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "scripture",
+          "label": "相關經文",
+          "value": "哥林多前書 1:18",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/beneath-the-cross-of-jesus/",
+          "sourceLabel": "hymnallibrary.org"
+        }
+      ],
+      "allSources": [
+        "https://hymnary.org/text/beneath_the_cross_of_jesus_i_fain_would",
+        "https://www.hymnallibrary.org/hymns/beneath-the-cross-of-jesus/"
+      ]
+    },
+    {
+      "id": "hymn_a_75",
+      "collection": "hymn_a",
+      "hymnAbbr": "平",
+      "number": "075",
+      "fields": [
+        {
+          "key": "titleOriginal",
+          "label": "原文歌名",
+          "value": "Must Jesus Bear the Cross Alone",
+          "sourceUrl": "https://hymnary.org/text/must_jesus_bear_the_cross_alone",
+          "sourceLabel": "hymnary.org"
+        },
+        {
+          "key": "lyricist",
+          "label": "作詞",
+          "value": "Thomas Shepherd",
+          "sourceUrl": "https://hymnary.org/text/must_jesus_bear_the_cross_alone",
+          "sourceLabel": "hymnary.org"
+        },
+        {
+          "key": "composer",
+          "label": "作曲",
+          "value": "George Nelson Allen（曲調：Maitland）",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/must-jesus-bear-the-cross-alone/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "year",
+          "label": "原作年份",
+          "value": "1693",
+          "sourceUrl": "https://hymnary.org/text/must_jesus_bear_the_cross_alone",
+          "sourceLabel": "hymnary.org"
+        },
+        {
+          "key": "themes",
+          "label": "主題標籤",
+          "value": "背十字架、門徒訓練、永恆盼望",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/must-jesus-bear-the-cross-alone/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "background",
+          "label": "背景故事摘要",
+          "value": "由17世紀英國牧師 Thomas Shepherd 創作，是一首勉勵信徒背起十字架跟隨基督的聖詩。詩歌以「難道只有耶穌獨自背負十字架，而世人全然免去代價嗎？」的提問開始，強調每位基督徒都蒙召承擔屬靈責任與犧牲，回應主耶穌關於捨己跟從祂的教導。後來增補的歌詞進一步描繪信徒在苦難中持守忠心，並盼望將來得著神所預備的冠冕。",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/must-jesus-bear-the-cross-alone/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "scripture",
+          "label": "相關經文",
+          "value": "路加福音 9:23",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/must-jesus-bear-the-cross-alone/",
+          "sourceLabel": "hymnallibrary.org"
+        }
+      ],
+      "allSources": [
+        "https://hymnary.org/text/must_jesus_bear_the_cross_alone",
+        "https://www.hymnallibrary.org/hymns/must-jesus-bear-the-cross-alone/"
+      ]
+    },
+    {
+      "id": "hymn_a_76",
+      "collection": "hymn_a",
+      "hymnAbbr": "平",
+      "number": "076",
+      "fields": [
+        {
+          "key": "titleOriginal",
+          "label": "原文歌名",
+          "value": "Lead Me to Calvary",
+          "sourceUrl": "https://hymnary.org/text/king_of_my_life_i_crown_thee_now",
+          "sourceLabel": "hymnary.org"
+        },
+        {
+          "key": "lyricist",
+          "label": "作詞",
+          "value": "Jennie Evelyn Hussey",
+          "sourceUrl": "https://hymnary.org/text/king_of_my_life_i_crown_thee_now",
+          "sourceLabel": "hymnary.org"
+        },
+        {
+          "key": "composer",
+          "label": "作曲",
+          "value": "William J. Kirkpatrick",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/lead-me-to-calvary/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "year",
+          "label": "原作年份",
+          "value": "1921",
+          "sourceUrl": "https://hymnary.org/text/king_of_my_life_i_crown_thee_now",
+          "sourceLabel": "hymnary.org"
+        },
+        {
+          "key": "themes",
+          "label": "主題標籤",
+          "value": "記念十架、謙卑事奉、主愛",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/lead-me-to-calvary/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "background",
+          "label": "背景故事摘要",
+          "value": "由美國貴格會聖詩作者 Jennie Evelyn Hussey 創作，是一首引導信徒默想基督受難與十字架救恩的經典聖詩。Hussey 雖長期受關節炎困擾，仍以堅定信仰寫下這首充滿委身與感恩的作品。歌詞藉著對客西馬尼園、荊棘冠冕、十字架及空墳墓的追思，提醒信徒不要忘記基督為世人所付出的代價，並以謙卑、順服和愛來回應主。由 William J. Kirkpatrick 譜寫的旋律莊重而富有盼望，更增添詩歌的感染力。這首詩至今仍常用於受難節、聖餐聚會及靈修時刻，帶領人回到十架前，重新獻上生命。",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/lead-me-to-calvary/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "scripture",
+          "label": "相關經文",
+          "value": "路加福音 23:33-34；約翰福音 19:17",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/lead-me-to-calvary/",
+          "sourceLabel": "hymnallibrary.org"
+        }
+      ],
+      "allSources": [
+        "https://hymnary.org/text/king_of_my_life_i_crown_thee_now",
+        "https://www.hymnallibrary.org/hymns/lead-me-to-calvary/"
+      ]
+    },
+    {
+      "id": "hymn_a_77",
+      "collection": "hymn_a",
+      "hymnAbbr": "平",
+      "number": "077",
+      "fields": [
+        {
+          "key": "titleOriginal",
+          "label": "原文歌名",
+          "value": "The Old Rugged Cross",
+          "sourceUrl": "https://hymnary.org/text/on_a_hill_far_away_stood_an_old_rugged",
+          "sourceLabel": "hymnary.org"
+        },
+        {
+          "key": "lyricist",
+          "label": "作詞",
+          "value": "George Bennard",
+          "sourceUrl": "https://hymnary.org/text/on_a_hill_far_away_stood_an_old_rugged",
+          "sourceLabel": "hymnary.org"
+        },
+        {
+          "key": "year",
+          "label": "原作年份",
+          "value": "1912（創作）；1913（出版）",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/the-old-rugged-cross/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "themes",
+          "label": "主題標籤",
+          "value": "十架榮耀、救贖、愛主至終",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/the-old-rugged-cross/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "background",
+          "label": "背景故事摘要",
+          "value": "由 George Bennard 於1912至1913年間創作。當時身為循道宗佈道家的 Bennard 在一次復興聚會中受到嘲諷，因而更深體會基督在十字架上的犧牲，並寫下這首充滿敬愛與感恩的聖詩。歌曲於1913年首次公開獻唱，後經 Charles H. Gabriel 協助編曲，並在 Billy Sunday 的佈道事工推廣下廣受歡迎。",
+          "sourceUrl": "https://en.wikipedia.org/wiki/The_Old_Rugged_Cross",
+          "sourceLabel": "en.wikipedia.org"
+        },
+        {
+          "key": "scripture",
+          "label": "相關經文",
+          "value": "加拉太書 6:14；哥林多前書 1:18",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/the-old-rugged-cross/",
+          "sourceLabel": "hymnallibrary.org"
+        }
+      ],
+      "allSources": [
+        "https://hymnary.org/text/on_a_hill_far_away_stood_an_old_rugged",
+        "https://www.hymnallibrary.org/hymns/the-old-rugged-cross/",
+        "https://en.wikipedia.org/wiki/The_Old_Rugged_Cross"
+      ]
+    },
+    {
+      "id": "hymn_a_81",
+      "collection": "hymn_a",
+      "hymnAbbr": "平",
+      "number": "081",
+      "fields": [
+        {
+          "key": "titleOriginal",
+          "label": "原文歌名",
+          "value": "When I Survey the Wondrous Cross",
+          "sourceUrl": "https://hymnary.org/text/when_i_survey_the_wondrous_cross_watts",
+          "sourceLabel": "hymnary.org"
+        },
+        {
+          "key": "lyricist",
+          "label": "作詞",
+          "value": "Isaac Watts",
+          "sourceUrl": "https://hymnary.org/text/when_i_survey_the_wondrous_cross_watts",
+          "sourceLabel": "hymnary.org"
+        },
+        {
+          "key": "composer",
+          "label": "作曲",
+          "value": "Lowell Mason（曲調：Hamburg；源自 Gregorian Chant）",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/when-i-survey-the-wondrous-cross/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "year",
+          "label": "原作年份",
+          "value": "1707",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/when-i-survey-the-wondrous-cross/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "themes",
+          "label": "主題標籤",
+          "value": "十架救恩、敬拜、捨己",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/when-i-survey-the-wondrous-cross/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "background",
+          "label": "背景故事摘要",
+          "value": "由 Isaac Watts 於1707年創作，原為聖餐聚會而寫，被譽為英語聖詩中最偉大的作品之一。Watts 不滿當時教會詩歌內容貧乏，因此致力改革聖詩創作，被尊稱為「英語聖詩之父」。這首詩聚焦於基督在十字架上的犧牲與救贖，引導信徒默想主的大愛，並體會世上的榮耀與成就皆無法與之相比。歌詞從仰望十架開始，逐步帶出基督受苦所彰顯的愛與恩典，最終呼籲信徒以全然奉獻作為回應。後來 Lowell Mason 採用古老聖詠旋律編成〈Hamburg〉，莊嚴樸實的曲調更突顯詩歌深刻的敬虔與默想氛圍。",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/when-i-survey-the-wondrous-cross/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "scripture",
+          "label": "相關經文",
+          "value": "加拉太書 6:14；約翰福音 19:17",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/when-i-survey-the-wondrous-cross/",
+          "sourceLabel": "hymnallibrary.org"
+        }
+      ],
+      "allSources": [
+        "https://hymnary.org/text/when_i_survey_the_wondrous_cross_watts",
+        "https://www.hymnallibrary.org/hymns/when-i-survey-the-wondrous-cross/"
+      ]
+    },
+    {
+      "id": "hymn_a_82",
+      "collection": "hymn_a",
+      "hymnAbbr": "平",
+      "number": "082",
+      "fields": [
+        {
+          "key": "titleOriginal",
+          "label": "原文歌名",
+          "value": "Alas! and Did My Savior Bleed",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/alas-and-did-my-savior-bleed/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "lyricist",
+          "label": "作詞",
+          "value": "Isaac Watts",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/alas-and-did-my-savior-bleed/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "composer",
+          "label": "作曲",
+          "value": "Hugh Wilson（原旋律：Martyrdom）；Ralph E. Hudson（1885 年加入副歌，常稱 At the Cross / Hudson）",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Alas!_and_Did_My_Saviour_Bleed",
+          "sourceLabel": "en.wikipedia.org"
+        },
+        {
+          "key": "year",
+          "label": "原作年份",
+          "value": "1707（原詩）；1885（副歌版廣傳）",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Alas!_and_Did_My_Saviour_Bleed",
+          "sourceLabel": "en.wikipedia.org"
+        },
+        {
+          "key": "themes",
+          "label": "主題標籤",
+          "value": "十架救恩、悔改、感恩回應",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/alas-and-did-my-savior-bleed/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "background",
+          "label": "背景故事摘要",
+          "value": "此詩由 Isaac Watts 於 1707 年發表，詩歌以驚訝與感恩的語氣，反思耶穌竟願為罪人流血捨命，深刻表達人對自己不配的認知，以及對神浩大恩典的敬畏。歌詞從默想十字架上的犧牲，逐步引導信徒以悔改、感恩與全然奉獻來回應基督的大愛。後來 Ralph E. Hudson 在 1885 年加入副歌，使「At the Cross」版本在福音詩歌傳統中廣泛流傳，亦更貼近中文本常見的副歌形式。",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Alas!_and_Did_My_Saviour_Bleed",
+          "sourceLabel": "en.wikipedia.org"
+        }
+      ],
+      "allSources": [
+        "https://www.hymnallibrary.org/hymns/alas-and-did-my-savior-bleed/",
+        "https://en.wikipedia.org/wiki/Alas!_and_Did_My_Saviour_Bleed"
+      ]
+    },
+    {
+      "id": "hymn_a_90",
+      "collection": "hymn_a",
+      "hymnAbbr": "平",
+      "number": "090",
+      "fields": [
+        {
+          "key": "titleOriginal",
+          "label": "原文歌名",
+          "value": "He Lives（首句：I Serve a Risen Savior）",
+          "sourceUrl": "https://en.wikipedia.org/wiki/He_Lives",
+          "sourceLabel": "en.wikipedia.org"
+        },
+        {
+          "key": "lyricist",
+          "label": "作詞",
+          "value": "Alfred Henry Ackley",
+          "sourceUrl": "https://en.wikipedia.org/wiki/He_Lives",
+          "sourceLabel": "en.wikipedia.org"
+        },
+        {
+          "key": "year",
+          "label": "原作年份",
+          "value": "1933",
+          "sourceUrl": "https://hymnary.org/text/i_serve_a_risen_savior",
+          "sourceLabel": "hymnary.org"
+        },
+        {
+          "key": "themes",
+          "label": "主題標籤",
+          "value": "復活見證、同在安慰、信心盼望",
+          "sourceUrl": "https://en.wikipedia.org/wiki/He_Lives",
+          "sourceLabel": "en.wikipedia.org"
+        },
+        {
+          "key": "background",
+          "label": "背景故事摘要",
+          "value": "由 Alfred Henry Ackley 於1933年創作，是其約1,500首作品中最廣為人知的一首。Ackley 創作此詩的契機，來自有人質疑「為何要敬拜一位已死的猶太人？」詩歌因此強調耶穌基督並非停留在歷史中的人物，而是已復活並活在信徒心中的救主。其內容呼應《加拉太書》2:20及《以弗所書》3:17，宣告基督藉著信心住在信徒裡面，帶來真實的同在與生命更新。",
+          "sourceUrl": "https://en.wikipedia.org/wiki/He_Lives",
+          "sourceLabel": "en.wikipedia.org"
+        },
+        {
+          "key": "scripture",
+          "label": "相關經文",
+          "value": "路加福音 24:5",
+          "sourceUrl": "https://en.wikipedia.org/wiki/He_Lives",
+          "sourceLabel": "en.wikipedia.org"
+        }
+      ],
+      "allSources": [
+        "https://en.wikipedia.org/wiki/He_Lives",
+        "https://hymnary.org/text/i_serve_a_risen_savior"
+      ]
+    },
+    {
+      "id": "hymn_a_93",
+      "collection": "hymn_a",
+      "hymnAbbr": "平",
+      "number": "093",
+      "fields": [
+        {
+          "key": "titleOriginal",
+          "label": "原文歌名",
+          "value": "Christ Arose",
+          "sourceUrl": "https://hymnary.org/text/low_in_the_grave_he_lay_jesus_my_savior",
+          "sourceLabel": "hymnary.org"
+        },
+        {
+          "key": "lyricist",
+          "label": "作詞",
+          "value": "Robert Lowry",
+          "sourceUrl": "https://hymnary.org/text/low_in_the_grave_he_lay_jesus_my_savior",
+          "sourceLabel": "hymnary.org"
+        },
+        {
+          "key": "year",
+          "label": "原作年份",
+          "value": "1874",
+          "sourceUrl": "https://hymnary.org/text/low_in_the_grave_he_lay_jesus_my_savior",
+          "sourceLabel": "hymnary.org"
+        },
+        {
+          "key": "themes",
+          "label": "主題標籤",
+          "value": "復活得勝、死亡被勝、頌讚",
+          "sourceUrl": "https://hymnary.org/text/low_in_the_grave_he_lay_jesus_my_savior",
+          "sourceLabel": "hymnary.org"
+        },
+        {
+          "key": "background",
+          "label": "背景故事摘要",
+          "value": "由美國浸信會牧師兼聖詩作家 Robert S. Lowry 於1874年創作，並於1875年出版。詩歌以耶穌被埋葬、戰勝死亡並榮耀復活為主題，歌詞前半部沉靜地描述基督在墳墓中的時刻，而激昂的副歌「He arose!」則生動宣告主已復活，呼應《路加福音》24:6天使的信息：「祂不在這裡，已經復活了。」Lowry 同時譜寫歌詞與旋律，使整首詩充滿復活的喜樂與得勝氣氛。",
+          "sourceUrl": "https://hymnary.org/text/low_in_the_grave_he_lay_jesus_my_savior",
+          "sourceLabel": "hymnary.org"
+        }
+      ],
+      "allSources": [
+        "https://hymnary.org/text/low_in_the_grave_he_lay_jesus_my_savior"
+      ]
+    },
+    {
+      "id": "hymn_a_95",
+      "collection": "hymn_a",
+      "hymnAbbr": "平",
+      "number": "095",
+      "fields": [
+        {
+          "key": "titleOriginal",
+          "label": "原文歌名",
+          "value": "’Tis Midnight; And on Olive’s Brow",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/tis-midnight-and-on-olives-brow/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "lyricist",
+          "label": "作詞",
+          "value": "William B. Tappan",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/tis-midnight-and-on-olives-brow/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "year",
+          "label": "原作年份",
+          "value": "1822",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/tis-midnight-and-on-olives-brow/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "themes",
+          "label": "主題標籤",
+          "value": "客西馬尼、主的受苦、默想祈禱",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/tis-midnight-and-on-olives-brow/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "background",
+          "label": "背景故事摘要",
+          "value": "由 William Bingham Tappan 於1822年創作，是一首默想耶穌在客西馬尼園受苦禱告的聖詩。詩歌取材自福音書記載，以「橄欖山」和耶穌痛苦禱告的景象，描繪祂在被出賣和釘十字架前所承受的孤單、憂傷與重擔。Tappan 藉著簡潔而深刻的文字，引導信徒思想基督為世人罪孽甘心順服父神、承受苦難的愛。",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/tis-midnight-and-on-olives-brow/",
+          "sourceLabel": "hymnallibrary.org"
+        }
+      ],
+      "allSources": [
+        "https://www.hymnallibrary.org/hymns/tis-midnight-and-on-olives-brow/"
+      ]
+    },
+    {
+      "id": "hymn_a_96",
+      "collection": "hymn_a",
+      "hymnAbbr": "平",
+      "number": "096",
+      "fields": [
+        {
+          "key": "titleOriginal",
+          "label": "原文歌名",
+          "value": "One Day!（首句：One day when heaven was filled with His praises）",
+          "sourceUrl": "https://hymnary.org/text/one_day_when_heaven_was_filled_with_his",
+          "sourceLabel": "hymnary.org"
+        },
+        {
+          "key": "lyricist",
+          "label": "作詞",
+          "value": "J. Wilbur Chapman",
+          "sourceUrl": "https://hymnary.org/text/one_day_when_heaven_was_filled_with_his",
+          "sourceLabel": "hymnary.org"
+        },
+        {
+          "key": "composer",
+          "label": "作曲",
+          "value": "Charles H. Marsh",
+          "sourceUrl": "https://hymnary.org/text/one_day_when_heaven_was_filled_with_his",
+          "sourceLabel": "hymnary.org"
+        },
+        {
+          "key": "year",
+          "label": "原作年份",
+          "value": "1910",
+          "sourceUrl": "https://hymnary.org/text/one_day_when_heaven_was_filled_with_his",
+          "sourceLabel": "hymnary.org"
+        },
+        {
+          "key": "themes",
+          "label": "主題標籤",
+          "value": "福音全貌、基督生平、再來盼望",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/one-day-when-heaven-was-filled-with-his-praises/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "background",
+          "label": "背景故事摘要",
+          "value": "由美國佈道家 J. Wilbur Chapman 作詞、Charles H. Marsh 譜曲，是一首完整呈現福音信息的經典聖詩。詩歌以五節歌詞依次描繪耶穌基督降生、受死、埋葬、復活及再來，展現神的救贖計劃。副歌以「Living, He loved me; dying, He saved me」等句子精煉總結基督的救恩：祂以生命彰顯愛，以死亡成就救贖。詩歌不僅回顧主的救贖工作，也將信徒的盼望指向未來，提醒人基督的應許必將完全實現。",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/one-day-when-heaven-was-filled-with-his-praises/",
+          "sourceLabel": "hymnallibrary.org"
+        }
+      ],
+      "allSources": [
+        "https://hymnary.org/text/one_day_when_heaven_was_filled_with_his",
+        "https://www.hymnallibrary.org/hymns/one-day-when-heaven-was-filled-with-his-praises/"
+      ]
+    },
+    {
+      "id": "hymn_a_100",
+      "collection": "hymn_a",
+      "hymnAbbr": "平",
+      "number": "100",
+      "fields": [
+        {
+          "key": "titleOriginal",
+          "label": "原文歌名",
+          "value": "Fill Me Now",
+          "sourceUrl": "https://hymnary.org/text/hover_oer_me_holy_spirit",
+          "sourceLabel": "hymnary.org"
+        },
+        {
+          "key": "lyricist",
+          "label": "作詞",
+          "value": "Elwood H. Stokes",
+          "sourceUrl": "https://hymnary.org/text/hover_oer_me_holy_spirit",
+          "sourceLabel": "hymnary.org"
+        },
+        {
+          "key": "year",
+          "label": "原作年份",
+          "value": "1879",
+          "sourceUrl": "https://hymnary.org/text/hover_oer_me_holy_spirit",
+          "sourceLabel": "hymnary.org"
+        },
+        {
+          "key": "themes",
+          "label": "主題標籤",
+          "value": "聖靈充滿、潔淨更新、委身祈求",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/fill-me-now/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "background",
+          "label": "背景故事摘要",
+          "value": "由 Elwood H. Stokes 創作，是一首祈求聖靈充滿的經典聖詩，深受五旬節派及福音派教會喜愛。詩歌以真誠懇切的禱告語氣，表達信徒渴望完全降服於神，並被聖靈的同在、能力與潔淨所充滿。副歌反覆呼喊「Fill me now」，突顯對屬靈更新的迫切追求。歌詞強調聖靈充滿能幫助信徒過得勝與聖潔的生活，更有效地事奉神，呼應《以弗所書》5:18關於持續被聖靈充滿的教導。",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/fill-me-now/",
+          "sourceLabel": "hymnallibrary.org"
+        }
+      ],
+      "allSources": [
+        "https://hymnary.org/text/hover_oer_me_holy_spirit",
+        "https://www.hymnallibrary.org/hymns/fill-me-now/"
       ]
     }
   ]
