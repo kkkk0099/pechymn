@@ -63,6 +63,12 @@ self.addEventListener('activate', (event) => {
   );
 });
 
+self.addEventListener('message', (event) => {
+  if (event.data && event.data.type === 'SKIP_WAITING') {
+    self.skipWaiting();
+  }
+});
+
 self.addEventListener('fetch', (event) => {
   const request = event.request;
   if (request.method !== 'GET') {
@@ -93,7 +99,7 @@ self.addEventListener('fetch', (event) => {
   }
 
   if (isJsonRequest) {
-    event.respondWith(staleWhileRevalidateJson(request, event));
+    event.respondWith(networkFirstJson(request));
     return;
   }
 
@@ -127,27 +133,19 @@ async function networkFirstHtml(request) {
   }
 }
 
-async function staleWhileRevalidateJson(request, event) {
+async function networkFirstJson(request) {
   const cache = await caches.open(JSON_CACHE);
-  const cached = await cache.match(request);
-
-  const networkPromise = fetch(request)
-    .then((networkResponse) => {
-      if (networkResponse && networkResponse.ok) {
-        cache.put(request, networkResponse.clone());
-      }
-      return networkResponse;
-    })
-    .catch(() => null);
-
-  if (cached) {
-    event.waitUntil(networkPromise);
-    return cached;
-  }
-
-  const networkResponse = await networkPromise;
-  if (networkResponse) {
+  try {
+    const networkResponse = await fetch(request);
+    if (networkResponse && networkResponse.ok) {
+      cache.put(request, networkResponse.clone());
+    }
     return networkResponse;
+  } catch {
+    const cached = await cache.match(request);
+    if (cached) {
+      return cached;
+    }
   }
 
   return new Response('{}', {

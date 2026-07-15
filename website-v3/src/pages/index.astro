@@ -1504,7 +1504,7 @@ const toBase = (path = '') => `${baseUrl}${String(path).replace(/^\/+/, '')}`;
 			}
 
 			const loadPromise = (async () => {
-				const resp = await fetch(fullPath, { cache: 'force-cache' });
+				const resp = await fetch(fullPath, { cache: 'no-store' });
 				if (!resp.ok) {
 					throw new Error(`Cannot load ${fullPath}`);
 				}
@@ -1685,7 +1685,7 @@ const toBase = (path = '') => `${baseUrl}${String(path).replace(/^\/+/, '')}`;
 			}
 
 			hymnMetadataLoadPromise = (async () => {
-				const resp = await fetch(HYMN_METADATA_PATH, { cache: 'force-cache' });
+				const resp = await fetch(HYMN_METADATA_PATH, { cache: 'no-store' });
 				if (!resp.ok) {
 					throw new Error('無法載入詩歌資料來源索引');
 				}
@@ -2821,7 +2821,7 @@ const toBase = (path = '') => `${baseUrl}${String(path).replace(/^\/+/, '')}`;
 			resultList.innerHTML = '<div class="empty-state">正在載入詩歌資料...</div>';
 
 			try {
-				const resp = await fetch(toVersionedDataPath('data/search-index-lite.json'), { cache: 'force-cache' });
+				const resp = await fetch(toVersionedDataPath('data/search-index-lite.json'), { cache: 'no-store' });
 				if (!resp.ok) {
 					throw new Error('無法載入全文索引');
 				}

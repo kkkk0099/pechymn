@@ -116,11 +116,39 @@ const toBase = (path = '') => `${baseUrl}${String(path).replace(/^\/+/, '')}`;
             registrations.forEach((registration) => registration.unregister());
           });
         } else {
+        let hasRefreshedForNewWorker = false;
+
+        const requestSkipWaiting = (registration) => {
+        if (registration && registration.waiting) {
+          registration.waiting.postMessage({ type: 'SKIP_WAITING' });
+        }
+        };
+
+        navigator.serviceWorker.addEventListener('controllerchange', () => {
+        if (hasRefreshedForNewWorker) return;
+        hasRefreshedForNewWorker = true;
+        window.location.reload();
+        });
+
         window.addEventListener('load', () => {
-          navigator.serviceWorker
-            .register(`${baseUrl}sw.js?v=${buildVersion}`, { updateViaCache: 'none' })
-            .catch(() => {
-            // Ignore SW registration errors in unsupported/private contexts.
+        navigator.serviceWorker
+          .register(`${baseUrl}sw.js?v=${buildVersion}`, { updateViaCache: 'none' })
+          .then((registration) => {
+          requestSkipWaiting(registration);
+
+          registration.addEventListener('updatefound', () => {
+            const installing = registration.installing;
+            if (!installing) return;
+
+            installing.addEventListener('statechange', () => {
+            if (installing.state === 'installed' && navigator.serviceWorker.controller) {
+              requestSkipWaiting(registration);
+            }
+            });
+          });
+          })
+          .catch(() => {
+          // Ignore SW registration errors in unsupported/private contexts.
           });
         });
         }
