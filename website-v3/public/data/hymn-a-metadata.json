@@ -2,7 +2,7 @@
   "generatedAt": "2026-07-09T04:07:12.998Z",
   "sourceFile": "平安詩集_詩歌資料核實結果.txt",
   "collection": "hymn_a",
-  "totalSongs": 41,
+  "totalSongs": 59,
   "items": [
     {
       "id": "hymn_a_1",
@@ -2133,6 +2133,955 @@
       "allSources": [
         "https://hymnary.org/text/hover_oer_me_holy_spirit",
         "https://www.hymnallibrary.org/hymns/fill-me-now/"
+      ]
+    },
+    {
+      "id": "hymn_a_101",
+      "collection": "hymn_a",
+      "hymnAbbr": "平",
+      "number": "101",
+      "fields": [
+        {
+          "key": "titleOriginal",
+          "label": "原文歌名",
+          "value": "Breathe on Me, Breath of God",
+          "sourceUrl": "https://hymnary.org/text/breathe_on_me_breath_of_god",
+          "sourceLabel": "hymnary.org"
+        },
+        {
+          "key": "lyricist",
+          "label": "作詞",
+          "value": "Edwin Hatch",
+          "sourceUrl": "https://hymnary.org/text/breathe_on_me_breath_of_god",
+          "sourceLabel": "hymnary.org"
+        },
+        {
+          "key": "composer",
+          "label": "作曲",
+          "value": "Robert Jackson（曲調：TRENTHAM）",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/breathe-on-me-breath-of-god/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "year",
+          "label": "原作年份",
+          "value": "1878（詞）；1888（常用配曲）",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/breathe-on-me-breath-of-god/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "themes",
+          "label": "主題標籤",
+          "value": "聖靈更新、成聖、奉獻",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/breathe-on-me-breath-of-god/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "background",
+          "label": "背景故事摘要",
+          "value": "由英國聖公會神學家 Edwin Hatch 於1878年創作，是一首祈求聖靈更新與屬靈成長的禱告詩歌。詩歌靈感源自《約翰福音》20:22耶穌向門徒吹氣的記載，表達信徒渴望被神的靈充滿，使生命得潔淨、更新並順服神的旨意。歌詞逐步深化，從尋求聖靈內住，到追求與神心意合一、愛神勝過自我，最終盼望在永恆中完全活在神榮耀的光中。後來配上 Robert Jackson 於1888年創作的曲調〈Trentham〉，在五旬節與委身題材聚會中尤其常見。",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/breathe-on-me-breath-of-god/",
+          "sourceLabel": "hymnallibrary.org"
+        }
+      ],
+      "allSources": [
+        "https://hymnary.org/text/breathe_on_me_breath_of_god",
+        "https://www.hymnallibrary.org/hymns/breathe-on-me-breath-of-god/"
+      ]
+    },
+    {
+      "id": "hymn_a_102",
+      "collection": "hymn_a",
+      "hymnAbbr": "平",
+      "number": "102",
+      "fields": [
+        {
+          "key": "titleOriginal",
+          "label": "原文歌名",
+          "value": "Spirit of the Living God, Fall Fresh on Me",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/spirit-of-the-living-god-fall-fresh-on-me/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "lyricist",
+          "label": "作詞",
+          "value": "Daniel Iverson",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/spirit-of-the-living-god-fall-fresh-on-me/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "composer",
+          "label": "作曲",
+          "value": "Daniel Iverson",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/spirit-of-the-living-god-fall-fresh-on-me/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "year",
+          "label": "原作年份",
+          "value": "1926",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/spirit-of-the-living-god-fall-fresh-on-me/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "themes",
+          "label": "主題標籤",
+          "value": "聖靈充滿、破碎更新、順服使用",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/spirit-of-the-living-god-fall-fresh-on-me/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "background",
+          "label": "背景故事摘要",
+          "value": "是Daniel Iverson 於1926年的創作，祈求聖靈更新與充滿的一首經典聖詩。詩歌以簡潔真摯的禱告表達信徒對神同在的渴慕，呼求聖靈再次臨到，潔淨、塑造並引導生命。反覆出現的「fall fresh on me」強調屬靈生命需要持續不斷地被神更新，而非單靠人的努力維持。詩歌信息呼應《哥林多後書》3:17，提醒信徒真正的自由與能力來自聖靈的工作。。",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/spirit-of-the-living-god-fall-fresh-on-me/",
+          "sourceLabel": "hymnallibrary.org"
+        }
+      ],
+      "allSources": [
+        "https://www.hymnallibrary.org/hymns/spirit-of-the-living-god-fall-fresh-on-me/"
+      ]
+    },
+    {
+      "id": "hymn_a_105",
+      "collection": "hymn_a",
+      "hymnAbbr": "平",
+      "number": "105",
+      "fields": [
+        {
+          "key": "titleOriginal",
+          "label": "原文歌名",
+          "value": "There Shall Be Showers of Blessing",
+          "sourceUrl": "https://hymnary.org/text/there_shall_be_showers_of_blessing_this",
+          "sourceLabel": "hymnary.org"
+        },
+        {
+          "key": "lyricist",
+          "label": "作詞",
+          "value": "D. W. Whittle",
+          "sourceUrl": "https://hymnary.org/text/there_shall_be_showers_of_blessing_this",
+          "sourceLabel": "hymnary.org"
+        },
+        {
+          "key": "composer",
+          "label": "作曲",
+          "value": "James McGranahan",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/there-shall-be-showers-of-blessing/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "year",
+          "label": "原作年份",
+          "value": "1883",
+          "sourceUrl": "https://hymnary.org/text/there_shall_be_showers_of_blessing_this",
+          "sourceLabel": "hymnary.org"
+        },
+        {
+          "key": "themes",
+          "label": "主題標籤",
+          "value": "復興、恩雨、禱告祈求",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/there-shall-be-showers-of-blessing/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "background",
+          "label": "背景故事摘要",
+          "value": "此詩取意自《以西結書》34:26「必有福如甘霖而降」有關恩雨的應許，歌詞以雨水比喻上帝豐盛的恩典與屬靈復興，表達信徒不應滿足於零星的「憐憫雨點」，而應迫切祈求更豐富的聖靈澆灌。各節內容循序漸進地強調上帝的應許、信徒的禱告與盼望，以及對神供應的確信。",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/there-shall-be-showers-of-blessing/",
+          "sourceLabel": "hymnallibrary.org"
+        }
+      ],
+      "allSources": [
+        "https://hymnary.org/text/there_shall_be_showers_of_blessing_this",
+        "https://www.hymnallibrary.org/hymns/there-shall-be-showers-of-blessing/"
+      ]
+    },
+    {
+      "id": "hymn_a_113",
+      "collection": "hymn_a",
+      "hymnAbbr": "平",
+      "number": "113",
+      "fields": [
+        {
+          "key": "titleOriginal",
+          "label": "原文歌名",
+          "value": "Wonderful Grace of Jesus",
+          "sourceUrl": "https://hymnary.org/text/wonderful_grace_of_jesus",
+          "sourceLabel": "hymnary.org"
+        },
+        {
+          "key": "lyricist",
+          "label": "作詞",
+          "value": "Haldor Lillenas",
+          "sourceUrl": "https://hymnary.org/text/wonderful_grace_of_jesus",
+          "sourceLabel": "hymnary.org"
+        },
+        {
+          "key": "year",
+          "label": "原作年份",
+          "value": "1918",
+          "sourceUrl": "https://hymnary.org/text/wonderful_grace_of_jesus",
+          "sourceLabel": "hymnary.org"
+        },
+        {
+          "key": "themes",
+          "label": "主題標籤",
+          "value": "奇妙恩典、赦罪釋放、得救喜樂",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/wonderful-grace-of-jesus/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "background",
+          "label": "背景故事摘要",
+          "value": "由 Haldor Lillenas 於1918年創作詞曲。身為著名聖詩作家及牧師的他，一生創作超過4,000首詩歌。此詩受《羅馬書》5:20等經文啟發，於第一次世界大戰末期寫成，旨在宣揚上帝豐盛的恩典與赦免。歌詞讚頌基督救恩能赦免罪惡、改變生命，並臨到最不配的人；副歌則充滿喜樂與讚美。其旋律明快、氣勢磅礴，適合會眾及詩班合唱。",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/wonderful-grace-of-jesus/",
+          "sourceLabel": "hymnallibrary.org"
+        }
+      ],
+      "allSources": [
+        "https://hymnary.org/text/wonderful_grace_of_jesus",
+        "https://www.hymnallibrary.org/hymns/wonderful-grace-of-jesus/"
+      ]
+    },
+    {
+      "id": "hymn_a_115",
+      "collection": "hymn_a",
+      "hymnAbbr": "平",
+      "number": "115",
+      "fields": [
+        {
+          "key": "titleOriginal",
+          "label": "原文歌名",
+          "value": "Love Lifted Me",
+          "sourceUrl": "https://hymnary.org/text/i_was_sinking_deep_in_sin_far_from_the",
+          "sourceLabel": "hymnary.org"
+        },
+        {
+          "key": "lyricist",
+          "label": "作詞",
+          "value": "James Rowe",
+          "sourceUrl": "https://hymnary.org/text/i_was_sinking_deep_in_sin_far_from_the",
+          "sourceLabel": "hymnary.org"
+        },
+        {
+          "key": "composer",
+          "label": "作曲",
+          "value": "Howard E. Smith",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/love-lifted-me/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "year",
+          "label": "原作年份",
+          "value": "1912",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/love-lifted-me/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "themes",
+          "label": "主題標籤",
+          "value": "主愛拯救、脫離沉淪、委身事奉",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/love-lifted-me/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "background",
+          "label": "背景故事摘要",
+          "value": "這首詩歌以彼得在海中下沉、蒙耶穌拯救的經歷為背景，比喻人因罪沉淪，卻因基督的愛得救。歌詞先描繪人在罪中的絕望，接著宣告主垂聽呼求並施行救恩，副歌「Love lifted me」更成為對神救贖大愛的歡呼。後續段落強調信徒對基督的委身，以及向未信者發出得救邀請。",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/love-lifted-me/",
+          "sourceLabel": "hymnallibrary.org"
+        }
+      ],
+      "allSources": [
+        "https://hymnary.org/text/i_was_sinking_deep_in_sin_far_from_the",
+        "https://www.hymnallibrary.org/hymns/love-lifted-me/"
+      ]
+    },
+    {
+      "id": "hymn_a_116",
+      "collection": "hymn_a",
+      "hymnAbbr": "平",
+      "number": "116",
+      "fields": [
+        {
+          "key": "titleOriginal",
+          "label": "原文歌名",
+          "value": "Softly and Tenderly Jesus Is Calling",
+          "sourceUrl": "https://hymnary.org/text/softly_and_tenderly_jesus_is_calling",
+          "sourceLabel": "hymnary.org"
+        },
+        {
+          "key": "lyricist",
+          "label": "作詞",
+          "value": "Will L. Thompson",
+          "sourceUrl": "https://hymnary.org/text/softly_and_tenderly_jesus_is_calling",
+          "sourceLabel": "hymnary.org"
+        },
+        {
+          "key": "composer",
+          "label": "作曲",
+          "value": "Will L. Thompson（曲調：THOMPSON）",
+          "sourceUrl": "https://hymnary.org/text/softly_and_tenderly_jesus_is_calling",
+          "sourceLabel": "hymnary.org"
+        },
+        {
+          "key": "year",
+          "label": "原作年份",
+          "value": "1880",
+          "sourceUrl": "https://hymnary.org/text/softly_and_tenderly_jesus_is_calling",
+          "sourceLabel": "hymnary.org"
+        },
+        {
+          "key": "themes",
+          "label": "主題標籤",
+          "value": "呼召歸家、悔改、慈聲邀請",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/softly-and-tenderly-jesus-is-calling/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "background",
+          "label": "背景故事摘要",
+          "value": "由 Will Lamartine Thompson 創作。Thompson 原本以世俗歌曲聞名，但因渴望透過音樂觸動人心、傳揚福音，後來專注於聖詩創作。他經常親自前往偏遠社區傳唱詩歌，希望將基督的邀請帶給更多人。此詩以耶穌溫柔呼喚罪人回轉歸家的信息為主題，靈感呼應《浪子回頭》的比喻，強調神的慈愛與憐憫。詩歌因其真摯感人的內容而深受福音佈道家 Dwight L. Moody 喜愛，並廣泛用於美國及英國的大型復興聚會。",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/softly-and-tenderly-jesus-is-calling/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "scripture",
+          "label": "相關經文",
+          "value": "馬可福音 8:36-37",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/softly-and-tenderly-jesus-is-calling/",
+          "sourceLabel": "hymnallibrary.org"
+        }
+      ],
+      "allSources": [
+        "https://hymnary.org/text/softly_and_tenderly_jesus_is_calling",
+        "https://www.hymnallibrary.org/hymns/softly-and-tenderly-jesus-is-calling/"
+      ]
+    },
+    {
+      "id": "hymn_a_117",
+      "collection": "hymn_a",
+      "hymnAbbr": "平",
+      "number": "117",
+      "fields": [
+        {
+          "key": "titleOriginal",
+          "label": "原文歌名",
+          "value": "Blessed Assurance",
+          "sourceUrl": "https://hymnary.org/text/blessed_assurance_jesus_is_mine",
+          "sourceLabel": "hymnary.org"
+        },
+        {
+          "key": "lyricist",
+          "label": "作詞",
+          "value": "Fanny Crosby",
+          "sourceUrl": "https://hymnary.org/text/blessed_assurance_jesus_is_mine",
+          "sourceLabel": "hymnary.org"
+        },
+        {
+          "key": "composer",
+          "label": "作曲",
+          "value": "Phoebe P. Knapp（曲調：ASSURANCE）",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/blessed-assurance/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "year",
+          "label": "原作年份",
+          "value": "1873",
+          "sourceUrl": "https://hymnary.org/text/blessed_assurance_jesus_is_mine",
+          "sourceLabel": "hymnary.org"
+        },
+        {
+          "key": "themes",
+          "label": "主題標籤",
+          "value": "得救確據、喜樂見證、安息順服",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/blessed-assurance/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "background",
+          "label": "背景故事摘要",
+          "value": "由 Fanny J. Crosby 於1873年作詞、Phoebe P. Knapp 作曲，創作源於 Knapp 彈奏新譜旋律時詢問 Crosby 的感受，後者即以「Blessed assurance, Jesus is mine!」作為開端完成歌詞。Crosby 雖自幼失明，卻對救恩有堅定信心與喜樂，並以自身經歷見證因信稱義與得救確據。歌詞讚頌基督同在、聖靈工作及永恆盼望，強調信徒在任何境況下都能享有平安與把握。憑藉真摯的信息和優美旋律，此詩多年來成為復興聚會及教會敬拜中的經典作品。",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/blessed-assurance/",
+          "sourceLabel": "hymnallibrary.org"
+        }
+      ],
+      "allSources": [
+        "https://hymnary.org/text/blessed_assurance_jesus_is_mine",
+        "https://www.hymnallibrary.org/hymns/blessed-assurance/"
+      ]
+    },
+    {
+      "id": "hymn_a_118",
+      "collection": "hymn_a",
+      "hymnAbbr": "平",
+      "number": "118",
+      "fields": [
+        {
+          "key": "titleOriginal",
+          "label": "原文歌名",
+          "value": "Glory to His Name（又名：Down at the Cross）",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Glory_To_His_Name",
+          "sourceLabel": "en.wikipedia.org"
+        },
+        {
+          "key": "lyricist",
+          "label": "作詞",
+          "value": "Elisha A. Hoffman",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Glory_To_His_Name",
+          "sourceLabel": "en.wikipedia.org"
+        },
+        {
+          "key": "composer",
+          "label": "作曲",
+          "value": "John H. Stockton",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/glory-to-his-name/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "year",
+          "label": "原作年份",
+          "value": "1878",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Glory_To_His_Name",
+          "sourceLabel": "en.wikipedia.org"
+        },
+        {
+          "key": "themes",
+          "label": "主題標籤",
+          "value": "寶血潔淨、十架救恩、讚美主名",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/glory-to-his-name/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "background",
+          "label": "背景故事摘要",
+          "value": "這首福音詩聚焦在十架下因主寶血得潔淨的喜樂，創作目的是讚頌基督在十字架上的救贖工作，以及信徒因信靠主而得著的新生命。歌詞從「在十架下」的得救經歷出發，強調耶穌寶血能洗淨罪惡，並帶來與基督同在的喜樂和平安。後續段落進一步邀請世人來到救恩泉源，接受主的赦免與更新。",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/glory-to-his-name/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "scripture",
+          "label": "相關經文",
+          "value": "馬太福音 26:28",
+          "sourceUrl": "https://en.wikipedia.org/wiki/Glory_To_His_Name",
+          "sourceLabel": "en.wikipedia.org"
+        }
+      ],
+      "allSources": [
+        "https://en.wikipedia.org/wiki/Glory_To_His_Name",
+        "https://www.hymnallibrary.org/hymns/glory-to-his-name/"
+      ]
+    },
+    {
+      "id": "hymn_a_124",
+      "collection": "hymn_a",
+      "hymnAbbr": "平",
+      "number": "124",
+      "fields": [
+        {
+          "key": "titleOriginal",
+          "label": "原文歌名",
+          "value": "Only Trust Him",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/only-trust-him/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "lyricist",
+          "label": "作詞",
+          "value": "John H. Stockton",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/only-trust-him/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "composer",
+          "label": "作曲",
+          "value": "John H. Stockton",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/only-trust-him/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "year",
+          "label": "原作年份",
+          "value": "1874",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/only-trust-him/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "themes",
+          "label": "主題標籤",
+          "value": "呼召信靠、悔改歸主、福音邀請",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/only-trust-him/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "background",
+          "label": "背景故事摘要",
+          "value": "由衛理公會牧師兼聖詩作家 John H. Stockton 創作，是一首經常用於佈道會和復興聚會的邀請詩歌。其創作靈感源自《使徒行傳》16:31「當信主耶穌，你必得救」，旨在以簡單直接的信息呼籲人們憑信心接受基督。歌詞強調世人都受罪的捆綁，但主已預備憐憫與救恩；人無需靠行為賺取救恩，只需信靠耶穌。副歌反覆唱出「Only trust Him」，突出得救的迫切性與確據。除了向未信者發出邀請外，詩歌也提醒信徒持續以信心倚靠基督，享受祂所賜的平安與恩典。",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/only-trust-him/",
+          "sourceLabel": "hymnallibrary.org"
+        }
+      ],
+      "allSources": [
+        "https://www.hymnallibrary.org/hymns/only-trust-him/"
+      ]
+    },
+    {
+      "id": "hymn_a_125",
+      "collection": "hymn_a",
+      "hymnAbbr": "平",
+      "number": "125",
+      "fields": [
+        {
+          "key": "titleOriginal",
+          "label": "原文歌名",
+          "value": "Though Your Sins Be as Scarlet",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/though-your-sins-be-as-scarlet/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "lyricist",
+          "label": "作詞",
+          "value": "Fanny J. Crosby",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/though-your-sins-be-as-scarlet/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "composer",
+          "label": "作曲",
+          "value": "William H. Doane",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/though-your-sins-be-as-scarlet/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "year",
+          "label": "原作年份",
+          "value": "1887",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/though-your-sins-be-as-scarlet/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "themes",
+          "label": "主題標籤",
+          "value": "悔改、赦罪、潔淨更新",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/though-your-sins-be-as-scarlet/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "background",
+          "label": "背景故事摘要",
+          "value": "由 Fanny J. Crosby 作詞、William H. Doane 作曲，靈感來自《以賽亞書》1:18「你們的罪雖像朱紅，必變成雪白」。Crosby 創作此詩的目的是向罪人傳達神赦罪的應許，強調無論罪惡多深重，只要悔改歸向主，都能因神的恩典得潔淨。歌詞以溫柔懇切的語氣邀請人離開罪惡、接受救恩，並突顯神滿有憐憫與慈愛。",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/though-your-sins-be-as-scarlet/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "scripture",
+          "label": "相關經文",
+          "value": "以賽亞書 1:18",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/though-your-sins-be-as-scarlet/",
+          "sourceLabel": "hymnallibrary.org"
+        }
+      ],
+      "allSources": [
+        "https://www.hymnallibrary.org/hymns/though-your-sins-be-as-scarlet/"
+      ]
+    },
+    {
+      "id": "hymn_a_127",
+      "collection": "hymn_a",
+      "hymnAbbr": "平",
+      "number": "127",
+      "fields": [
+        {
+          "key": "titleOriginal",
+          "label": "原文歌名",
+          "value": "There Is Power in the Blood",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/there-is-power-in-the-blood/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "lyricist",
+          "label": "作詞",
+          "value": "Lewis E. Jones",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/there-is-power-in-the-blood/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "composer",
+          "label": "作曲",
+          "value": "Lewis E. Jones",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/there-is-power-in-the-blood/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "year",
+          "label": "原作年份",
+          "value": "1899",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/there-is-power-in-the-blood/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "themes",
+          "label": "主題標籤",
+          "value": "寶血能力、得勝罪惡、福音呼召",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/there-is-power-in-the-blood/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "background",
+          "label": "背景故事摘要",
+          "value": "《There Is Power in the Blood》由 Lewis E. Jones 於1899年在美國馬里蘭州一場營會期間創作，是其最著名的福音聖詩。此詩創作目的是宣揚耶穌基督寶血的大能，強調信徒能藉著基督的犧牲得著赦罪、勝過罪惡、脫離捆綁並經歷生命更新。歌詞以一連串提問引導人思考救恩需要，並在副歌中反覆宣告「寶血裡有奇妙大能」，強調基督救贖工作的完全與有效。",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/there-is-power-in-the-blood/",
+          "sourceLabel": "hymnallibrary.org"
+        }
+      ],
+      "allSources": [
+        "https://www.hymnallibrary.org/hymns/there-is-power-in-the-blood/"
+      ]
+    },
+    {
+      "id": "hymn_a_129",
+      "collection": "hymn_a",
+      "hymnAbbr": "平",
+      "number": "129",
+      "fields": [
+        {
+          "key": "titleOriginal",
+          "label": "原文歌名",
+          "value": "He Took My Sins Away",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/he-took-my-sins-away/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "lyricist",
+          "label": "作詞",
+          "value": "Margaret Jenkins Harris",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/he-took-my-sins-away/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "composer",
+          "label": "作曲",
+          "value": "Margaret Jenkins Harris",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/he-took-my-sins-away/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "year",
+          "label": "原作年份",
+          "value": "1903",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/he-took-my-sins-away/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "themes",
+          "label": "主題標籤",
+          "value": "罪得赦免、救恩見證、喜樂讚美",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/he-took-my-sins-away/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "background",
+          "label": "背景故事摘要",
+          "value": "《He Took My Sins Away》是一首見證得救喜樂的福音詩歌。歌詞以第一人稱描述信徒因罪而疲憊、憂傷，來到耶穌面前後得著赦免與釋放的經歷。詩歌強調基督的愛能除去罪擔，使人不再被定罪，並享有屬天的平安與喜樂。後半部分進一步邀請他人來到主面前，相信耶穌同樣能赦免罪過並保守信徒每日活在祂的愛中。副歌反覆宣告主已除去罪惡，突顯救恩帶來的確據與喜樂。",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/he-took-my-sins-away/",
+          "sourceLabel": "hymnallibrary.org"
+        }
+      ],
+      "allSources": [
+        "https://www.hymnallibrary.org/hymns/he-took-my-sins-away/"
+      ]
+    },
+    {
+      "id": "hymn_a_130",
+      "collection": "hymn_a",
+      "hymnAbbr": "平",
+      "number": "130",
+      "fields": [
+        {
+          "key": "titleOriginal",
+          "label": "原文歌名",
+          "value": "Are You Washed in the Blood of the Lamb?",
+          "sourceUrl": "https://hymnary.org/text/have_you_been_to_jesus_for_the_cleansing",
+          "sourceLabel": "hymnary.org"
+        },
+        {
+          "key": "lyricist",
+          "label": "作詞",
+          "value": "Elisha A. Hoffman",
+          "sourceUrl": "https://hymnary.org/text/have_you_been_to_jesus_for_the_cleansing",
+          "sourceLabel": "hymnary.org"
+        },
+        {
+          "key": "composer",
+          "label": "作曲",
+          "value": "Elisha A. Hoffman",
+          "sourceUrl": "https://hymnary.org/text/have_you_been_to_jesus_for_the_cleansing",
+          "sourceLabel": "hymnary.org"
+        },
+        {
+          "key": "year",
+          "label": "原作年份",
+          "value": "1878",
+          "sourceUrl": "https://hymnary.org/text/have_you_been_to_jesus_for_the_cleansing",
+          "sourceLabel": "hymnary.org"
+        },
+        {
+          "key": "themes",
+          "label": "主題標籤",
+          "value": "寶血潔淨、悔改省察、福音呼召",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/are-you-washed-in-the-blood/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "background",
+          "label": "背景故事摘要",
+          "value": "由 Elisha A. Hoffman 創作，是19世紀末極具代表性的福音聖詩。此詩創作目的是透過「你是否已被羔羊的寶血洗淨？」這一直接而發人深省的問題，引導人反思自己與基督的關係。歌詞以聖經中羔羊寶血洗淨罪惡的意象為核心，強調救恩並非靠人的努力，而是藉著信靠耶穌基督的犧牲而得著。詩歌不斷呼籲個人作出信仰回應，同時提醒信徒預備將來站立在神面前。憑藉清晰的福音信息和易於傳唱的副歌，此詩長久以來廣泛用於佈道會及復興聚會，持續向世人傳達救恩的核心信息。",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/are-you-washed-in-the-blood/",
+          "sourceLabel": "hymnallibrary.org"
+        }
+      ],
+      "allSources": [
+        "https://hymnary.org/text/have_you_been_to_jesus_for_the_cleansing",
+        "https://www.hymnallibrary.org/hymns/are-you-washed-in-the-blood/"
+      ]
+    },
+    {
+      "id": "hymn_a_135",
+      "collection": "hymn_a",
+      "hymnAbbr": "平",
+      "number": "135",
+      "fields": [
+        {
+          "key": "titleOriginal",
+          "label": "原文歌名",
+          "value": "Let Jesus Come into Your Heart",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/let-jesus-come-into-your-heart/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "lyricist",
+          "label": "作詞",
+          "value": "Mrs. C. H. Morris",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/let-jesus-come-into-your-heart/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "composer",
+          "label": "作曲",
+          "value": "Mrs. C. H. Morris",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/let-jesus-come-into-your-heart/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "year",
+          "label": "原作年份",
+          "value": "1950",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/let-jesus-come-into-your-heart/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "themes",
+          "label": "主題標籤",
+          "value": "心門敞開、決志邀請、基督內住",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/let-jesus-come-into-your-heart/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "background",
+          "label": "背景故事摘要",
+          "value": "由 Mrs. Claribel Hayward Morris 於20世紀初創作，是一首充滿福音邀請意味的聖詩。創作目的是呼籲人們向耶穌基督敞開心門，接受祂的救恩與恩典。歌詞以基督叩門的聖經意象為基礎，強調救恩是一個個人回應主呼召的過程。副歌反覆勸勉聽眾「讓耶穌進入你的心」，表達悔改歸主後所帶來的平安、喜樂和新生命。",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/let-jesus-come-into-your-heart/",
+          "sourceLabel": "hymnallibrary.org"
+        }
+      ],
+      "allSources": [
+        "https://www.hymnallibrary.org/hymns/let-jesus-come-into-your-heart/"
+      ]
+    },
+    {
+      "id": "hymn_a_147",
+      "collection": "hymn_a",
+      "hymnAbbr": "平",
+      "number": "147",
+      "fields": [
+        {
+          "key": "titleOriginal",
+          "label": "原文歌名",
+          "value": "Just as I Am, Without One Plea",
+          "sourceUrl": "https://hymnary.org/text/just_as_i_am_without_one_plea",
+          "sourceLabel": "hymnary.org"
+        },
+        {
+          "key": "lyricist",
+          "label": "作詞",
+          "value": "Charlotte Elliott",
+          "sourceUrl": "https://hymnary.org/text/just_as_i_am_without_one_plea",
+          "sourceLabel": "hymnary.org"
+        },
+        {
+          "key": "composer",
+          "label": "作曲",
+          "value": "William B. Bradbury（曲調：WOODWORTH）",
+          "sourceUrl": "https://hymnary.org/text/just_as_i_am_without_one_plea",
+          "sourceLabel": "hymnary.org"
+        },
+        {
+          "key": "year",
+          "label": "原作年份",
+          "value": "1836",
+          "sourceUrl": "https://hymnary.org/text/just_as_i_am_without_one_plea",
+          "sourceLabel": "hymnary.org"
+        },
+        {
+          "key": "themes",
+          "label": "主題標籤",
+          "value": "悔改歸主、完全接納、呼召",
+          "sourceUrl": "https://hymnary.org/text/just_as_i_am_without_one_plea",
+          "sourceLabel": "hymnary.org"
+        },
+        {
+          "key": "background",
+          "label": "背景故事摘要",
+          "value": "《Just as I Am》由 Charlotte Elliott 於1834年創作。Elliott 32歲時因重病而長期臥床，並曾陷入屬靈掙扎，不確定自己該如何來到基督面前。早年瑞士佈道家 Henri A. Cesar Malan 對她說的一句話──「Come to him just as you are」──深深影響了她。多年後，在一次因身體軟弱而感到自己毫無用處的低谷中，她重新思想基督的救恩與應許，遂寫下此詩作為個人信仰宣告。歌詞強調人無需靠自己的功德或改變才配來到主前，而是能照著本相接受基督的恩典與接納。",
+          "sourceUrl": "https://hymnary.org/text/just_as_i_am_without_one_plea",
+          "sourceLabel": "hymnary.org"
+        }
+      ],
+      "allSources": [
+        "https://hymnary.org/text/just_as_i_am_without_one_plea"
+      ]
+    },
+    {
+      "id": "hymn_a_148",
+      "collection": "hymn_a",
+      "hymnAbbr": "平",
+      "number": "148",
+      "fields": [
+        {
+          "key": "titleOriginal",
+          "label": "原文歌名",
+          "value": "In Tenderness He Sought Me",
+          "sourceUrl": "https://hymnary.org/text/in_tenderness_he_sought_me_weary_and_sic",
+          "sourceLabel": "hymnary.org"
+        },
+        {
+          "key": "lyricist",
+          "label": "作詞",
+          "value": "W. Spencer Walton",
+          "sourceUrl": "https://hymnary.org/text/in_tenderness_he_sought_me_weary_and_sic",
+          "sourceLabel": "hymnary.org"
+        },
+        {
+          "key": "year",
+          "label": "原作年份",
+          "value": "1894",
+          "sourceUrl": "https://hymnary.org/text/in_tenderness_he_sought_me_weary_and_sic",
+          "sourceLabel": "hymnary.org"
+        },
+        {
+          "key": "themes",
+          "label": "主題標籤",
+          "value": "主的慈愛、悔改歸回",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/in-tenderness-he-sought-me/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "background",
+          "label": "背景故事摘要",
+          "value": "由英國佈道家兼南非宣教士 W. Spencer Walton 於1894年創作。詩歌靈感來自《迷失的羊》的比喻，以失喪的羊象徵在罪中迷失的人，描繪基督如何主動尋找、拯救並帶領罪人回家。創作目的在於見證救恩完全出於主的恩典，而非人的努力。歌詞從罪人的無助與迷失，轉向蒙主救贖的喜樂與平安，並強調耶穌這位好牧人的慈愛、犧牲與看顧。副歌則充滿感恩與讚美，表達信徒對救主永不止息的愛與回應。",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/in-tenderness-he-sought-me/",
+          "sourceLabel": "hymnallibrary.org"
+        }
+      ],
+      "allSources": [
+        "https://hymnary.org/text/in_tenderness_he_sought_me_weary_and_sic",
+        "https://www.hymnallibrary.org/hymns/in-tenderness-he-sought-me/"
+      ]
+    },
+    {
+      "id": "hymn_a_149",
+      "collection": "hymn_a",
+      "hymnAbbr": "平",
+      "number": "149",
+      "fields": [
+        {
+          "key": "titleOriginal",
+          "label": "原文歌名",
+          "value": "Nailed to the Cross",
+          "sourceUrl": "https://hymnary.org/text/there_was_one_who_was_willing_to_die_in",
+          "sourceLabel": "hymnary.org"
+        },
+        {
+          "key": "lyricist",
+          "label": "作詞",
+          "value": "Carrie Ellis Breck",
+          "sourceUrl": "https://hymnary.org/text/there_was_one_who_was_willing_to_die_in",
+          "sourceLabel": "hymnary.org"
+        },
+        {
+          "key": "year",
+          "label": "原作年份",
+          "value": "1899",
+          "sourceUrl": "https://hymnary.org/text/there_was_one_who_was_willing_to_die_in",
+          "sourceLabel": "hymnary.org"
+        },
+        {
+          "key": "themes",
+          "label": "主題標籤",
+          "value": "寶血潔淨、救贖泉源、十架功效",
+          "sourceUrl": "https://hymnary.org/text/there_was_one_who_was_willing_to_die_in",
+          "sourceLabel": "hymnary.org"
+        }
+      ],
+      "allSources": [
+        "https://hymnary.org/text/there_was_one_who_was_willing_to_die_in"
+      ]
+    },
+    {
+      "id": "hymn_a_151",
+      "collection": "hymn_a",
+      "hymnAbbr": "平",
+      "number": "151",
+      "fields": [
+        {
+          "key": "titleOriginal",
+          "label": "原文歌名",
+          "value": "Since Jesus Came Into My Heart",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/since-jesus-came-into-my-heart/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "lyricist",
+          "label": "作詞",
+          "value": "Rufus H. McDaniel",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/since-jesus-came-into-my-heart/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "year",
+          "label": "原作年份",
+          "value": "1914",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/since-jesus-came-into-my-heart/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "themes",
+          "label": "主題標籤",
+          "value": "內住喜樂、重生見證、屬靈更新",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/since-jesus-came-into-my-heart/",
+          "sourceLabel": "hymnallibrary.org"
+        },
+        {
+          "key": "background",
+          "label": "背景故事摘要",
+          "value": "由牧師兼聖詩作家 Rufus H. McDaniel 於1914年創作。創作背景源於其兒子剛離世的悲痛經歷；在傷痛之中，McDaniel 仍希望見證耶穌基督帶來的盼望與生命改變，因此寫下這首詩歌。歌詞以個人見證的方式，述說接受基督後，憂傷被喜樂取代、黑暗被光明驅散，生命因救恩而徹底更新。詩歌強調救恩帶來的平安、喜樂與永恆盼望。",
+          "sourceUrl": "https://www.hymnallibrary.org/hymns/since-jesus-came-into-my-heart/",
+          "sourceLabel": "hymnallibrary.org"
+        }
+      ],
+      "allSources": [
+        "https://www.hymnallibrary.org/hymns/since-jesus-came-into-my-heart/"
       ]
     }
   ]
